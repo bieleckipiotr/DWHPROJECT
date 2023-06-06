@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+﻿<?xml version="1.0"?>
 <DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
   DTS:refId="Package"
   DTS:CreationDate="6/6/2023 7:18:15 PM"
@@ -11,9 +11,538 @@
   DTS:LocaleID="1045"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionGUID="{2FE7F75F-82A5-4214-B4BB-FABF1D6C01C8}">
+  DTS:VersionBuild="1"
+  DTS:VersionGUID="{65529A3F-8217-4A5E-8519-F959FF075BE1}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-V5DA5NT.HDiSBI_projekt.sa]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{C8D643F5-95A2-40C1-81CD-408E0548F9AC}"
+      DTS:ObjectName="DESKTOP-V5DA5NT.HDiSBI_projekt.sa">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-V5DA5NT;User ID=sa;Initial Catalog=HDiSBI_projekt;Provider=SQLNCLI11.1;Persist Security Info=True;Application Name=SSIS-Package-{C8D643F5-95A2-40C1-81CD-408E0548F9AC}DESKTOP-V5DA5NT.HDiSBI_projekt.sa;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAJKgfiWJeJ0eLUv1474sk6AAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAHAy+vWxHhn3d4dFH4JziXX6JWUH2ro1XDu4cinyIkjQAAAAAOgAAAAAIAACAAAAAYHSAlxw9fDUlHmqn6WeH7G6OdGCxmyfwxtXUo7hMARyAAAABjx1//vhRVP+pzDyr0eHumy68opeh+tHlKG+7friAsY0AAAACSkwrgLg4pCtzv2U7PPLhRg6Nt3cpfX4h2g8xzH398EX64wSfe+XzXqlPxlbygu+KSMDlBtosJsT4TuuhrxRjE</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-V5DA5NT.sa]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{D07FF0F0-5E0B-4F15-9EEC-F6D2E78509ED}"
+      DTS:ObjectName="DESKTOP-V5DA5NT.sa">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-V5DA5NT;User ID=sa;Provider=MSOLEDBSQL.1;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAJKgfiWJeJ0eLUv1474sk6AAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADSagZHtVP6UXYob3oPVmrFC5nyeqs5ETmQraATCsnRqAAAAAAOgAAAAAIAACAAAADpcNYRUfBe2+SAemoYSfBIGLFJNWeLpJZ/Bzf+qhvaeCAAAAA/cfY4Z+h7UoY4ye6IAJDEsrJcs1pItC5SYx7Puy8fj0AAAACSKJoxb6BPkK2uD+fRd+8E+rxapWXT+DXqRdte4ClVmtyCWn98tqS2adlwL4eeIOExVT2XTMJCsfdzepOrZe/W</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
   <DTS:Variables />
-  <DTS:Executables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Data Flow Task"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{05BF338E-3798-4BA8-8671-170EF0FB8CEE}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Data Flow Task"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Execute SQL Task"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{38CFCAD4-8557-46F6-8E27-967F6481738B}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Execute SQL Task"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Import Schedules"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{F386E15C-ADCC-468C-9D85-C9F064223CA7}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Import Schedules"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Import Schedules\OLE DB Source"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="OLE DB Source"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[Schedules]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1250</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Import Schedules\OLE DB Source.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-V5DA5NT.HDiSBI_projekt.sa]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-V5DA5NT.HDiSBI_projekt.sa]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Import Schedules\OLE DB Source.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Import Schedules\OLE DB Source.Outputs[OLE DB Source Output].Columns[zespol]"
+                      codePage="1250"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import Schedules\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[zespol]"
+                      length="255"
+                      lineageId="Package\Import Schedules\OLE DB Source.Outputs[OLE DB Source Output].Columns[zespol]"
+                      name="zespol"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Import Schedules\OLE DB Source.Outputs[OLE DB Source Output].Columns[slupek]"
+                      codePage="1250"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import Schedules\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[slupek]"
+                      length="255"
+                      lineageId="Package\Import Schedules\OLE DB Source.Outputs[OLE DB Source Output].Columns[slupek]"
+                      name="slupek"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Import Schedules\OLE DB Source.Outputs[OLE DB Source Output].Columns[linia]"
+                      codePage="1250"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import Schedules\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[linia]"
+                      length="255"
+                      lineageId="Package\Import Schedules\OLE DB Source.Outputs[OLE DB Source Output].Columns[linia]"
+                      name="linia"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Import Schedules\OLE DB Source.Outputs[OLE DB Source Output].Columns[symbol_2]"
+                      codePage="1250"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import Schedules\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[symbol_2]"
+                      length="255"
+                      lineageId="Package\Import Schedules\OLE DB Source.Outputs[OLE DB Source Output].Columns[symbol_2]"
+                      name="symbol_2"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Import Schedules\OLE DB Source.Outputs[OLE DB Source Output].Columns[symbol_1]"
+                      codePage="1250"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import Schedules\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[symbol_1]"
+                      length="255"
+                      lineageId="Package\Import Schedules\OLE DB Source.Outputs[OLE DB Source Output].Columns[symbol_1]"
+                      name="symbol_1"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Import Schedules\OLE DB Source.Outputs[OLE DB Source Output].Columns[brygada]"
+                      codePage="1250"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import Schedules\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[brygada]"
+                      length="255"
+                      lineageId="Package\Import Schedules\OLE DB Source.Outputs[OLE DB Source Output].Columns[brygada]"
+                      name="brygada"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Import Schedules\OLE DB Source.Outputs[OLE DB Source Output].Columns[kierunek]"
+                      codePage="1250"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import Schedules\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[kierunek]"
+                      length="255"
+                      lineageId="Package\Import Schedules\OLE DB Source.Outputs[OLE DB Source Output].Columns[kierunek]"
+                      name="kierunek"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Import Schedules\OLE DB Source.Outputs[OLE DB Source Output].Columns[trasa]"
+                      codePage="1250"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import Schedules\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[trasa]"
+                      length="255"
+                      lineageId="Package\Import Schedules\OLE DB Source.Outputs[OLE DB Source Output].Columns[trasa]"
+                      name="trasa"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Import Schedules\OLE DB Source.Outputs[OLE DB Source Output].Columns[czas]"
+                      codePage="1250"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import Schedules\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[czas]"
+                      length="255"
+                      lineageId="Package\Import Schedules\OLE DB Source.Outputs[OLE DB Source Output].Columns[czas]"
+                      name="czas"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Import Schedules\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[zespol]"
+                      codePage="1250"
+                      dataType="str"
+                      length="255"
+                      name="zespol" />
+                    <externalMetadataColumn
+                      refId="Package\Import Schedules\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[slupek]"
+                      codePage="1250"
+                      dataType="str"
+                      length="255"
+                      name="slupek" />
+                    <externalMetadataColumn
+                      refId="Package\Import Schedules\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[linia]"
+                      codePage="1250"
+                      dataType="str"
+                      length="255"
+                      name="linia" />
+                    <externalMetadataColumn
+                      refId="Package\Import Schedules\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[symbol_2]"
+                      codePage="1250"
+                      dataType="str"
+                      length="255"
+                      name="symbol_2" />
+                    <externalMetadataColumn
+                      refId="Package\Import Schedules\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[symbol_1]"
+                      codePage="1250"
+                      dataType="str"
+                      length="255"
+                      name="symbol_1" />
+                    <externalMetadataColumn
+                      refId="Package\Import Schedules\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[brygada]"
+                      codePage="1250"
+                      dataType="str"
+                      length="255"
+                      name="brygada" />
+                    <externalMetadataColumn
+                      refId="Package\Import Schedules\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[kierunek]"
+                      codePage="1250"
+                      dataType="str"
+                      length="255"
+                      name="kierunek" />
+                    <externalMetadataColumn
+                      refId="Package\Import Schedules\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[trasa]"
+                      codePage="1250"
+                      dataType="str"
+                      length="255"
+                      name="trasa" />
+                    <externalMetadataColumn
+                      refId="Package\Import Schedules\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[czas]"
+                      codePage="1250"
+                      dataType="str"
+                      length="255"
+                      name="czas" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Import Schedules\OLE DB Source.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Import Schedules\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[zespol]"
+                      codePage="1250"
+                      dataType="str"
+                      length="255"
+                      lineageId="Package\Import Schedules\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[zespol]"
+                      name="zespol" />
+                    <outputColumn
+                      refId="Package\Import Schedules\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[slupek]"
+                      codePage="1250"
+                      dataType="str"
+                      length="255"
+                      lineageId="Package\Import Schedules\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[slupek]"
+                      name="slupek" />
+                    <outputColumn
+                      refId="Package\Import Schedules\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[linia]"
+                      codePage="1250"
+                      dataType="str"
+                      length="255"
+                      lineageId="Package\Import Schedules\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[linia]"
+                      name="linia" />
+                    <outputColumn
+                      refId="Package\Import Schedules\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[symbol_2]"
+                      codePage="1250"
+                      dataType="str"
+                      length="255"
+                      lineageId="Package\Import Schedules\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[symbol_2]"
+                      name="symbol_2" />
+                    <outputColumn
+                      refId="Package\Import Schedules\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[symbol_1]"
+                      codePage="1250"
+                      dataType="str"
+                      length="255"
+                      lineageId="Package\Import Schedules\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[symbol_1]"
+                      name="symbol_1" />
+                    <outputColumn
+                      refId="Package\Import Schedules\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[brygada]"
+                      codePage="1250"
+                      dataType="str"
+                      length="255"
+                      lineageId="Package\Import Schedules\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[brygada]"
+                      name="brygada" />
+                    <outputColumn
+                      refId="Package\Import Schedules\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[kierunek]"
+                      codePage="1250"
+                      dataType="str"
+                      length="255"
+                      lineageId="Package\Import Schedules\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[kierunek]"
+                      name="kierunek" />
+                    <outputColumn
+                      refId="Package\Import Schedules\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[trasa]"
+                      codePage="1250"
+                      dataType="str"
+                      length="255"
+                      lineageId="Package\Import Schedules\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[trasa]"
+                      name="trasa" />
+                    <outputColumn
+                      refId="Package\Import Schedules\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[czas]"
+                      codePage="1250"
+                      dataType="str"
+                      length="255"
+                      lineageId="Package\Import Schedules\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[czas]"
+                      name="czas" />
+                    <outputColumn
+                      refId="Package\Import Schedules\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Import Schedules\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Import Schedules\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Import Schedules\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{F640F9FE-2FC0-4ED6-8946-BB96114DFE3A}"
+      DTS:From="Package\Import Schedules"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\Execute SQL Task" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
+      DTS:CreationName=""
+      DTS:DTSID="{C9883E3F-E9AF-4B47-BCBC-FE2497A894BA}"
+      DTS:From="Package\Data Flow Task"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 1"
+      DTS:To="Package\Execute SQL Task" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="165,42"
+          Id="Package\Import Schedules"
+          TopLeft="570.5,234.5" />
+        <NodeLayout
+          Size="170,42"
+          Id="Package\Execute SQL Task"
+          TopLeft="643,393" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="648,276.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="80,116.5"
+              Start="0,0"
+              End="80,109">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,54.25" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,54.25"
+                    Point2="0,58.25"
+                    Point3="4,58.25" />
+                  <mssgle:LineSegment
+                    End="76,58.25" />
+                  <mssgle:CubicBezierSegment
+                    Point1="76,58.25"
+                    Point2="80,58.25"
+                    Point3="80,62.25" />
+                  <mssgle:LineSegment
+                    End="80,109" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="155,42"
+          Id="Package\Data Flow Task"
+          TopLeft="762,234" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 1]"
+          TopLeft="839.5,276">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-84.5,117"
+              Start="0,0"
+              End="-84.5,109.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,65.5454545454545" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,65.5454545454545"
+                    Point2="0,69.5454545454545"
+                    Point3="-4,69.5454545454545" />
+                  <mssgle:LineSegment
+                    End="-80.5,69.5454545454545" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-80.5,69.5454545454545"
+                    Point2="-84.5,69.5454545454545"
+                    Point3="-84.5,73.5454545454545" />
+                  <mssgle:LineSegment
+                    End="-84.5,109.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Import Schedules">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="157,42"
+          Id="Package\Import Schedules\OLE DB Source"
+          TopLeft="466,161" />
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Import Schedules\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
 </DTS:Executable>
