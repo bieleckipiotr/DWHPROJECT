@@ -11,11 +11,113 @@
   DTS:LocaleID="1045"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="25"
-  DTS:VersionGUID="{0124B970-736D-4337-ABDF-8C3EA261D1D1}">
+  DTS:VersionBuild="46"
+  DTS:VersionGUID="{D96B2E93-F3CE-4862-83C9-437314B3116D}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-0E91BGO.HDiSBI_projekt.sa]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{5824F1B3-8E4A-4A22-B7AA-242CD4A1FC36}"
+      DTS:ObjectName="DESKTOP-0E91BGO.HDiSBI_projekt.sa">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-0E91BGO;User ID=sa;Initial Catalog=HDiSBI_projekt;Provider=SQLNCLI11.1;Persist Security Info=True;Application Name=SSIS-Package-{5824F1B3-8E4A-4A22-B7AA-242CD4A1FC36}DESKTOP-0E91BGO.HDiSBI_projekt.sa;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAVrRUbLU4JEO5cc8pfX1cUwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAtZCeMskgY6yXF+YCfn3XBSnbQLCrPfXOLbLYDDk7lewAAAAAOgAAAAAIAACAAAAC4THdpXzg+oJMI0kRCAKh9NBehB8YHlwaDoTpGZomppyAAAAAMgPaSdHCxM3222KU62c2sNaLc4kJJiJaUK4HWBAR/WUAAAAB85jpHItawDEmzu9HjVr2yoSLA7tXNLNWkFTOvAtXU7KzvqaskNaXXMsv0af0GtfAqC+3St7On43Kw7AbJ9FgZ</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-0E91BGO.HDiSBI_projekt.sa 1]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{F245DC85-B91C-46CE-82BF-7B8939B1B98D}"
+      DTS:ObjectName="DESKTOP-0E91BGO.HDiSBI_projekt.sa 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-0E91BGO;User ID=sa;Initial Catalog=HDiSBI_projekt;Provider=SQLNCLI11.1;Persist Security Info=True;Application Name=SSIS-Package-{F245DC85-B91C-46CE-82BF-7B8939B1B98D}DESKTOP-0E91BGO.HDiSBI_projekt.sa 1;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAVrRUbLU4JEO5cc8pfX1cUwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAANAAuN6FKZso1w0eroEeqVeFoVVyrsMSu0c3FkRlcN6gAAAAAOgAAAAAIAACAAAAD+ImKRZsteHKEx3NRzqUSGRCRKjuJl05QUFPhojo6iuyAAAACf7tqiSIgd5uRtd1gBXab6yVk6rQQYmgQPMHUxDb5lJkAAAADi0Z0KOq4WQM2IrCIp4hSIqJ0sjSpzzPHWfq3rmEp5kA+Ux2ZXYnCNQ4xb6Muqmkvuy2NDJcZM0y10bZJbfnoO</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-0E91BGO.HDiSBI_projekt.sa 2]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{3C2F669A-C03C-440A-A66A-A8A0B0319FA6}"
+      DTS:ObjectName="DESKTOP-0E91BGO.HDiSBI_projekt.sa 2">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-0E91BGO;User ID=sa;Initial Catalog=HDiSBI_projekt;Provider=SQLNCLI11.1;Persist Security Info=True;Application Name=SSIS-Package-{3C2F669A-C03C-440A-A66A-A8A0B0319FA6}DESKTOP-0E91BGO.HDiSBI_projekt.sa 2;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAVrRUbLU4JEO5cc8pfX1cUwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAKvEIkVjkggq1AUJRkeVrULxoCRF2KNd+ch89IXJYSywAAAAAOgAAAAAIAACAAAACzjpRygIuSS7ylTqwErOlgoKQ4HtzPiR2tBq1lT0Z/uCAAAAA6qLV01sonjcONNEpbiqJlh4M7nK/EmQaBnNKv+llAZUAAAACVqJcryerzCEbUizYHNQ69N/3ztWFu0cM6FYgWSz7Aw2sk/znFx4MLJ0fZYiOYijYeVS/swRknGRpNoNx1ZyuP</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-0E91BGO.HDiSBI_projekt.sa 3]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{89829B58-EA50-4BF2-BF41-DD607A5CC945}"
+      DTS:ObjectName="DESKTOP-0E91BGO.HDiSBI_projekt.sa 3">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-0E91BGO;User ID=sa;Initial Catalog=HDiSBI_projekt;Provider=SQLNCLI11.1;Persist Security Info=True;Application Name=SSIS-Package-{89829B58-EA50-4BF2-BF41-DD607A5CC945}DESKTOP-0E91BGO.HDiSBI_projekt.sa 3;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAVrRUbLU4JEO5cc8pfX1cUwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABMYqY18AMP4CBYjRvXQl8miQXTCkWxUtvtio4EttqfuwAAAAAOgAAAAAIAACAAAACvU4gKue2zoiFxj5YRKENg6oMvenLoupGWyFcHSeLGciAAAADWR65fVzZgT4N4Hcy+QFKDZru57vd0gYN+QyX+mOtu6UAAAACVt92d0Ql+kXSnBc4nFm+sJL1rxSWJS9arfHLWUH36tz0dor98tN0CDLNmHnemocDYseUL505twduaKTi/hnh+</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-0E91BGO.HDiSBI_projekt.sa 4]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{8B32A0D7-1835-4AA8-B702-6E64FEF18D9A}"
+      DTS:ObjectName="DESKTOP-0E91BGO.HDiSBI_projekt.sa 4">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-0E91BGO;User ID=sa;Initial Catalog=HDiSBI_projekt;Provider=SQLNCLI11.1;Persist Security Info=True;Application Name=SSIS-Package-{8B32A0D7-1835-4AA8-B702-6E64FEF18D9A}DESKTOP-0E91BGO.HDiSBI_projekt.sa 4;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAVrRUbLU4JEO5cc8pfX1cUwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADM1JogzQMr47LKTJEy3t4he7vjWnwcf/o74AM7w9rAwQAAAAAOgAAAAAIAACAAAADp7vFiEYm38SqfNxWb5sl6sc1+JwEnIs5ixQovxiWfBCAAAABnY7b1xW2BAdGf3j2C5k8byCjCwFrK7u976B/9T+KotEAAAACvBMTOMVbaERYX9SAwDWd7kGVIIlfJXvfjVS5ahQhGIB4Sz7XQ/TRMAq0QKW7P2XeQpdT+4eMwZXJP4E2dGT/I</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-0E91BGO.HDiSBI_projekt.sa 5]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{357206F3-E621-47FB-B485-96BD496E1C95}"
+      DTS:ObjectName="DESKTOP-0E91BGO.HDiSBI_projekt.sa 5">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-0E91BGO;User ID=sa;Initial Catalog=HDiSBI_projekt;Provider=SQLNCLI11.1;Persist Security Info=True;Application Name=SSIS-Package-{357206F3-E621-47FB-B485-96BD496E1C95}DESKTOP-0E91BGO.HDiSBI_projekt.sa 5;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAVrRUbLU4JEO5cc8pfX1cUwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAbGFdPXXJFkUdR3Ie+fB4wRUp+RTPav0MR3ohujjyW+gAAAAAOgAAAAAIAACAAAADwKSrmfUSq6iJ8Ob2O3IuJl4aCAGjAkR2u/PyLB/35KCAAAABZFtbXMynNoldlLSNPXLGbsjd5C+qN0YrCI3YAoiyKg0AAAAB6frsTjUsf7/sNEdSPCGqENldYldVjypEC+RtWxscrJqaJYzjB55WFi7zvl5ND0cY03QQBBXLt3+S3fq1OSr+I</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[DESKTOP-V5DA5NT.HDiSBI_projekt.sa]"
       DTS:CreationName="OLEDB"
@@ -25,11 +127,11 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=DESKTOP-V5DA5NT;User ID=sa;Initial Catalog=HDiSBI_projekt;Provider=SQLNCLI11.1;Persist Security Info=True;Application Name=SSIS-Package-{C8D643F5-95A2-40C1-81CD-408E0548F9AC}DESKTOP-V5DA5NT.HDiSBI_projekt.sa;Auto Translate=False;">
+          DTS:ConnectionString="Data Source=DESKTOP-0E91BGO;User ID=sa;Initial Catalog=HDiSBI_projekt;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;Application Name=SSIS-Package-{C8D643F5-95A2-40C1-81CD-408E0548F9AC}DESKTOP-V5DA5NT.HDiSBI_projekt.sa;">
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAJKgfiWJeJ0eLUv1474sk6AAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAKe9mD4QNaSa62ZK1n8gx4D6jgVogIB+yCdUTkuA9nYwAAAAAOgAAAAAIAACAAAAA7fsPj6OQiGlTkC99Qya13gpBuALl/wtiSYEq24HQnaCAAAABW9ABH6zXrI8UaDmY0+kGkhEFNp/PstAQJPnisx9otNkAAAACx9LdWFS4H5Zts+Ao5RgE+qmQ3qajcIcQaEBc21MLxRQeE851PCKf+xkO0/4/1xv7qESmztYNaA1EsDLWauBvB</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAVrRUbLU4JEO5cc8pfX1cUwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABHBmLdpwQ24b8qFGFGTTrUvxm0H4iHqXzM5XTcz3JumgAAAAAOgAAAAAIAACAAAABFewv8CZHQ9WG9GtigKaZY/dUYH2mqRgAK9wiWlbrHXyAAAADtBye5+UU3YDvPLTjf78Cg8Df2/n+TGCvUX5hK8oG38EAAAABNJ+WX07xkOTThxuM9xl4F2G7PIQ0/pHwDCkyIm38qInNES5kmGX8H2495HM4NfpWY9M19E2cU3/FdwBm2XDLv</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -42,11 +144,11 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=DESKTOP-V5DA5NT;User ID=sa;Initial Catalog=HDiSBI_projekt;Provider=SQLNCLI11.1;Persist Security Info=True;Application Name=SSIS-Package-{09DE53AB-CD0E-4F8A-8A67-F42A2703AE81}DESKTOP-V5DA5NT.HDiSBI_projekt.sa 1;Auto Translate=False;">
+          DTS:ConnectionString="Data Source=DESKTOP-0E91BGO;User ID=sa;Initial Catalog=HDiSBI_projekt;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;Application Name=SSIS-Package-{09DE53AB-CD0E-4F8A-8A67-F42A2703AE81}DESKTOP-V5DA5NT.HDiSBI_projekt.sa 1;">
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAJKgfiWJeJ0eLUv1474sk6AAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABIHSk5sKdkvXQEdel2Lp7XgfbJ5FGQrecXurTJ/LiongAAAAAOgAAAAAIAACAAAAAkOlrqn/lZeb2r1LF09ewn8t601LWpSNOOkzOhM1x7ISAAAADCzqyJIHOjsqxoFb2Iync+Io2Fbs16OsYLy8R834Czu0AAAAAx+oo4YgXl9nPtQlnvNmBOSRarJc7ODiyFOuToKAw+BMu1x/9V9zGxBkY6JFLn6G0B1tZApjDUpuqu3+Fi77Te</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAVrRUbLU4JEO5cc8pfX1cUwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAB+iK932LZ9/E7KnNBKoQmq5OPa6Mx+bD2n+i7g6IDm8gAAAAAOgAAAAAIAACAAAABKOKKDj6uZWT9lgAA2NI4yWbmOyfit+Td7FPS+IT/psSAAAABqYAlDExnQ2amR3lKBDvzRfvrd1aKt+zLBML8HcsEiekAAAAC6IHD0p0PZde/1CDcAsOAYOPw65gsZ9271kSeYpUGRvSZ1TOpAO8qNUwDsc8u0K18mFGBNZlAe62OVzEBFGppr</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -59,11 +161,11 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=DESKTOP-V5DA5NT;User ID=sa;Provider=MSOLEDBSQL.1;Auto Translate=False;">
+          DTS:ConnectionString="Data Source=DESKTOP-0E91BGO;User ID=sa;Provider=MSOLEDBSQL.1;Persist Security Info=True;Auto Translate=False;Application Name=SSIS-Package-{D07FF0F0-5E0B-4F15-9EEC-F6D2E78509ED}DESKTOP-V5DA5NT.sa;">
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAJKgfiWJeJ0eLUv1474sk6AAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAEURwzaYQ50IwIlm/4YDkvEAPLdp3TsBXXwjM0slQd8QAAAAAOgAAAAAIAACAAAAAFrlTLSTl+Jg9kD5kP+sK4NVyytnNXevjly8NERvG9WSAAAADoSJUlxASjCN/7qQvvIA7ucX3aEEItyxovVSKdEUBI6kAAAADFNnvO/QB8Yv3BbtGGrM7NS+e4geUGJHY+lM4t1bXsp9CKu0j1PMUQOij/gY8FPQPu/THSflOfSrEXmJl4w35b</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAVrRUbLU4JEO5cc8pfX1cUwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADLxsAKVw+V14E1l57KD43WbNPJjZniD9O9DpJWnumAjgAAAAAOgAAAAAIAACAAAABs/7ld5focQhtvMapRYBPWdIQPGNJiw5MWVlGi7Oq/2CAAAAAC9FWoEiP6+V/ofOD/9yUnvkTYTqLphPbeDFPtI8LDw0AAAABWyTuDJ7GTbrOsTBPJOEVmcRv10/kjKpGasLrnWbSq9jfls4mlE9IKNnpR5rgzg/H+TUg8MDRu1ir6iq+5JNAc</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -76,11 +178,11 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=localhost;User ID=sa;Initial Catalog=HDiSBI_projekt;Provider=SQLNCLI11.1;Persist Security Info=True;Application Name=SSIS-Package-{0B4915A1-AC4B-43A2-A091-07CB0A1AF108}localhost.HDiSBI_projekt.sa;Auto Translate=False;">
+          DTS:ConnectionString="Data Source=localhost;User ID=sa;Initial Catalog=HDiSBI_projekt;Provider=SQLNCLI11.1;Auto Translate=False;Application Name=SSIS-Package-{0B4915A1-AC4B-43A2-A091-07CB0A1AF108}localhost.HDiSBI_projekt.sa;">
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAJKgfiWJeJ0eLUv1474sk6AAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACU3KHRNs/IJV4DhqvY8laSksoZdsmDr4bujNd6tW/zywAAAAAOgAAAAAIAACAAAABm5wK33AmtpNWf8wDDXUKmWe9jDTUKFrnSThAn0SJOTCAAAADwgs+BfIZ8gLt0syfdRTzvp7qI/FF9XE9lf9mmMJWBVUAAAACrf87TErywEp021XgZwWsi5UW3RN69SUuaLXXu/EncdSjfTGXJHPRMik8Q/5iHWZjYLuYFhjEEQBnX6Ex63Ib6</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAVrRUbLU4JEO5cc8pfX1cUwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACrqq6R+wfHzrtBrUXraVjFcM1eAdH9Nc6x05jw2f90YgAAAAAOgAAAAAIAACAAAABBXZCPHRRYepueCOPO6cEagh8Pwq6C86X2vqLiUHUuZSAAAADxrVwUNZ1lTqYJHMXQaBhVJ4eBMxkesIEBmS+dT/CwYEAAAADW7uk1esiIia7XMa2FrDBZ2mHx09PpPLn3nNdPeMhU7WT2FefGF9JBCFVdyO0/YCXIEUmyeXh9bP7di41jt+ea</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -93,11 +195,11 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=localhost;User ID=sa;Initial Catalog=HDiSBI_projekt;Provider=SQLNCLI11.1;Persist Security Info=True;Application Name=SSIS-Package-{BA3E6007-681F-4ED1-A255-9B8ECD4A7BB6}localhost.HDiSBI_projekt.sa 1;Auto Translate=False;">
+          DTS:ConnectionString="Data Source=localhost;User ID=sa;Initial Catalog=HDiSBI_projekt;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;Application Name=SSIS-Package-{BA3E6007-681F-4ED1-A255-9B8ECD4A7BB6}localhost.HDiSBI_projekt.sa 1;">
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAJKgfiWJeJ0eLUv1474sk6AAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACojqIroKqaakQFwVuAeFffOq7iATY7WWhb5PmcozgzBAAAAAAOgAAAAAIAACAAAACq18+xBDHoy618bWg8k1cjE9iNnUWdzqaYV8RJiQj+nSAAAACHbajl1LxBMg9HHPCftNkV0L2AtCnxK4CHk3jK77O28EAAAAALNLODVtwydcjxQkNTT3PHW0SutQ4XBnGxKU6taR3IaaAEbQvQhrA/DWUsAfHi7vv/ewkpUN4CT1gV5kYW+Z1l</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAVrRUbLU4JEO5cc8pfX1cUwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADhBjc8QF60D7rwGlCxh8MC0hl8iNQXKLaSWRcHcjqOFAAAAAAOgAAAAAIAACAAAADAaKzXwgCL/VhkEz1K2jUMv8FwMoyO8bNosC02/fJFqCAAAADvDoozoiISTU+SgChG9j3x5o2bhodfVkibu7NTXkQtvEAAAACTPVpZ5rmD3ERun0OcJp2hFPZTu+9WUfrzhLGWup+QmP2WHQzZjKJ9mrv2XAcKWGHVpLwmgWB+N15HjcH+x/pB</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -186,8 +288,8 @@
               <connections>
                 <connection
                   refId="Package\IMPORT DICT\OLE DB Source.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[DESKTOP-V5DA5NT.HDiSBI_projekt.sa]"
-                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-V5DA5NT.HDiSBI_projekt.sa]"
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-0E91BGO.HDiSBI_projekt.sa 1]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-0E91BGO.HDiSBI_projekt.sa 1]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -364,8 +466,8 @@
               <connections>
                 <connection
                   refId="Package\Import ROUTES\OLE DB Source.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[DESKTOP-V5DA5NT.HDiSBI_projekt.sa]"
-                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-V5DA5NT.HDiSBI_projekt.sa]"
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-0E91BGO.HDiSBI_projekt.sa]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-0E91BGO.HDiSBI_projekt.sa]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -662,8 +764,8 @@
               <connections>
                 <connection
                   refId="Package\Import SCHEDULES\OLE DB Source.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[DESKTOP-V5DA5NT.HDiSBI_projekt.sa]"
-                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-V5DA5NT.HDiSBI_projekt.sa]"
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-0E91BGO.HDiSBI_projekt.sa 5]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-0E91BGO.HDiSBI_projekt.sa 5]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -984,8 +1086,8 @@
               <connections>
                 <connection
                   refId="Package\Import STOPCODE\OLE DB Source.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[DESKTOP-V5DA5NT.HDiSBI_projekt.sa]"
-                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-V5DA5NT.HDiSBI_projekt.sa]"
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-0E91BGO.HDiSBI_projekt.sa 3]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-0E91BGO.HDiSBI_projekt.sa 3]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -1138,8 +1240,8 @@
               <connections>
                 <connection
                   refId="Package\Import STOPINFO\OLE DB Source.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[DESKTOP-V5DA5NT.HDiSBI_projekt.sa]"
-                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-V5DA5NT.HDiSBI_projekt.sa]"
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-0E91BGO.HDiSBI_projekt.sa 4]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-0E91BGO.HDiSBI_projekt.sa 4]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -2424,7 +2526,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
                       refId="Package\Import STOPS\Data Conversion.Outputs[Data Conversion Output].Columns[valid_since]"
                       dataType="date"
                       errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="RedirectRow"
+                      errorRowDisposition="IgnoreFailure"
                       lineageId="Package\Import STOPS\Data Conversion.Outputs[Data Conversion Output].Columns[valid_since]"
                       name="valid_since"
                       truncationRowDisposition="IgnoreFailure">
@@ -2840,8 +2942,8 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
               <connections>
                 <connection
                   refId="Package\Import STOPS\OLE DB Source.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[DESKTOP-V5DA5NT.HDiSBI_projekt.sa]"
-                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-V5DA5NT.HDiSBI_projekt.sa]"
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-0E91BGO.HDiSBI_projekt.sa 2]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-0E91BGO.HDiSBI_projekt.sa 2]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -3822,43 +3924,63 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="150,42"
-          Id="Package\Import STOPS"
-          TopLeft="824.5,107.75" />
-        <NodeLayout
           Size="170,42"
           Id="Package\Execute SQL Task"
           TopLeft="643,390.5" />
         <NodeLayout
-          Size="165,42"
+          Size="150,42"
+          Id="Package\IMPORT DICT"
+          TopLeft="721.499998752027,34.6500010344386" />
+        <NodeLayout
+          Size="158.666666666667,42"
+          Id="Package\Import ROUTES"
+          TopLeft="468.749998901039,34.30000172019" />
+        <NodeLayout
+          Size="165.333333333334,42"
           Id="Package\Import SCHEDULES"
-          TopLeft="569.25,234.5" />
+          TopLeft="568.625000009313,235.799999976754" />
+        <NodeLayout
+          Size="174.666666666667,42"
+          Id="Package\Import STOPCODE"
+          TopLeft="187.5,234.25" />
+        <NodeLayout
+          Size="169.333333333334,42"
+          Id="Package\Import STOPINFO"
+          TopLeft="379,233.75" />
+        <NodeLayout
+          Size="150,42"
+          Id="Package\Import STOPS"
+          TopLeft="917.624998612329,114.249999883771" />
+        <NodeLayout
+          Size="169.333333333334,42"
+          Id="Package\SUBSET UNIQUE"
+          TopLeft="906.874998612329,215.249999883771" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="651.75,276.5">
+          TopLeft="651.29166667598,277.799999976754">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="103.25,114"
+              EndConnector="78.7083336965493,112.700000023246"
               Start="0,0"
-              End="103.25,106.5">
+              End="78.7083336965493,105.200000023246">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,63.7622377622378" />
+                    End="0,45.4395108171464" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,63.7622377622378"
-                    Point2="0,67.7622377622378"
-                    Point3="4,67.7622377622378" />
+                    Point1="0,45.4395108171464"
+                    Point2="0,49.4395108171464"
+                    Point3="4,49.4395108171464" />
                   <mssgle:LineSegment
-                    End="99.25,67.7622377622378" />
+                    End="74.7083336965493,49.4395108171464" />
                   <mssgle:CubicBezierSegment
-                    Point1="99.25,67.7622377622378"
-                    Point2="103.25,67.7622377622378"
-                    Point3="103.25,71.7622377622378" />
+                    Point1="74.7083336965493,49.4395108171464"
+                    Point2="78.7083336965493,49.4395108171464"
+                    Point3="78.7083336965493,53.4395108171464" />
                   <mssgle:LineSegment
-                    End="103.25,106.5" />
+                    End="78.7083336965493,105.200000023246" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -3867,14 +3989,28 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="169,42"
-          Id="Package\Import STOPINFO"
-          TopLeft="379,233.75" />
-        <NodeLayout
-          Size="175,42"
-          Id="Package\Import STOPCODE"
-          TopLeft="187.5,234.25" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 1]"
+          TopLeft="991.999998612329,156.249999883771">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,59"
+              Start="0,0"
+              End="0,51.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,51.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 2]"
           TopLeft="463.5,275.75">
@@ -3888,17 +4024,17 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,64.208041958042" />
+                    End="0,70.0580418534359" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,64.208041958042"
-                    Point2="0,68.208041958042"
-                    Point3="4,68.208041958042" />
+                    Point1="0,70.0580418534359"
+                    Point2="0,74.0580418534359"
+                    Point3="4,74.0580418534359" />
                   <mssgle:LineSegment
-                    End="233.5,68.208041958042" />
+                    End="233.5,74.0580418534359" />
                   <mssgle:CubicBezierSegment
-                    Point1="233.5,68.208041958042"
-                    Point2="237.5,68.208041958042"
-                    Point3="237.5,72.208041958042" />
+                    Point1="233.5,74.0580418534359"
+                    Point2="237.5,74.0580418534359"
+                    Point3="237.5,78.0580418534359" />
                   <mssgle:LineSegment
                     End="237.5,107.25" />
                 </mssgle:SegmentCollection>
@@ -3922,17 +4058,17 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,79.7176724137931" />
+                    End="0,89.4676722394495" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,79.7176724137931"
-                    Point2="0,83.7176724137931"
-                    Point3="4,83.7176724137931" />
+                    Point1="0,89.4676722394495"
+                    Point2="0,93.4676722394495"
+                    Point3="4,93.4676722394495" />
                   <mssgle:LineSegment
-                    End="395,83.7176724137931" />
+                    End="395,93.4676722394495" />
                   <mssgle:CubicBezierSegment
-                    Point1="395,83.7176724137931"
-                    Point2="399,83.7176724137931"
-                    Point3="399,87.7176724137931" />
+                    Point1="395,93.4676722394495"
+                    Point2="399,93.4676722394495"
+                    Point3="399,97.4676722394495" />
                   <mssgle:LineSegment
                     End="399,106.75" />
                 </mssgle:SegmentCollection>
@@ -3943,40 +4079,32 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="150,42"
-          Id="Package\IMPORT DICT"
-          TopLeft="637.75,92.5" />
-        <NodeLayout
-          Size="159,42"
-          Id="Package\Import ROUTES"
-          TopLeft="395,130.5" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 4]"
-          TopLeft="712.75,134.5">
+          TopLeft="796.499998752027,76.6500010344386">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="69.25,256"
+              EndConnector="-14.4999987520274,313.849998965561"
               Start="0,0"
-              End="69.25,248.5">
+              End="-14.4999987520274,306.349998965561">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,183.586206896552" />
+                    End="0,225.976292345454" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,183.586206896552"
-                    Point2="0,187.586206896552"
-                    Point3="4,187.586206896552" />
+                    Point1="0,225.976292345454"
+                    Point2="0,229.976292345454"
+                    Point3="-4,229.976292345454" />
                   <mssgle:LineSegment
-                    End="65.25,187.586206896552" />
+                    End="-10.4999987520274,229.976292345454" />
                   <mssgle:CubicBezierSegment
-                    Point1="65.25,187.586206896552"
-                    Point2="69.25,187.586206896552"
-                    Point3="69.25,191.586206896552" />
+                    Point1="-10.4999987520274,229.976292345454"
+                    Point2="-14.4999987520274,229.976292345454"
+                    Point3="-14.4999987520274,233.976292345454" />
                   <mssgle:LineSegment
-                    End="69.25,248.5" />
+                    End="-14.4999987520274,306.349998965561" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -3987,56 +4115,30 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 5]"
-          TopLeft="474.5,172.5">
+          TopLeft="548.083332234373,76.30000172019">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="253.5,218"
+              EndConnector="179.916667765627,314.19999827981"
               Start="0,0"
-              End="253.5,210.5">
+              End="179.916667765627,306.69999827981">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,105" />
+                    End="0,153.099999139905" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,105"
-                    Point2="0,109"
-                    Point3="4,109" />
+                    Point1="0,153.099999139905"
+                    Point2="0,157.099999139905"
+                    Point3="4,157.099999139905" />
                   <mssgle:LineSegment
-                    End="249.5,109" />
+                    End="175.916667765627,157.099999139905" />
                   <mssgle:CubicBezierSegment
-                    Point1="249.5,109"
-                    Point2="253.5,109"
-                    Point3="253.5,113" />
+                    Point1="175.916667765627,157.099999139905"
+                    Point2="179.916667765627,157.099999139905"
+                    Point3="179.916667765627,161.099999139905" />
                   <mssgle:LineSegment
-                    End="253.5,210.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="169,42"
-          Id="Package\SUBSET UNIQUE"
-          TopLeft="813.75,208.75" />
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 1]"
-          TopLeft="898.875,149.75">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,59"
-              Start="0,0"
-              End="0,51.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,51.5" />
+                    End="179.916667765627,306.69999827981" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -4049,131 +4151,322 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
     </LayoutInfo>
   </Package>
   <TaskHost
+    design-time-name="Package\IMPORT DICT">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="134,54.6666666666667"
+          Id="Package\IMPORT DICT\OLE DB Source"
+          TopLeft="409,117" />
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\IMPORT DICT\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Import ROUTES">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="157.333333333334,42"
+          Id="Package\Import ROUTES\OLE DB Source"
+          TopLeft="466,161" />
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Import ROUTES\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Import SCHEDULES">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="157.333333333334,42"
+          Id="Package\Import SCHEDULES\OLE DB Source"
+          TopLeft="467,162" />
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Import SCHEDULES\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Import STOPCODE">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="157.333333333334,42"
+          Id="Package\Import STOPCODE\OLE DB Source"
+          TopLeft="466,161" />
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Import STOPCODE\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Import STOPINFO">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="170.666666666667,42"
+          Id="Package\Import STOPINFO\OLE DB Source"
+          TopLeft="408,116" />
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Import STOPINFO\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
     design-time-name="Package\Import STOPS">
     <LayoutInfo>
       <GraphLayout
         Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="171,42"
-          Id="Package\Import STOPS\OLE DB Source"
-          TopLeft="351,1" />
-        <NodeLayout
-          Size="161,42"
-          Id="Package\Import STOPS\create stop_id"
-          TopLeft="363,63" />
-        <EdgeLayout
-          Id="Package\Import STOPS.Paths[OLE DB Source Output]"
-          TopLeft="351,22">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="12,62"
-              Start="0,0"
-              End="4.5,62">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="-18.5,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-18.5,0"
-                    Point2="-22.5,0"
-                    Point3="-22.5,4" />
-                  <mssgle:LineSegment
-                    End="-22.5,58" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-22.5,58"
-                    Point2="-22.5,62"
-                    Point3="-18.5,62" />
-                  <mssgle:LineSegment
-                    End="4.5,62" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
           Size="244,42"
           Id="Package\Import STOPS\create column zespol-slupek"
-          TopLeft="324,193" />
+          TopLeft="368,193" />
         <NodeLayout
-          Size="216,42"
-          Id="Package\Import STOPS\subset uniques or latest"
-          TopLeft="343.615384615385,524.692307692308" />
-        <NodeLayout
-          Size="272,42"
-          Id="Package\Import STOPS\count grouped by zespol + slupek"
-          TopLeft="472.5,284.709951456311" />
+          Size="142.666666666667,42"
+          Id="Package\Import STOPS\Merge Join"
+          TopLeft="479.491091314031,437.884615384615" />
         <NodeLayout
           Size="102,42"
           Id="Package\Import STOPS\split"
-          TopLeft="316,277" />
-        <EdgeLayout
-          Id="Package\Import STOPS.Paths[Multicast Output 1]"
-          TopLeft="418,301.854975728155">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="54.5,0"
-              Start="0,0"
-              End="47,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="47,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Import STOPS.Paths[Derived Column Output]"
-          TopLeft="446,235">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-79,42"
-              Start="0,0"
-              End="-79,34.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,17" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,17"
-                    Point2="0,21"
-                    Point3="-4,21" />
-                  <mssgle:LineSegment
-                    End="-75,21" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-75,21"
-                    Point2="-79,21"
-                    Point3="-79,25" />
-                  <mssgle:LineSegment
-                    End="-79,34.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
+          TopLeft="360,277" />
         <NodeLayout
-          Size="103,42"
+          Size="216,42"
+          Id="Package\Import STOPS\subset uniques or latest"
+          TopLeft="185.615384615385,479.692307692308" />
+        <NodeLayout
+          Size="170.666666666667,42"
+          Id="Package\Import STOPS\OLE DB Source"
+          TopLeft="395,0.333333333333332" />
+        <NodeLayout
+          Size="161.333333333334,42"
+          Id="Package\Import STOPS\create stop_id"
+          TopLeft="407,63.6666666666667" />
+        <NodeLayout
+          Size="114,42"
+          Id="Package\Import STOPS\Sort 1"
+          TopLeft="587.5,360.23382045929" />
+        <NodeLayout
+          Size="102.666666666667,42"
           Id="Package\Import STOPS\Sort"
-          TopLeft="347,363" />
+          TopLeft="391,363" />
+        <NodeLayout
+          Size="176,42"
+          Id="Package\Import STOPS\Data Conversion"
+          TopLeft="405.5,125.5" />
+        <NodeLayout
+          Size="272,42"
+          Id="Package\Import STOPS\count grouped by zespol + slupek"
+          TopLeft="516.5,284.709951456311" />
+        <EdgeLayout
+          Id="Package\Import STOPS.Paths[Sort Output1]"
+          TopLeft="644.5,402.23382045929">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-71.0089086859689,35.6507949253252"
+              Start="0,0"
+              End="-71.0089086859689,28.1507949253252">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,17.1537911797572" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,17.1537911797572"
+                    Point2="0,21.1537911797572"
+                    Point3="-4,21.1537911797572" />
+                  <mssgle:LineSegment
+                    End="-67.0089086859689,21.1537911797572" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-67.0089086859689,21.1537911797572"
+                    Point2="-71.0089086859689,21.1537911797572"
+                    Point3="-71.0089086859689,25.1537911797572" />
+                  <mssgle:LineSegment
+                    End="-71.0089086859689,28.1507949253252" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-43.5044543429845,26.1537911797572,16,16"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Import STOPS.Paths[Sort Output]"
+          TopLeft="442.5,405">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="85.9910913140311,32.8846153846153"
+              Start="0,0"
+              End="85.9910913140311,25.3846153846153">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,15.51244813278" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,15.51244813278"
+                    Point2="0,19.51244813278"
+                    Point3="4,19.51244813278" />
+                  <mssgle:LineSegment
+                    End="81.9910913140311,19.51244813278" />
+                  <mssgle:CubicBezierSegment
+                    Point1="81.9910913140311,19.51244813278"
+                    Point2="85.9910913140311,19.51244813278"
+                    Point3="85.9910913140311,23.51244813278" />
+                  <mssgle:LineSegment
+                    End="85.9910913140311,25.3846153846153" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="34.9955456570155,24.51244813278,16,16"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Import STOPS.Paths[Output 0]"
+          TopLeft="407,90.3333333333333">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-1.5,56.1666666666667"
+              Start="0,0"
+              End="-9,56.1666666666667">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-20,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-20,0"
+                    Point2="-24,0"
+                    Point3="-24,4" />
+                  <mssgle:LineSegment
+                    End="-24,52.1666666666667" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-24,52.1666666666667"
+                    Point2="-24,56.1666666666667"
+                    Point3="-20,56.1666666666667" />
+                  <mssgle:LineSegment
+                    End="-9,56.1666666666667" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-32,-22,16,16"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Import STOPS.Paths[OLE DB Source Output]"
+          TopLeft="395,21.3333333333333">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="12,57.6666666666667"
+              Start="0,0"
+              End="4.5,57.6666666666667">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-17.8333333333334,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-17.8333333333334,0"
+                    Point2="-21.8333333333334,0"
+                    Point3="-21.8333333333334,4" />
+                  <mssgle:LineSegment
+                    End="-21.8333333333334,53.6666666666667" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-21.8333333333334,53.6666666666667"
+                    Point2="-21.8333333333334,57.6666666666667"
+                    Point3="-17.8333333333334,57.6666666666667" />
+                  <mssgle:LineSegment
+                    End="4.5,57.6666666666667" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-29.8333333333334,-22,16,16"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\Import STOPS.Paths[Multicast Output 3]"
-          TopLeft="367,319">
+          TopLeft="411,319">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -4202,16 +4495,74 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="7.75,27,16,16"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="114,42"
-          Id="Package\Import STOPS\Sort 1"
-          TopLeft="543.5,360.23382045929" />
+        <EdgeLayout
+          Id="Package\Import STOPS.Paths[Multicast Output 1]"
+          TopLeft="462,301.854975728155">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="54.5,0"
+              Start="0,0"
+              End="47,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="47,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="15.5,5,16,16"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Import STOPS.Paths[Merge Join Output]"
+          TopLeft="479.491091314031,458.884615384615">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-77.8757066986465,41.8076923076924"
+              Start="0,0"
+              End="-70.3757066986465,41.8076923076924">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-34.9378533493232,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-34.9378533493232,0"
+                    Point2="-38.9378533493232,0"
+                    Point3="-38.9378533493232,4" />
+                  <mssgle:LineSegment
+                    End="-38.9378533493232,37.8076923076924" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-38.9378533493232,37.8076923076924"
+                    Point2="-38.9378533493232,41.8076923076924"
+                    Point3="-42.9378533493232,41.8076923076924" />
+                  <mssgle:LineSegment
+                    End="-70.3757066986465,41.8076923076924" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-46.9378533493232,-22,16,16"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\Import STOPS.Paths[grouped]"
-          TopLeft="608.5,326.709951456311">
+          TopLeft="652.5,326.709951456311">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -4240,307 +4591,83 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="-12,21.7619345014897,16,16"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="143,42"
-          Id="Package\Import STOPS\Merge Join"
-          TopLeft="436.491091314031,438.884615384615" />
         <EdgeLayout
-          Id="Package\Import STOPS.Paths[Sort Output]"
-          TopLeft="398.5,405">
+          Id="Package\Import STOPS.Paths[Derived Column Output]"
+          TopLeft="490,235">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="86.9910913140311,33.8846153846153"
+              EndConnector="-79,42"
               Start="0,0"
-              End="86.9910913140311,26.3846153846153">
+              End="-79,34.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,16.1058091286307" />
+                    End="0,17" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,16.1058091286307"
-                    Point2="0,20.1058091286307"
-                    Point3="4,20.1058091286307" />
+                    Point1="0,17"
+                    Point2="0,21"
+                    Point3="-4,21" />
                   <mssgle:LineSegment
-                    End="82.9910913140311,20.1058091286307" />
+                    End="-75,21" />
                   <mssgle:CubicBezierSegment
-                    Point1="82.9910913140311,20.1058091286307"
-                    Point2="86.9910913140311,20.1058091286307"
-                    Point3="86.9910913140311,24.1058091286307" />
+                    Point1="-75,21"
+                    Point2="-79,21"
+                    Point3="-79,25" />
                   <mssgle:LineSegment
-                    End="86.9910913140311,26.3846153846153" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Import STOPS.Paths[Sort Output1]"
-          TopLeft="600.5,402.23382045929">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-70.0089086859689,36.6507949253252"
-              Start="0,0"
-              End="-70.0089086859689,29.1507949253252">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,17.7471521756079" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,17.7471521756079"
-                    Point2="0,21.7471521756079"
-                    Point3="-4,21.7471521756079" />
-                  <mssgle:LineSegment
-                    End="-66.0089086859689,21.7471521756079" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-66.0089086859689,21.7471521756079"
-                    Point2="-70.0089086859689,21.7471521756079"
-                    Point3="-70.0089086859689,25.7471521756079" />
-                  <mssgle:LineSegment
-                    End="-70.0089086859689,29.1507949253252" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Import STOPS.Paths[Merge Join Output]"
-          TopLeft="507.991091314031,480.884615384615">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-56.3757066986465,43.8076923076924"
-              Start="0,0"
-              End="-56.3757066986465,36.3076923076924">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,17.9038461538462" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,17.9038461538462"
-                    Point2="0,21.9038461538462"
-                    Point3="-4,21.9038461538462" />
-                  <mssgle:LineSegment
-                    End="-52.3757066986465,21.9038461538462" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-52.3757066986465,21.9038461538462"
-                    Point2="-56.3757066986465,21.9038461538462"
-                    Point3="-56.3757066986465,25.9038461538462" />
-                  <mssgle:LineSegment
-                    End="-56.3757066986465,36.3076923076924" />
+                    End="-79,34.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-36.1878533493232,26.9038461538462,16,16"
+              BoundingBox="-47.5,26,16,16"
               RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="176,42"
-          Id="Package\Import STOPS\Data Conversion"
-          TopLeft="363.5,124.5" />
-        <EdgeLayout
-          Id="Package\Import STOPS.Paths[Output 0]"
-          TopLeft="363,89.6666666666667">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0.5,55.8333333333333"
-              Start="0,0"
-              End="-7,55.8333333333333">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="-18.5,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-18.5,0"
-                    Point2="-22.5,0"
-                    Point3="-22.5,4" />
-                  <mssgle:LineSegment
-                    End="-22.5,51.8333333333333" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-22.5,51.8333333333333"
-                    Point2="-22.5,55.8333333333333"
-                    Point3="-18.5,55.8333333333333" />
-                  <mssgle:LineSegment
-                    End="-7,55.8333333333333" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Import STOPS.Paths[Data Conversion Output]"
-          TopLeft="448.75,166.5">
+          TopLeft="491.75,167.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,26.5"
+              EndConnector="0,25.5"
               Start="0,0"
-              End="0,19">
+              End="0,18">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,19" />
+                    End="0,18" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="-8,1,16,16"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <AnnotationLayout
+          Text="trzeba było zrobić agregację żeby znaleźć ostatni&#xA;dodany rekord danego przystanku, teraz są już odfiltrowane&#xA;wystarczy wybrać odpowiednie kolumny i zapisać do sql&#xA;i mamy przystanki wczytane"
+          ParentId="Package\Import STOPS"
+          FontInfo="{assembly:Null}"
+          Size="314,120"
+          Id="daf115cf-9135-4b5b-ae34-c7dd5e1864ed"
+          TopLeft="34,211" />
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
-  <TaskHost
-    design-time-name="Package\Import SCHEDULES">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
-        <NodeLayout
-          Size="157,42"
-          Id="Package\Import SCHEDULES\OLE DB Source"
-          TopLeft="466,161" />
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\Import SCHEDULES\OLE DB Source">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\Import STOPS\OLE DB Source">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <TaskHost
-    design-time-name="Package\Import STOPINFO">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
-        <NodeLayout
-          Size="171,42"
-          Id="Package\Import STOPINFO\OLE DB Source"
-          TopLeft="408,116" />
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\Import STOPINFO\OLE DB Source">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <TaskHost
-    design-time-name="Package\Import STOPCODE">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
-        <NodeLayout
-          Size="157,42"
-          Id="Package\Import STOPCODE\OLE DB Source"
-          TopLeft="466,161" />
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\Import STOPCODE\OLE DB Source">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <TaskHost
-    design-time-name="Package\IMPORT DICT">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
-        <NodeLayout
-          Size="171,42"
-          Id="Package\IMPORT DICT\OLE DB Source"
-          TopLeft="408,116" />
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\IMPORT DICT\OLE DB Source">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <TaskHost
-    design-time-name="Package\Import ROUTES">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
-        <NodeLayout
-          Size="157,42"
-          Id="Package\Import ROUTES\OLE DB Source"
-          TopLeft="466,161" />
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\Import ROUTES\OLE DB Source">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
