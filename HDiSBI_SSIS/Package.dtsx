@@ -11,8 +11,8 @@
   DTS:LocaleID="1045"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="94"
-  DTS:VersionGUID="{BBD3FCC3-339F-4A2B-B8FB-230D940A0D39}">
+  DTS:VersionBuild="101"
+  DTS:VersionGUID="{B5DA282E-4353-4B31-B186-BDB6FC67EFCD}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -25,12 +25,7 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=DESKTOP-0E91BGO;User ID=sa;Initial Catalog=HDiSBI_projekt;Provider=SQLNCLI11.1;Persist Security Info=True;Application Name=SSIS-Package-{5824F1B3-8E4A-4A22-B7AA-242CD4A1FC36}DESKTOP-0E91BGO.HDiSBI_projekt.sa;Auto Translate=False;">
-          <DTS:Password
-            DTS:Name="Password"
-            Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAVrRUbLU4JEO5cc8pfX1cUwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAARmqQXaeZaDMejQjMyOhzYF/xBP3dALo7lCXQOrFljCQAAAAAOgAAAAAIAACAAAAD6T+rgBT9ctLFQw6/OxHT9a6Tg1cspp9UfnVK2oA9P3yAAAAB8AQYXRw3gSOHZCiYfCwOQBJSLmit8AVeEwKOVWz/SiEAAAABUIf92AlfTDeDpSipusmNCr1jYn1FWrRu/M2AS0wTeSsz9yXAqvFg5Hb6mvB8Y4s2CChrL2vZk6bm59VPCjYFr</DTS:Password>
-        </DTS:ConnectionManager>
+          DTS:ConnectionString="Data Source=DESKTOP-0E91BGO;User ID=sa;Initial Catalog=HDiSBI_projekt;Provider=SQLNCLI11.1;Persist Security Info=True;Application Name=SSIS-Package-{5824F1B3-8E4A-4A22-B7AA-242CD4A1FC36}DESKTOP-0E91BGO.HDiSBI_projekt.sa;Auto Translate=False;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -42,11 +37,23 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=DESKTOP-0E91BGO;User ID=sa;Provider=MSOLEDBSQL.1;Persist Security Info=True;Auto Translate=False;Application Name=SSIS-Package-{D07FF0F0-5E0B-4F15-9EEC-F6D2E78509ED}DESKTOP-V5DA5NT.sa;">
+          DTS:ConnectionString="Data Source=DESKTOP-0E91BGO;User ID=sa;Provider=MSOLEDBSQL.1;Persist Security Info=True;Auto Translate=False;Application Name=SSIS-Package-{D07FF0F0-5E0B-4F15-9EEC-F6D2E78509ED}DESKTOP-V5DA5NT.sa;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[localhost.DWH.sa]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{7C8BADC9-278E-44BA-9047-10952EF68442}"
+      DTS:ObjectName="localhost.DWH.sa">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=localhost;User ID=sa;Initial Catalog=DWH;Provider=SQLNCLI11.1;Persist Security Info=True;Application Name=SSIS-Package-{7C8BADC9-278E-44BA-9047-10952EF68442}localhost.DWH.sa;Auto Translate=False;">
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAVrRUbLU4JEO5cc8pfX1cUwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABbML1zpay8JyjApjdVlFKq1u8qQZB4eWQxacFb/x5F1AAAAAAOgAAAAAIAACAAAAAJwYerBfyKXvmfJ+nvV9q6vLp/DTNbUuJLhSSaLvN9HiAAAADIFz3vUH2wXC3kKgIB3hZg1SEaMwmGWQFsdZNh9a4YeUAAAADM1J1RNPCpaWINjfRQ3GS6imklVDEXld8OEBelY6tNcAZqy54zGEFeXXtYZr3dGQVwGE6u87sNf0giuqGwJ2WS</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAJKgfiWJeJ0eLUv1474sk6AAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADrzgphjnvrydRVSxFSCQo6iJ5FCLNy+/WWdk9gNEdVQQAAAAAOgAAAAAIAACAAAAChCijKuD9FIzc+5/m865zpRT2ovkgoLOyHFpG2pNeOHSAAAADOC36BE937Crs4N8RSDuhlmVWGjI+tLNMLgIJtJRnhF0AAAAAyaNn2TvG5xK69BVvqO3z7df7O8cjeF5ArFd4QN8LeGsB0NmQJ8VzBYvtm02MI/tY4XdaLR9toUyjXJcstT7Ov</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -59,12 +66,7 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=localhost;User ID=sa;Initial Catalog=HDiSBI_projekt;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;Application Name=SSIS-Package-{0B4915A1-AC4B-43A2-A091-07CB0A1AF108}localhost.HDiSBI_projekt.sa;">
-          <DTS:Password
-            DTS:Name="Password"
-            Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAVrRUbLU4JEO5cc8pfX1cUwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAA85Nxhr9TE4ZzVEksFK9C0vKEafxR3dRrMAB4Er+/HtwAAAAAOgAAAAAIAACAAAABgNlQVCsuULx9z47zg9ae2Nsm/yzhpmbM7eCdf9uXfpCAAAACw/M5KpB1qYIHhekkReqh3Jf5cEJ4cXSwk0J1kmLCLoEAAAAD71Tv0d9d86m2SB5IXSitmssFzkn6EGsLIyW6mu2fqx5Nm2ko1kilcAFrm02tXyLPsywkv1/j7sRC1AOj3JlhA</DTS:Password>
-        </DTS:ConnectionManager>
+          DTS:ConnectionString="Data Source=localhost;User ID=sa;Initial Catalog=HDiSBI_projekt;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;Application Name=SSIS-Package-{0B4915A1-AC4B-43A2-A091-07CB0A1AF108}localhost.HDiSBI_projekt.sa;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -76,11 +78,23 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=localhost;User ID=sa;Initial Catalog=HDiSBI_projekt;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;Application Name=SSIS-Package-{BA3E6007-681F-4ED1-A255-9B8ECD4A7BB6}localhost.HDiSBI_projekt.sa 1;">
+          DTS:ConnectionString="Data Source=localhost;User ID=sa;Initial Catalog=HDiSBI_projekt;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;Application Name=SSIS-Package-{BA3E6007-681F-4ED1-A255-9B8ECD4A7BB6}localhost.HDiSBI_projekt.sa 1;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[localhost.HDiSBI_projekt.sa 2]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{EF4EEFB5-6BDC-4857-8B6E-E5FDFF5A042F}"
+      DTS:ObjectName="localhost.HDiSBI_projekt.sa 2">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=localhost;User ID=sa;Initial Catalog=HDiSBI_projekt;Provider=SQLNCLI11.1;Persist Security Info=True;Application Name=SSIS-Package-{EF4EEFB5-6BDC-4857-8B6E-E5FDFF5A042F}localhost.HDiSBI_projekt.sa 2;Auto Translate=False;">
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAVrRUbLU4JEO5cc8pfX1cUwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABIHralle+c48Q84QD4PpZ4g+f+LnpsjzpX5gBSmN4cPwAAAAAOgAAAAAIAACAAAAD2/ruP7xjbcYRawjzrbMdcdNSWGjVuaC/QLOCTMbSy+SAAAAD+GO8tHU52+0ufGrCls/rGgKuEJ/hrGS0RHPIT5e14QEAAAABjFPeYGz4zYLKDinEx5+KQYRfAdmrEB0sKPxrXKXygSqADL1wawZC5p9lHlbB58En9o8Zg63MRLJJ8ce8XPtky</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAJKgfiWJeJ0eLUv1474sk6AAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADNVopfIgKRIqfiEECz/Ke9V+NhdWpS5B9zmehOB98CcQAAAAAOgAAAAAIAACAAAABOd08u3iAtLX6qnrJ/v2YKSj1DIJyIp32svk/rJ3C1AyAAAACrFhlY2E5q+Qljg3ePak4rnhUOwXbEJp/3W30I9QoJ+0AAAABH5TOwfFl/Nc+ZiUZl9mYahJqMjIyoXkyhSyiGe2hYcr3OjL5/Joa+3zOQU/yhMB3tkbtPXLgI/kiL/4eXjdba</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -96,488 +110,12 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="Execute SQL Task"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="1">
+      DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
           SQLTask:Connection="{5824F1B3-8E4A-4A22-B7AA-242CD4A1FC36}"
           SQLTask:SqlStatementSource="select * from STOPS" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
-      </DTS:ObjectData>
-    </DTS:Executable>
-    <DTS:Executable
-      DTS:refId="Package\IMPORT DICT"
-      DTS:CreationName="Microsoft.Pipeline"
-      DTS:Description="Data Flow Task"
-      DTS:DTSID="{b955035d-9668-4de1-a361-2308cc945327}"
-      DTS:ExecutableType="Microsoft.Pipeline"
-      DTS:LocaleID="-1"
-      DTS:ObjectName="IMPORT DICT"
-      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
-      <DTS:Variables />
-      <DTS:ObjectData>
-        <pipeline
-          version="1">
-          <components>
-            <component
-              refId="Package\IMPORT DICT\OLE DB Source"
-              componentClassID="Microsoft.OLEDBSource"
-              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
-              description="OLE DB Source"
-              name="OLE DB Source"
-              usesDispositions="true"
-              version="7">
-              <properties>
-                <property
-                  dataType="System.Int32"
-                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
-                  name="CommandTimeout">0</property>
-                <property
-                  dataType="System.String"
-                  description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[dbo].[Dict]</property>
-                <property
-                  dataType="System.String"
-                  description="Specifies the variable that contains the name of the database object used to open a rowset."
-                  name="OpenRowsetVariable"></property>
-                <property
-                  dataType="System.String"
-                  description="The SQL command to be executed."
-                  name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
-                <property
-                  dataType="System.String"
-                  description="The variable that contains the SQL command to be executed."
-                  name="SqlCommandVariable"></property>
-                <property
-                  dataType="System.Int32"
-                  description="Specifies the column code page to use when code page information is unavailable from the data source."
-                  name="DefaultCodePage">1250</property>
-                <property
-                  dataType="System.Boolean"
-                  description="Forces the use of the DefaultCodePage property value when describing character data."
-                  name="AlwaysUseDefaultCodePage">false</property>
-                <property
-                  dataType="System.Int32"
-                  description="Specifies the mode used to access the database."
-                  name="AccessMode"
-                  typeConverter="AccessMode">0</property>
-                <property
-                  dataType="System.String"
-                  description="The mappings between the parameters in the SQL command and variables."
-                  name="ParameterMapping"></property>
-              </properties>
-              <connections>
-                <connection
-                  refId="Package\IMPORT DICT\OLE DB Source.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[DESKTOP-0E91BGO.HDiSBI_projekt.sa]"
-                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-0E91BGO.HDiSBI_projekt.sa]"
-                  description="The OLE DB runtime connection used to access the database."
-                  name="OleDbConnection" />
-              </connections>
-              <outputs>
-                <output
-                  refId="Package\IMPORT DICT\OLE DB Source.Outputs[OLE DB Source Output]"
-                  name="OLE DB Source Output">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\IMPORT DICT\OLE DB Source.Outputs[OLE DB Source Output].Columns[type]"
-                      codePage="1250"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\IMPORT DICT\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[type]"
-                      length="255"
-                      lineageId="Package\IMPORT DICT\OLE DB Source.Outputs[OLE DB Source Output].Columns[type]"
-                      name="type"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\IMPORT DICT\OLE DB Source.Outputs[OLE DB Source Output].Columns[value]"
-                      codePage="1250"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\IMPORT DICT\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[value]"
-                      length="255"
-                      lineageId="Package\IMPORT DICT\OLE DB Source.Outputs[OLE DB Source Output].Columns[value]"
-                      name="value"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\IMPORT DICT\OLE DB Source.Outputs[OLE DB Source Output].Columns[id]"
-                      codePage="1250"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\IMPORT DICT\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[id]"
-                      length="255"
-                      lineageId="Package\IMPORT DICT\OLE DB Source.Outputs[OLE DB Source Output].Columns[id]"
-                      name="id"
-                      truncationRowDisposition="FailComponent" />
-                  </outputColumns>
-                  <externalMetadataColumns
-                    isUsed="True">
-                    <externalMetadataColumn
-                      refId="Package\IMPORT DICT\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[type]"
-                      codePage="1250"
-                      dataType="str"
-                      length="255"
-                      name="type" />
-                    <externalMetadataColumn
-                      refId="Package\IMPORT DICT\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[value]"
-                      codePage="1250"
-                      dataType="str"
-                      length="255"
-                      name="value" />
-                    <externalMetadataColumn
-                      refId="Package\IMPORT DICT\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[id]"
-                      codePage="1250"
-                      dataType="str"
-                      length="255"
-                      name="id" />
-                  </externalMetadataColumns>
-                </output>
-                <output
-                  refId="Package\IMPORT DICT\OLE DB Source.Outputs[OLE DB Source Error Output]"
-                  isErrorOut="true"
-                  name="OLE DB Source Error Output">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\IMPORT DICT\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[type]"
-                      codePage="1250"
-                      dataType="str"
-                      length="255"
-                      lineageId="Package\IMPORT DICT\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[type]"
-                      name="type" />
-                    <outputColumn
-                      refId="Package\IMPORT DICT\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[value]"
-                      codePage="1250"
-                      dataType="str"
-                      length="255"
-                      lineageId="Package\IMPORT DICT\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[value]"
-                      name="value" />
-                    <outputColumn
-                      refId="Package\IMPORT DICT\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[id]"
-                      codePage="1250"
-                      dataType="str"
-                      length="255"
-                      lineageId="Package\IMPORT DICT\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[id]"
-                      name="id" />
-                    <outputColumn
-                      refId="Package\IMPORT DICT\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
-                      dataType="i4"
-                      lineageId="Package\IMPORT DICT\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
-                      name="ErrorCode"
-                      specialFlags="1" />
-                    <outputColumn
-                      refId="Package\IMPORT DICT\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
-                      dataType="i4"
-                      lineageId="Package\IMPORT DICT\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
-                      name="ErrorColumn"
-                      specialFlags="2" />
-                  </outputColumns>
-                  <externalMetadataColumns />
-                </output>
-              </outputs>
-            </component>
-          </components>
-        </pipeline>
-      </DTS:ObjectData>
-    </DTS:Executable>
-    <DTS:Executable
-      DTS:refId="Package\Import ROUTES"
-      DTS:CreationName="Microsoft.Pipeline"
-      DTS:Description="Data Flow Task"
-      DTS:DTSID="{3a4dbb6a-fbdd-446c-8edf-f64dd0593757}"
-      DTS:ExecutableType="Microsoft.Pipeline"
-      DTS:LocaleID="-1"
-      DTS:ObjectName="Import ROUTES"
-      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
-      <DTS:Variables />
-      <DTS:ObjectData>
-        <pipeline
-          version="1">
-          <components>
-            <component
-              refId="Package\Import ROUTES\OLE DB Source"
-              componentClassID="Microsoft.OLEDBSource"
-              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
-              description="OLE DB Source"
-              name="OLE DB Source"
-              usesDispositions="true"
-              version="7">
-              <properties>
-                <property
-                  dataType="System.Int32"
-                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
-                  name="CommandTimeout">0</property>
-                <property
-                  dataType="System.String"
-                  description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[dbo].[Routes]</property>
-                <property
-                  dataType="System.String"
-                  description="Specifies the variable that contains the name of the database object used to open a rowset."
-                  name="OpenRowsetVariable"></property>
-                <property
-                  dataType="System.String"
-                  description="The SQL command to be executed."
-                  name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
-                <property
-                  dataType="System.String"
-                  description="The variable that contains the SQL command to be executed."
-                  name="SqlCommandVariable"></property>
-                <property
-                  dataType="System.Int32"
-                  description="Specifies the column code page to use when code page information is unavailable from the data source."
-                  name="DefaultCodePage">1250</property>
-                <property
-                  dataType="System.Boolean"
-                  description="Forces the use of the DefaultCodePage property value when describing character data."
-                  name="AlwaysUseDefaultCodePage">false</property>
-                <property
-                  dataType="System.Int32"
-                  description="Specifies the mode used to access the database."
-                  name="AccessMode"
-                  typeConverter="AccessMode">0</property>
-                <property
-                  dataType="System.String"
-                  description="The mappings between the parameters in the SQL command and variables."
-                  name="ParameterMapping"></property>
-              </properties>
-              <connections>
-                <connection
-                  refId="Package\Import ROUTES\OLE DB Source.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[DESKTOP-0E91BGO.HDiSBI_projekt.sa]"
-                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-0E91BGO.HDiSBI_projekt.sa]"
-                  description="The OLE DB runtime connection used to access the database."
-                  name="OleDbConnection" />
-              </connections>
-              <outputs>
-                <output
-                  refId="Package\Import ROUTES\OLE DB Source.Outputs[OLE DB Source Output]"
-                  name="OLE DB Source Output">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\Import ROUTES\OLE DB Source.Outputs[OLE DB Source Output].Columns[linia]"
-                      codePage="1250"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Import ROUTES\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[linia]"
-                      length="255"
-                      lineageId="Package\Import ROUTES\OLE DB Source.Outputs[OLE DB Source Output].Columns[linia]"
-                      name="linia"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Import ROUTES\OLE DB Source.Outputs[OLE DB Source Output].Columns[kod]"
-                      codePage="1250"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Import ROUTES\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[kod]"
-                      length="255"
-                      lineageId="Package\Import ROUTES\OLE DB Source.Outputs[OLE DB Source Output].Columns[kod]"
-                      name="kod"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Import ROUTES\OLE DB Source.Outputs[OLE DB Source Output].Columns[enroute_nr]"
-                      codePage="1250"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Import ROUTES\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[enroute_nr]"
-                      length="255"
-                      lineageId="Package\Import ROUTES\OLE DB Source.Outputs[OLE DB Source Output].Columns[enroute_nr]"
-                      name="enroute_nr"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Import ROUTES\OLE DB Source.Outputs[OLE DB Source Output].Columns[odleglosc]"
-                      codePage="1250"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Import ROUTES\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[odleglosc]"
-                      length="255"
-                      lineageId="Package\Import ROUTES\OLE DB Source.Outputs[OLE DB Source Output].Columns[odleglosc]"
-                      name="odleglosc"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Import ROUTES\OLE DB Source.Outputs[OLE DB Source Output].Columns[ulica_id]"
-                      codePage="1250"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Import ROUTES\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ulica_id]"
-                      length="255"
-                      lineageId="Package\Import ROUTES\OLE DB Source.Outputs[OLE DB Source Output].Columns[ulica_id]"
-                      name="ulica_id"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Import ROUTES\OLE DB Source.Outputs[OLE DB Source Output].Columns[nr_zespolu]"
-                      codePage="1250"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Import ROUTES\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[nr_zespolu]"
-                      length="255"
-                      lineageId="Package\Import ROUTES\OLE DB Source.Outputs[OLE DB Source Output].Columns[nr_zespolu]"
-                      name="nr_zespolu"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Import ROUTES\OLE DB Source.Outputs[OLE DB Source Output].Columns[typ]"
-                      codePage="1250"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Import ROUTES\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[typ]"
-                      length="255"
-                      lineageId="Package\Import ROUTES\OLE DB Source.Outputs[OLE DB Source Output].Columns[typ]"
-                      name="typ"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Import ROUTES\OLE DB Source.Outputs[OLE DB Source Output].Columns[nr_przystanku]"
-                      codePage="1250"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Import ROUTES\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[nr_przystanku]"
-                      length="255"
-                      lineageId="Package\Import ROUTES\OLE DB Source.Outputs[OLE DB Source Output].Columns[nr_przystanku]"
-                      name="nr_przystanku"
-                      truncationRowDisposition="FailComponent" />
-                  </outputColumns>
-                  <externalMetadataColumns
-                    isUsed="True">
-                    <externalMetadataColumn
-                      refId="Package\Import ROUTES\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[linia]"
-                      codePage="1250"
-                      dataType="str"
-                      length="255"
-                      name="linia" />
-                    <externalMetadataColumn
-                      refId="Package\Import ROUTES\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[kod]"
-                      codePage="1250"
-                      dataType="str"
-                      length="255"
-                      name="kod" />
-                    <externalMetadataColumn
-                      refId="Package\Import ROUTES\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[enroute_nr]"
-                      codePage="1250"
-                      dataType="str"
-                      length="255"
-                      name="enroute_nr" />
-                    <externalMetadataColumn
-                      refId="Package\Import ROUTES\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[odleglosc]"
-                      codePage="1250"
-                      dataType="str"
-                      length="255"
-                      name="odleglosc" />
-                    <externalMetadataColumn
-                      refId="Package\Import ROUTES\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ulica_id]"
-                      codePage="1250"
-                      dataType="str"
-                      length="255"
-                      name="ulica_id" />
-                    <externalMetadataColumn
-                      refId="Package\Import ROUTES\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[nr_zespolu]"
-                      codePage="1250"
-                      dataType="str"
-                      length="255"
-                      name="nr_zespolu" />
-                    <externalMetadataColumn
-                      refId="Package\Import ROUTES\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[typ]"
-                      codePage="1250"
-                      dataType="str"
-                      length="255"
-                      name="typ" />
-                    <externalMetadataColumn
-                      refId="Package\Import ROUTES\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[nr_przystanku]"
-                      codePage="1250"
-                      dataType="str"
-                      length="255"
-                      name="nr_przystanku" />
-                  </externalMetadataColumns>
-                </output>
-                <output
-                  refId="Package\Import ROUTES\OLE DB Source.Outputs[OLE DB Source Error Output]"
-                  isErrorOut="true"
-                  name="OLE DB Source Error Output">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\Import ROUTES\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[linia]"
-                      codePage="1250"
-                      dataType="str"
-                      length="255"
-                      lineageId="Package\Import ROUTES\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[linia]"
-                      name="linia" />
-                    <outputColumn
-                      refId="Package\Import ROUTES\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[kod]"
-                      codePage="1250"
-                      dataType="str"
-                      length="255"
-                      lineageId="Package\Import ROUTES\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[kod]"
-                      name="kod" />
-                    <outputColumn
-                      refId="Package\Import ROUTES\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[enroute_nr]"
-                      codePage="1250"
-                      dataType="str"
-                      length="255"
-                      lineageId="Package\Import ROUTES\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[enroute_nr]"
-                      name="enroute_nr" />
-                    <outputColumn
-                      refId="Package\Import ROUTES\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[odleglosc]"
-                      codePage="1250"
-                      dataType="str"
-                      length="255"
-                      lineageId="Package\Import ROUTES\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[odleglosc]"
-                      name="odleglosc" />
-                    <outputColumn
-                      refId="Package\Import ROUTES\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ulica_id]"
-                      codePage="1250"
-                      dataType="str"
-                      length="255"
-                      lineageId="Package\Import ROUTES\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ulica_id]"
-                      name="ulica_id" />
-                    <outputColumn
-                      refId="Package\Import ROUTES\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[nr_zespolu]"
-                      codePage="1250"
-                      dataType="str"
-                      length="255"
-                      lineageId="Package\Import ROUTES\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[nr_zespolu]"
-                      name="nr_zespolu" />
-                    <outputColumn
-                      refId="Package\Import ROUTES\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[typ]"
-                      codePage="1250"
-                      dataType="str"
-                      length="255"
-                      lineageId="Package\Import ROUTES\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[typ]"
-                      name="typ" />
-                    <outputColumn
-                      refId="Package\Import ROUTES\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[nr_przystanku]"
-                      codePage="1250"
-                      dataType="str"
-                      length="255"
-                      lineageId="Package\Import ROUTES\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[nr_przystanku]"
-                      name="nr_przystanku" />
-                    <outputColumn
-                      refId="Package\Import ROUTES\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
-                      dataType="i4"
-                      lineageId="Package\Import ROUTES\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
-                      name="ErrorCode"
-                      specialFlags="1" />
-                    <outputColumn
-                      refId="Package\Import ROUTES\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
-                      dataType="i4"
-                      lineageId="Package\Import ROUTES\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
-                      name="ErrorColumn"
-                      specialFlags="2" />
-                  </outputColumns>
-                  <externalMetadataColumns />
-                </output>
-              </outputs>
-            </component>
-          </components>
-        </pipeline>
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
@@ -849,6 +387,238 @@
               </outputs>
             </component>
             <component
+              refId="Package\Import SCHEDULES\id"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="id"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Import SCHEDULES\id.Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Import SCHEDULES\id.Inputs[Derived Column Input].Columns[zespol]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="255"
+                      cachedName="zespol"
+                      lineageId="Package\Import SCHEDULES\OLE DB Source.Outputs[OLE DB Source Output].Columns[zespol]" />
+                    <inputColumn
+                      refId="Package\Import SCHEDULES\id.Inputs[Derived Column Input].Columns[slupek]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="255"
+                      cachedName="slupek"
+                      lineageId="Package\Import SCHEDULES\OLE DB Source.Outputs[OLE DB Source Output].Columns[slupek]" />
+                    <inputColumn
+                      refId="Package\Import SCHEDULES\id.Inputs[Derived Column Input].Columns[linia]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="255"
+                      cachedName="linia"
+                      lineageId="Package\Import SCHEDULES\OLE DB Source.Outputs[OLE DB Source Output].Columns[linia]" />
+                    <inputColumn
+                      refId="Package\Import SCHEDULES\id.Inputs[Derived Column Input].Columns[brygada]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="255"
+                      cachedName="brygada"
+                      lineageId="Package\Import SCHEDULES\OLE DB Source.Outputs[OLE DB Source Output].Columns[brygada]" />
+                    <inputColumn
+                      refId="Package\Import SCHEDULES\id.Inputs[Derived Column Input].Columns[czas]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="255"
+                      cachedName="czas"
+                      lineageId="Package\Import SCHEDULES\OLE DB Source.Outputs[OLE DB Source Output].Columns[czas]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Import SCHEDULES\id.Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\Import SCHEDULES\id.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Import SCHEDULES\id.Outputs[Derived Column Output].Columns[scheduled_arr_id]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      length="1279"
+                      lineageId="Package\Import SCHEDULES\id.Outputs[Derived Column Output].Columns[scheduled_arr_id]"
+                      name="scheduled_arr_id"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">#{Package\Import SCHEDULES\OLE DB Source.Outputs[OLE DB Source Output].Columns[zespol]} + "-" + #{Package\Import SCHEDULES\OLE DB Source.Outputs[OLE DB Source Output].Columns[slupek]} + "-" + #{Package\Import SCHEDULES\OLE DB Source.Outputs[OLE DB Source Output].Columns[linia]} + "-" + #{Package\Import SCHEDULES\OLE DB Source.Outputs[OLE DB Source Output].Columns[brygada]} + "-" + #{Package\Import SCHEDULES\OLE DB Source.Outputs[OLE DB Source Output].Columns[czas]}</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">zespol + "-" + slupek + "-" + linia + "-" + brygada + "-" + czas</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Import SCHEDULES\id.Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\Import SCHEDULES\id.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Import SCHEDULES\id.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Import SCHEDULES\id.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Import SCHEDULES\id.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Import SCHEDULES\id.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Import SCHEDULES\Lookup"
+              componentClassID="Microsoft.Lookup"
+              contactInfo="Lookup;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;6"
+              description="Joins additional columns to the data flow by looking up values in a table. For example, join to the 'employee id' column the employees table to get 'hire date' and 'employee name'. We recommend this transformation when the lookup table can fit into memory."
+              name="Lookup"
+              usesDispositions="true"
+              version="6">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Specifies the SQL statement that generates the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.String"
+                  description="Specifies a SQL statement that uses parameters to generate the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommandParam"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the type of connection used to access the reference dataset."
+                  name="ConnectionType"
+                  typeConverter="LookupConnectionType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the cache type of the lookup table."
+                  name="CacheType"
+                  typeConverter="CacheType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies how the Lookup transformation handles rows without matching entries in the reference data set."
+                  name="NoMatchBehavior"
+                  typeConverter="LookupNoMatchBehavior">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the percentage of the cache that is allocated for rows with no matching entries in the reference dataset."
+                  name="NoMatchCachePercentage">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Maximum Memory Usage for Reference Cache on a 32 bit platform."
+                  name="MaxMemoryUsage">25</property>
+                <property
+                  dataType="System.Int64"
+                  description="Maximum Memory Usage for Reference Cache on a 64 bit platform."
+                  name="MaxMemoryUsage64">25</property>
+                <property
+                  dataType="System.String"
+                  description="Indicates whether to reference metadata in an XML format."
+                  name="ReferenceMetadataXml"></property>
+                <property
+                  containsID="true"
+                  dataType="System.String"
+                  description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
+                  name="ParameterMap"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1250</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Determines whether duplicate keys in the reference data should be treated as errors when full cache mode is used."
+                  name="TreatDuplicateKeysAsError">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Import SCHEDULES\Lookup.Connections[OleDbConnection]"
+                  description="Connection manager used to access lookup data."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Import SCHEDULES\Lookup.Inputs[Lookup Input]"
+                  name="Lookup Input">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Import SCHEDULES\Lookup.Outputs[Lookup Match Output]"
+                  errorOrTruncationOperation="Lookup"
+                  errorRowDisposition="FailComponent"
+                  exclusionGroup="1"
+                  name="Lookup Match Output"
+                  synchronousInputId="Package\Import SCHEDULES\Lookup.Inputs[Lookup Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Import SCHEDULES\Lookup.Outputs[Lookup No Match Output]"
+                  description="The Lookup output that handles rows with no matching entries in the reference dataset. Use this output when the NoMatchBehavior property is set to &quot;Send rows with no matching entries to the no match output.&quot;"
+                  exclusionGroup="1"
+                  name="Lookup No Match Output"
+                  synchronousInputId="Package\Import SCHEDULES\Lookup.Inputs[Lookup Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Import SCHEDULES\Lookup.Outputs[Lookup Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Lookup Error Output"
+                  synchronousInputId="Package\Import SCHEDULES\Lookup.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Import SCHEDULES\Lookup.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Import SCHEDULES\Lookup.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Import SCHEDULES\Lookup.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Import SCHEDULES\Lookup.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
               refId="Package\Import SCHEDULES\Multicast"
               componentClassID="Microsoft.Multicast"
               contactInfo="Multicast;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
@@ -871,9 +641,16 @@
                 </output>
                 <output
                   refId="Package\Import SCHEDULES\Multicast.Outputs[Multicast Output 2]"
-                  dangling="true"
                   deleteOutputOnPathDetached="true"
                   name="Multicast Output 2"
+                  synchronousInputId="Package\Import SCHEDULES\Multicast.Inputs[Multicast Input 1]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Import SCHEDULES\Multicast.Outputs[Multicast Output 3]"
+                  dangling="true"
+                  deleteOutputOnPathDetached="true"
+                  name="Multicast Output 3"
                   synchronousInputId="Package\Import SCHEDULES\Multicast.Inputs[Multicast Input 1]">
                   <externalMetadataColumns />
                 </output>
@@ -930,8 +707,8 @@
               <connections>
                 <connection
                   refId="Package\Import SCHEDULES\OLE DB Source.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[DESKTOP-0E91BGO.HDiSBI_projekt.sa]"
-                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-0E91BGO.HDiSBI_projekt.sa]"
+                  connectionManagerID="Package.ConnectionManagers[localhost.HDiSBI_projekt.sa 2]"
+                  connectionManagerRefId="Package.ConnectionManagers[localhost.HDiSBI_projekt.sa 2]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -1184,6 +961,877 @@
               </outputs>
             </component>
             <component
+              refId="Package\Import SCHEDULES\Script Component"
+              componentClassID="Microsoft.ManagedComponentHost"
+              contactInfo="Includes and runs custom script code. For example, apply a business rule that limits the range of valid values in an &quot;income&quot; column or add values in two columns and calculate the average of the sum.;Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;13"
+              description="Includes and runs custom script code. For example, apply a business rule that limits the range of valid values in an &quot;income&quot; column or add values in two columns and calculate the average of the sum."
+              name="Script Component"
+              version="13">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Stores the source code of the component"
+                  isArray="true"
+                  name="SourceCode"
+                  state="cdata">
+                  <arrayElements
+                    arrayElementCount="30">
+                    <arrayElement
+                      dataType="System.String"><![CDATA[ComponentWrapper.cs]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[/* THIS IS AUTO-GENERATED CODE THAT WILL BE OVERWRITTEN! DO NOT EDIT!
+*  Microsoft SQL Server Integration Services component wrapper
+*  This module defines the base class for your component
+*  THIS IS AUTO-GENERATED CODE THAT WILL BE OVERWRITTEN! DO NOT EDIT! */
+
+using System;
+using System.Data;
+using Microsoft.SqlServer.Dts.Pipeline;
+using Microsoft.SqlServer.Dts.Pipeline.Wrapper;
+using Microsoft.SqlServer.Dts.Runtime.Wrapper;
+
+public class UserComponent: ScriptComponent
+{
+    public Connections Connections;
+    public Variables Variables;
+    public UserComponent()
+    {
+        Connections = new Connections(this);
+        Variables = new Variables(this);
+    }
+
+    public override void ProcessInput(int InputID, string InputName, PipelineBuffer Buffer, OutputNameMap OutputMap)
+    {
+
+        if (InputName.Equals(@"Input 0", StringComparison.Ordinal))
+        {
+            Input0_ProcessInput(new Input0Buffer(Buffer, GetColumnIndexes(InputID), OutputMap));
+        }
+
+    }
+
+    public virtual void Input0_ProcessInput(Input0Buffer Buffer)
+    {
+        while (Buffer.NextRow())
+        {
+            Input0_ProcessInputRow(Buffer);
+        }
+    }
+
+    public virtual void Input0_ProcessInputRow(Input0Buffer Row)
+    {
+    }
+
+}
+
+public class Connections
+{
+    ScriptComponent ParentComponent;
+
+    public Connections(ScriptComponent Component)
+    {
+        ParentComponent = Component;
+    }
+
+}
+
+public class Variables
+{
+    ScriptComponent ParentComponent;
+
+    public Variables(ScriptComponent Component)
+    {
+        ParentComponent = Component;
+    }
+
+}
+]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[Properties\Resources.resx]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+</root>]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[main.cs]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[#region Help:  Introduction to the Script Component
+/* The Script Component allows you to perform virtually any operation that can be accomplished in
+ * a .Net application within the context of an Integration Services data flow.
+ *
+ * Expand the other regions which have "Help" prefixes for examples of specific ways to use
+ * Integration Services features within this script component. */
+#endregion
+
+#region Namespaces
+using System;
+using System.Data;
+using Microsoft.SqlServer.Dts.Pipeline.Wrapper;
+using Microsoft.SqlServer.Dts.Runtime.Wrapper;
+#endregion
+
+/// <summary>
+/// This is the class to which to add your code.  Do not change the name, attributes, or parent
+/// of this class.
+/// </summary>
+[Microsoft.SqlServer.Dts.Pipeline.SSISScriptComponentEntryPointAttribute]
+public class ScriptMain : UserComponent
+{
+    #region Help:  Using Integration Services variables and parameters
+    /* To use a variable in this script, first ensure that the variable has been added to
+     * either the list contained in the ReadOnlyVariables property or the list contained in
+     * the ReadWriteVariables property of this script component, according to whether or not your
+     * code needs to write into the variable.  To do so, save this script, close this instance of
+     * Visual Studio, and update the ReadOnlyVariables and ReadWriteVariables properties in the
+     * Script Transformation Editor window.
+     * To use a parameter in this script, follow the same steps. Parameters are always read-only.
+     *
+     * Example of reading from a variable or parameter:
+     *  DateTime startTime = Variables.MyStartTime;
+     *
+     * Example of writing to a variable:
+     *  Variables.myStringVariable = "new value";
+     */
+    #endregion
+
+    #region Help:  Using Integration Services Connnection Managers
+    /* Some types of connection managers can be used in this script component.  See the help topic
+     * "Working with Connection Managers Programatically" for details.
+     *
+     * To use a connection manager in this script, first ensure that the connection manager has
+     * been added to either the list of connection managers on the Connection Managers page of the
+     * script component editor.  To add the connection manager, save this script, close this instance of
+     * Visual Studio, and add the Connection Manager to the list.
+     *
+     * If the component needs to hold a connection open while processing rows, override the
+     * AcquireConnections and ReleaseConnections methods.
+     * 
+     * Example of using an ADO.Net connection manager to acquire a SqlConnection:
+     *  object rawConnection = Connections.SalesDB.AcquireConnection(transaction);
+     *  SqlConnection salesDBConn = (SqlConnection)rawConnection;
+     *
+     * Example of using a File connection manager to acquire a file path:
+     *  object rawConnection = Connections.Prices_zip.AcquireConnection(transaction);
+     *  string filePath = (string)rawConnection;
+     *
+     * Example of releasing a connection manager:
+     *  Connections.SalesDB.ReleaseConnection(rawConnection);
+     */
+    #endregion
+
+    #region Help:  Firing Integration Services Events
+    /* This script component can fire events.
+     *
+     * Example of firing an error event:
+     *  ComponentMetaData.FireError(10, "Process Values", "Bad value", "", 0, out cancel);
+     *
+     * Example of firing an information event:
+     *  ComponentMetaData.FireInformation(10, "Process Values", "Processing has started", "", 0, fireAgain);
+     *
+     * Example of firing a warning event:
+     *  ComponentMetaData.FireWarning(10, "Process Values", "No rows were received", "", 0);
+     */
+    #endregion
+
+    /// <summary>
+    /// This method is called once, before rows begin to be processed in the data flow.
+    ///
+    /// You can remove this method if you don't need to do anything here.
+    /// </summary>
+    public override void PreExecute()
+    {
+        base.PreExecute();
+        /*
+         * Add your code here
+         */
+    }
+
+    /// <summary>
+    /// This method is called after all the rows have passed through this component.
+    ///
+    /// You can delete this method if you don't need to do anything here.
+    /// </summary>
+    public override void PostExecute()
+    {
+        base.PostExecute();
+        /*
+         * Add your code here
+         */
+    }
+
+    /// <summary>
+    /// This method is called once for every row that passes through the component from Input0.
+    ///
+    /// Example of reading a value from a column in the the row:
+    ///  string zipCode = Row.ZipCode
+    ///
+    /// Example of writing a value to a column in the row:
+    ///  Row.ZipCode = zipCode
+    /// </summary>
+    /// <param name="Row">The row that is currently passing through the component</param>
+    /// 
+    int i = 0;
+    public override void Input0_ProcessInputRow(Input0Buffer Row)
+    {
+        Row.scheduledarrid = i;
+        i += 1;
+        /*
+         * Add your code here
+         */
+    }
+}
+]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[BufferWrapper.cs]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[/* THIS IS AUTO-GENERATED CODE THAT WILL BE OVERWRITTEN! DO NOT EDIT!
+*  Microsoft SQL Server Integration Services buffer wrappers
+*  This module defines classes for accessing data flow buffers
+*  THIS IS AUTO-GENERATED CODE THAT WILL BE OVERWRITTEN! DO NOT EDIT! */
+
+
+
+using System;
+using System.Data;
+using Microsoft.SqlServer.Dts.Pipeline;
+using Microsoft.SqlServer.Dts.Pipeline.Wrapper;
+
+public class Input0Buffer: ScriptBuffer
+
+{
+    public Input0Buffer(PipelineBuffer Buffer, int[] BufferColumnIndexes, OutputNameMap OutputMap)
+        : base(Buffer, BufferColumnIndexes, OutputMap)
+    {
+    }
+
+    public Int32 scheduledarrid
+    {
+        set
+        {
+            this[0] = value;
+        }
+    }
+    public bool scheduledarrid_IsNull
+    {
+        set
+        {
+            if (value)
+            {
+                SetNull(0);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
+    new public bool NextRow()
+    {
+        return base.NextRow();
+    }
+
+    new public bool EndOfRowset()
+    {
+        return base.EndOfRowset();
+    }
+
+}
+]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[Properties\Settings.Designer.cs]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
+
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="SC_4660bd41c2c4404690c06268aa3ac259.Properties.Settings.get_Default():SC_4660bd41c2c4404690c06268aa3ac259.Properties.Sett" +
+    "ings")]
+
+namespace SC_4660bd41c2c4404690c06268aa3ac259.Properties {
+    
+    
+    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
+        
+        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
+        private static Settings defaultInstance = new Settings();
+        
+        public static Settings Default {
+            get {
+                return defaultInstance;
+            }
+        }
+    }
+}
+]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[SC_4660bd41c2c4404690c06268aa3ac259.csproj]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectTypeGuids>{30D016F9-3734-4E33-A861-5E7D899E18F3};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4d45bcc2-b378-414e-80a4-748576a3cd56}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SC_4660bd41c2c4404690c06268aa3ac259</RootNamespace>
+    <AssemblyName>SC_4660bd41c2c4404690c06268aa3ac259</AssemblyName>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>true</ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>
+    <TargetFrameworkProfile></TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>.\bin\Debug\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <OutputPath>.\bin\Release\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.SqlServer.TxScript, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.SqlServer.DTSRuntimeWrap, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.SqlServer.DTSPipelineWrap, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.SqlServer.PipelineHost, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Compile Include="main.cs" />
+    <Compile Include="BufferWrapper.cs" />
+    <Compile Include="ComponentWrapper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <!-- Include the build rules for a C# project.-->
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- This section defines VSTA properties that describe the host-changable project properties. -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{30D016F9-3734-4E33-A861-5E7D899E18F3}">
+        <ProjectProperties HostName="ScriptComponent" HostPackage="{B3A685AA-7EAF-4BC6-9940-57959FA5AC07}" ApplicationType="usd" Language="cs" TemplatesPath="" DebugInfoExeName="" DebugInfoCommandLine="" DebugInfoWorkingDir="" IconImageList="" />
+        <Host Name="ScriptComponent" GeneratedNamespace="SC_4660bd41c2c4404690c06268aa3ac259" IconIndex="0"></Host>
+        <ProjectClient>
+          <HostIdentifier>SSIS_SC160</HostIdentifier>
+        </ProjectClient>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[Project]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF16LE]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[<?xml version="1.0" encoding="UTF-16" standalone="yes"?>
+<c:Project xmlns:c="http://schemas.microsoft.com/codeprojectml/2010/08/main" xmlns:msb="http://schemas.microsoft.com/developer/msbuild/2003" runtimeVersion="4.0" schemaVersion="1.0">
+  <msb:PropertyGroup>
+    <msb:CodeName>SC_4660bd41c2c4404690c06268aa3ac259</msb:CodeName>
+    <msb:Language>msBuild</msb:Language>
+    <msb:DisplayName>SC_4660bd41c2c4404690c06268aa3ac259</msb:DisplayName>
+    <msb:ProjectId>{AEAED8F5-CB6E-42F5-BEEB-2E7BB2EB66A7}</msb:ProjectId>
+  </msb:PropertyGroup>
+  <msb:ItemGroup>
+    <msb:Project Include="SC_4660bd41c2c4404690c06268aa3ac259.csproj" />
+    <msb:File Include="Properties\Resources.Designer.cs" />
+    <msb:File Include="Properties\Settings.Designer.cs" />
+    <msb:File Include="main.cs" />
+    <msb:File Include="BufferWrapper.cs" />
+    <msb:File Include="ComponentWrapper.cs" />
+    <msb:File Include="Properties\Settings.settings" />
+    <msb:File Include="Properties\AssemblyInfo.cs" />
+    <msb:File Include="Properties\Resources.resx" />
+  </msb:ItemGroup>
+</c:Project>]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[Properties\AssemblyInfo.cs]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[using System.Reflection;
+using System.Runtime.CompilerServices;
+
+//
+// General Information about an assembly is controlled through the following 
+// set of attributes. Change these attribute values to modify the information
+// associated with an assembly.
+//
+[assembly: AssemblyTitle("SC_4660bd41c2c4404690c06268aa3ac259")]
+[assembly: AssemblyDescription("")]
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("SC_4660bd41c2c4404690c06268aa3ac259")]
+[assembly: AssemblyCopyright("Copyright @  2023")]
+[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCulture("")]
+//
+// Version information for an assembly consists of the following four values:
+//
+//      Major Version
+//      Minor Version 
+//      Build Number
+//      Revision
+//
+// You can specify all the values or you can default the Revision and Build Numbers 
+// by using the '*' as shown below:
+
+[assembly: AssemblyVersion("1.0.0.0")]
+]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[Properties\Settings.settings]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
+<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
+  <Profiles>
+    <Profile Name="(Default)" />
+  </Profiles>
+  <Settings />
+</SettingsFile>]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[Properties\Resources.Designer.cs]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
+
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="SC_4660bd41c2c4404690c06268aa3ac259.Properties.Resources.get_ResourceManager():System.Resources.Resou" +
+    "rceManager")]
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="SC_4660bd41c2c4404690c06268aa3ac259.Properties.Resources.get_Culture():System.Globalization.CultureIn" +
+    "fo")]
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="SC_4660bd41c2c4404690c06268aa3ac259.Properties.Resources.set_Culture(System.Globalization.CultureInfo" +
+    "):Void")]
+
+namespace SC_4660bd41c2c4404690c06268aa3ac259.Properties {
+    
+    
+    /// <summary>
+    ///   A strongly-typed resource class, for looking up localized strings, etc.
+    /// </summary>
+    // This class was auto-generated by the StronglyTypedResourceBuilder
+    // class via a tool like ResGen or Visual Studio.
+    // To add or remove a member, edit your .ResX file then rerun ResGen
+    // with the /str option, or rebuild your VS project.
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+    internal class Resources {
+        
+        private static global::System.Resources.ResourceManager resourceMan;
+        
+        private static global::System.Globalization.CultureInfo resourceCulture;
+        
+        [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
+        internal Resources() {
+        }
+        
+        /// <summary>
+        ///   Returns the cached ResourceManager instance used by this class.
+        /// </summary>
+        [global::System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        internal static global::System.Resources.ResourceManager ResourceManager {
+            get {
+                if ((resourceMan == null)) {
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("SC_4660bd41c2c4404690c06268aa3ac259.Properties.Resources", typeof(Resources).Assembly);
+                    resourceMan = temp;
+                }
+                return resourceMan;
+            }
+        }
+        
+        /// <summary>
+        ///   Overrides the current thread's CurrentUICulture property for all
+        ///   resource lookups using this strongly typed resource class.
+        /// </summary>
+        [global::System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        internal static global::System.Globalization.CultureInfo Culture {
+            get {
+                return resourceCulture;
+            }
+            set {
+                resourceCulture = value;
+            }
+        }
+    }
+}
+]]></arrayElement>
+                  </arrayElements>
+                </property>
+                <property
+                  dataType="System.String"
+                  description="Stores the binary representation of the component"
+                  isArray="true"
+                  name="BinaryCode"
+                  state="cdata">
+                  <arrayElements
+                    arrayElementCount="2">
+                    <arrayElement
+                      dataType="System.String"><![CDATA[SC_4660bd41c2c4404690c06268aa3ac259.dll]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[TVqQAAMAAAAEAAAA//8AALgAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAgAAAAA4fug4AtAnNIbgBTM0hVGhpcyBwcm9ncmFtIGNhbm5vdCBiZSBydW4gaW4gRE9TIG1v
+ZGUuDQ0KJAAAAAAAAABQRQAATAEDAINwg2QAAAAAAAAAAOAAIiALATAAABIAAAAIAAAAAAAAHjEA
+AAAgAAAAQAAAAAAAEAAgAAAAAgAABAAAAAAAAAAGAAAAAAAAAACAAAAAAgAAAAAAAAMAYIUAABAA
+ABAAAAAAEAAAEAAAAAAAABAAAAAAAAAAAAAAAMwwAABPAAAAAEAAAEgEAAAAAAAAAAAAAAAAAAAA
+AAAAAGAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAIAAACAAAAAAAAAAAAAAACCAAAEgAAAAAAAAAAAAAAC50ZXh0AAAAJBEAAAAgAAAAEgAAAAIA
+AAAAAAAAAAAAAAAAACAAAGAucnNyYwAAAEgEAAAAQAAAAAYAAAAUAAAAAAAAAAAAAAAAAABAAABA
+LnJlbG9jAAAMAAAAAGAAAAACAAAAGgAAAAAAAAAAAAAAAAAAQAAAQgAAAAAAAAAAAAAAAAAAAAAA
+MQAAAAAAAEgAAAACAAUAnCEAAHgOAAABAAAAAAAAABQwAAC4AAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAB4CKBAAAAoqHgIoEQAACipuAwJ7AQAABG8GAAAGAgJ7AQAA
+BBdYfQEAAAQqHgIoCgAABioqAgMEBSgSAAAKKjoCFgOMGgAAASgTAAAKKloDLAgCFigUAAAKKnIB
+AABwcxUAAAp6HgIoFgAACioeAigXAAAKKn4CKBgAAAoCAnMOAAAGfQIAAAQCAnMPAAAGfQMAAAQq
+kgRyngAAcBpvGQAACiwVAgUCAygaAAAKDgRzBQAABm8MAAAGKkorBwIDbw0AAAYDbwgAAAYt8SoG
+KjoCKBsAAAoCA30EAAAEKjoCKBsAAAoCA30FAAAEKh4CKBsAAAoqrn4GAAAELR5yrgAAcNAHAAAC
+KBwAAApvHQAACnMeAAAKgAYAAAR+BgAABCoafgcAAAQqHgKABwAABCoafggAAAQqHgIoHwAACiou
+cxUAAAaACAAABCoAQlNKQgEAAQAAAAAADAAAAHY0LjAuMzAzMTkAAAAABQBsAAAAJAUAACN+AACQ
+BQAAKAYAACNTdHJpbmdzAAAAALgLAAAgAQAAI1VTANgMAAAQAAAAI0dVSUQAAADoDAAAkAEAACNC
+bG9iAAAAAAAAAAIAAAFXFaABCQEAAAD6ATMAFgAAAQAAACAAAAAIAAAACAAAABYAAAAPAAAAHwAA
+ABAAAAADAAAABQAAAAYAAAABAAAABAAAAAEAAAAAAAUDAQAAAAAABgD9AV4EBgCRAl4EBgBJAUsE
+DwDSBAAABgB2AaADBgDgAaADBgDBAaADBgB4AqADBgAdAqADBgA2AqADBgCNAaADBgCoAcwCCgBR
+ApYACgAdBJYADgAOBJYACgDpA5YACgCYBZYABgBbBVgDBgAsAUsEBgAuBH4EBgDdA4sDEgD8AO8C
+EgBdAe8CEgDkAHYDBgARAV4EBgABAFgDBgCyA1gDBgDmAlgDBgDMA1gDBgC3AFgDBgBoAFgDBgAd
+BqADAAAAACsAAAAAAAEAAQABABAAawMAABAAAQABAAEAEAABBAAAOQACAAUAAQAQAHoFAABFAAIA
+CgABABAATwUAAEkABAAOAAEAEAAQBQAASQAFAA8AAAAQAIUE4QRJAAYAEAAAARAAPwXhBGEACAAU
+AAEA7QJjAAYATwVmAAYAEAVqAAEAiAVuAAEAiAVuABEAXwNyABEA1AB2ABEAWAB6AFAgAAAAAMYA
+rwIGAAEAWCAAAAAAxgC6AgYAAQBgIAAAAADGAPoFfgABAHwgAAAAAIYYPgQGAAIAhCAAAAAAhhg+
+BBsAAgCPIAAAAACGCEUAAQAFAJ4gAAAAAIYILQOEAAYAtSAAAAAAhgARBisABwC9IAAAAACGAGIF
+KwAHAMUgAAAAAIYYPgQGAAcA5SAAAAAAxgDtBYkABwAKIQAAAADGAeYFfgALAB0hAAAAAMYB+gV+
+AAwAHyEAAAAAhhg+BJMADQAuIQAAAACGGD4EkwAOAD0hAAAAAIMYPgQGAA8ARSEAAAAAkwgqBJkA
+DwBxIQAAAACTCLwAngAPAHghAAAAAJMIyACjAA8AgCEAAAAAlghuBakAEACHIQAAAACGGD4EBgAQ
+AI8hAAAAAJEYRASuABAAAAABABUGAAABACMEAAACABoFAAADAPcDAAABAMYCAAABAMYCAAABADQA
+AAACAIwAAAADACMEAAAEAPcDAAABACMEAAABABUGAAABAJ4FAAABAJ4FAAABAMYCCQA+BAEAEQA+
+BAYAGQA+BAoAKQA+BBAAMQA+BBAAOQA+BBAAQQA+BBAASQA+BBAAUQA+BBAAWQA+BBAAYQA+BBAA
+aQA+BAYAmQA+BAYAuQA+BBUAyQA+BAYAiQCvAgYAiQC6AgYAcQA+BBsAcQBPAyUAcQBHAwEA2QA+
+BBAAcQARBisAcQBiBSsAiQA+BAYA4QBIBS8AiQAuBTYAkQA+BAYA8QB6ADwA8QAZBkMAoQA+BEkA
+wQA+BAYALgALAMkALgATANIALgAbAPEALgAjAPoALgArACMBLgAzACMBLgA7ACMBLgBDAPoALgBL
+ACkBLgBTACMBLgBbAEABQwBjAIoBaQBzAPEAiQBzAPEA4wBrAIoBAQF7AIoBAwABAAcAAwAIAAUA
+AABJALIAAAAxA7YAAAAuBLoAAADcAL8AAAByBcQAAQAGAAMAAQAHAAUAAgARAAcAAgASAAkAAQAT
+AAkAAgAUAAsABIAAAAEAAAAAAAAAAAAAAAAABwAAAAQAAAAAAAAAAAAAAFEAPAAAAAAAEAAAAAAA
+AAAAAAAAWgCoBQAAAAAQAAAAAAAAAAAAAABaAMUFAAAAAAQAAAAAAAAAAAAAAFEAWAMAAAAAAAAA
+AAEAAACPBAAAAAAASW50MzIAU0NfNDY2MGJkNDFjMmM0NDA0NjkwYzA2MjY4YWEzYWMyNTkAPE1v
+ZHVsZT4ASW5wdXRJRABtc2NvcmxpYgBzZXRfc2NoZWR1bGVkYXJyaWQAZGVmYXVsdEluc3RhbmNl
+AFJ1bnRpbWVUeXBlSGFuZGxlAEdldFR5cGVGcm9tSGFuZGxlAElucHV0TmFtZQBNaWNyb3NvZnQu
+U3FsU2VydmVyLkR0cy5QaXBlbGluZQBUeXBlAGdldF9DdWx0dXJlAHNldF9DdWx0dXJlAHJlc291
+cmNlQ3VsdHVyZQBBcHBsaWNhdGlvblNldHRpbmdzQmFzZQBFZGl0b3JCcm93c2FibGVTdGF0ZQBD
+b21waWxlckdlbmVyYXRlZEF0dHJpYnV0ZQBEZWJ1Z2dlck5vblVzZXJDb2RlQXR0cmlidXRlAERl
+YnVnZ2FibGVBdHRyaWJ1dGUARWRpdG9yQnJvd3NhYmxlQXR0cmlidXRlAEFzc2VtYmx5VGl0bGVB
+dHRyaWJ1dGUAQXNzZW1ibHlUcmFkZW1hcmtBdHRyaWJ1dGUAVGFyZ2V0RnJhbWV3b3JrQXR0cmli
+dXRlAEFzc2VtYmx5Q29uZmlndXJhdGlvbkF0dHJpYnV0ZQBBc3NlbWJseURlc2NyaXB0aW9uQXR0
+cmlidXRlAENvbXBpbGF0aW9uUmVsYXhhdGlvbnNBdHRyaWJ1dGUAQXNzZW1ibHlQcm9kdWN0QXR0
+cmlidXRlAEFzc2VtYmx5Q29weXJpZ2h0QXR0cmlidXRlAFNTSVNTY3JpcHRDb21wb25lbnRFbnRy
+eVBvaW50QXR0cmlidXRlAEFzc2VtYmx5Q29tcGFueUF0dHJpYnV0ZQBSdW50aW1lQ29tcGF0aWJp
+bGl0eUF0dHJpYnV0ZQBQcmVFeGVjdXRlAFBvc3RFeGVjdXRlAHZhbHVlAFN5c3RlbS5SdW50aW1l
+LlZlcnNpb25pbmcAU3RyaW5nAGkAU3lzdGVtLkNvbXBvbmVudE1vZGVsAFNDXzQ2NjBiZDQxYzJj
+NDQwNDY5MGMwNjI2OGFhM2FjMjU5LmRsbABzZXRfc2NoZWR1bGVkYXJyaWRfSXNOdWxsAFNldE51
+bGwAc2V0X0l0ZW0AU3lzdGVtAHJlc291cmNlTWFuAFNjcmlwdE1haW4AU3lzdGVtLkNvbmZpZ3Vy
+YXRpb24AU3lzdGVtLkdsb2JhbGl6YXRpb24AU3lzdGVtLlJlZmxlY3Rpb24ASW52YWxpZE9wZXJh
+dGlvbkV4Y2VwdGlvbgBTdHJpbmdDb21wYXJpc29uAEN1bHR1cmVJbmZvAE91dHB1dE5hbWVNYXAA
+T3V0cHV0TWFwAElucHV0MEJ1ZmZlcgBQaXBlbGluZUJ1ZmZlcgBTY3JpcHRCdWZmZXIAZ2V0X1Jl
+c291cmNlTWFuYWdlcgAuY3RvcgAuY2N0b3IAU3lzdGVtLkRpYWdub3N0aWNzAFN5c3RlbS5SdW50
+aW1lLkNvbXBpbGVyU2VydmljZXMAU3lzdGVtLlJlc291cmNlcwBTQ180NjYwYmQ0MWMyYzQ0MDQ2
+OTBjMDYyNjhhYTNhYzI1OS5Qcm9wZXJ0aWVzLlJlc291cmNlcy5yZXNvdXJjZXMARGVidWdnaW5n
+TW9kZXMAU0NfNDY2MGJkNDFjMmM0NDA0NjkwYzA2MjY4YWEzYWMyNTkuUHJvcGVydGllcwBWYXJp
+YWJsZXMAQnVmZmVyQ29sdW1uSW5kZXhlcwBHZXRDb2x1bW5JbmRleGVzAFNldHRpbmdzAEVxdWFs
+cwBDb25uZWN0aW9ucwBPYmplY3QARW5kT2ZSb3dzZXQAZ2V0X0RlZmF1bHQAVXNlckNvbXBvbmVu
+dABQYXJlbnRDb21wb25lbnQAU2NyaXB0Q29tcG9uZW50AE1pY3Jvc29mdC5TcWxTZXJ2ZXIuVHhT
+Y3JpcHQATWljcm9zb2Z0LlNxbFNlcnZlci5QaXBlbGluZUhvc3QASW5wdXQwX1Byb2Nlc3NJbnB1
+dABJbnB1dDBfUHJvY2Vzc0lucHV0Um93AE5leHRSb3cAZ2V0X0Fzc2VtYmx5AAAAAICbSQBzAE4A
+dQBsAGwAIABwAHIAbwBwAGUAcgB0AHkAIABjAGEAbgBuAG8AdAAgAGIAZQAgAHMAZQB0ACAAdABv
+ACAARgBhAGwAcwBlAC4AIABBAHMAcwBpAGcAbgAgAGEAIAB2AGEAbAB1AGUAIAB0AG8AIAB0AGgA
+ZQAgAGMAbwBsAHUAbQBuACAAaQBuAHMAdABlAGEAZAAuAAAPSQBuAHAAdQB0ACAAMAAAcVMAQwBf
+ADQANgA2ADAAYgBkADQAMQBjADIAYwA0ADQAMAA0ADYAOQAwAGMAMAA2ADIANgA4AGEAYQAzAGEA
+YwAyADUAOQAuAFAAcgBvAHAAZQByAHQAaQBlAHMALgBSAGUAcwBvAHUAcgBjAGUAcwAACoXxE4SB
+9kGC9txy3naa/QAEIAEBCAMgAAEFIAEBEREEIAEBDgUgAQERWQkgAwESPR0IEkEFIAIBCBwDIAAC
+BiACAg4RdQUgAR0ICAYAARJ5EX0FIAASgIEHIAIBDhKAgQi3elxWGTTgiQiJhF3NgIDMkQIGCAMG
+EhQDBhIYAwYSRQMGElEDBhJVAwYSIAUgAQESDAQgAQECCSAEAQgOEj0SQQUgAQESRQQAABJRBAAA
+ElUFAAEBElUEAAASIAMAAAEDKAAIAygAAgQIABJRBAgAElUECAASIAgBAAgAAAAAAB4BAAEAVAIW
+V3JhcE5vbkV4Y2VwdGlvblRocm93cwEIAQACAAAAAAAoAQAjU0NfNDY2MGJkNDFjMmM0NDA0Njkw
+YzA2MjY4YWEzYWMyNTkAAAUBAAAAABYBABFDb3B5cmlnaHQgQCAgMjAyMwAASQEAGi5ORVRGcmFt
+ZXdvcmssVmVyc2lvbj12NC43AQBUDhRGcmFtZXdvcmtEaXNwbGF5TmFtZRIuTkVUIEZyYW1ld29y
+ayA0LjcEAQAAAAC0AAAAzsrvvgEAAACRAAAAbFN5c3RlbS5SZXNvdXJjZXMuUmVzb3VyY2VSZWFk
+ZXIsIG1zY29ybGliLCBWZXJzaW9uPTQuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5
+VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OSNTeXN0ZW0uUmVzb3VyY2VzLlJ1bnRpbWVSZXNvdXJjZVNl
+dAIAAAAAAAAAAAAAAFBBRFBBRFC0AAAA9DAAAAAAAAAAAAAADjEAAAAgAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAxAAAAAAAAAAAAAAAAX0NvckRsbE1haW4AbXNjb3JlZS5kbGwAAAAAAP8lACAAEAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAEAEAAAABgAAIAAAAAAAAAAAAAAAAAAAAEAAQAAADAAAIAAAAAAAAAAAAAAAAAAAAEAAAAA
+AEgAAABYQAAA7AMAAAAAAAAAAAAA7AM0AAAAVgBTAF8AVgBFAFIAUwBJAE8ATgBfAEkATgBGAE8A
+AAAAAL0E7/4AAAEAAAABAAAAAAAAAAEAAAAAAD8AAAAAAAAABAAAAAIAAAAAAAAAAAAAAAAAAABE
+AAAAAQBWAGEAcgBGAGkAbABlAEkAbgBmAG8AAAAAACQABAAAAFQAcgBhAG4AcwBsAGEAdABpAG8A
+bgAAAAAAAACwBEwDAAABAFMAdAByAGkAbgBnAEYAaQBsAGUASQBuAGYAbwAAACgDAAABADAAMAAw
+ADAAMAA0AGIAMAAAABoAAQABAEMAbwBtAG0AZQBuAHQAcwAAAAAAAAAiAAEAAQBDAG8AbQBwAGEA
+bgB5AE4AYQBtAGUAAAAAAAAAAABwACQAAQBGAGkAbABlAEQAZQBzAGMAcgBpAHAAdABpAG8AbgAA
+AAAAUwBDAF8ANAA2ADYAMABiAGQANAAxAGMAMgBjADQANAAwADQANgA5ADAAYwAwADYAMgA2ADgA
+YQBhADMAYQBjADIANQA5AAAAMAAIAAEARgBpAGwAZQBWAGUAcgBzAGkAbwBuAAAAAAAxAC4AMAAu
+ADAALgAwAAAAcAAoAAEASQBuAHQAZQByAG4AYQBsAE4AYQBtAGUAAABTAEMAXwA0ADYANgAwAGIA
+ZAA0ADEAYwAyAGMANAA0ADAANAA2ADkAMABjADAANgAyADYAOABhAGEAMwBhAGMAMgA1ADkALgBk
+AGwAbAAAAEgAEgABAEwAZQBnAGEAbABDAG8AcAB5AHIAaQBnAGgAdAAAAEMAbwBwAHkAcgBpAGcA
+aAB0ACAAQAAgACAAMgAwADIAMwAAACoAAQABAEwAZQBnAGEAbABUAHIAYQBkAGUAbQBhAHIAawBz
+AAAAAAAAAAAAeAAoAAEATwByAGkAZwBpAG4AYQBsAEYAaQBsAGUAbgBhAG0AZQAAAFMAQwBfADQA
+NgA2ADAAYgBkADQAMQBjADIAYwA0ADQAMAA0ADYAOQAwAGMAMAA2ADIANgA4AGEAYQAzAGEAYwAy
+ADUAOQAuAGQAbABsAAAAaAAkAAEAUAByAG8AZAB1AGMAdABOAGEAbQBlAAAAAABTAEMAXwA0ADYA
+NgAwAGIAZAA0ADEAYwAyAGMANAA0ADAANAA2ADkAMABjADAANgAyADYAOABhAGEAMwBhAGMAMgA1
+ADkAAAA0AAgAAQBQAHIAbwBkAHUAYwB0AFYAZQByAHMAaQBvAG4AAAAxAC4AMAAuADAALgAwAAAA
+OAAIAAEAQQBzAHMAZQBtAGIAbAB5ACAAVgBlAHIAcwBpAG8AbgAAADEALgAwAC4AMAAuADAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMAAADAAAACAxAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
+                  </arrayElements>
+                </property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the Microsoft Visual Studio Tools for Applications project. Project names must be unique within a package."
+                  name="VSTAProjectName"
+                  typeConverter="NOTBROWSABLE">SC_4660bd41c2c4404690c06268aa3ac259</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the programming language used by the script."
+                  name="ScriptLanguage"
+                  typeConverter="Microsoft.SqlServer.VSTAHosting.ScriptingLanguages">CSharp</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies a comma-separated list of read-only variables."
+                  name="ReadOnlyVariables"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ScriptUIVariablePickerDlg"></property>
+                <property
+                  dataType="System.String"
+                  description="Specifies a comma-separated list of read/write variables."
+                  name="ReadWriteVariables"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ScriptUIWriteableVariablePickerDlg"></property>
+                <property
+                  dataType="System.String"
+                  description="List of breakpoints present on the script."
+                  isArray="true"
+                  name="BreakpointCollection"
+                  typeConverter="NOTBROWSABLE">
+                  <arrayElements
+                    arrayElementCount="0" />
+                </property>
+                <property
+                  dataType="System.String"
+                  description="Checksum to match component metedata against compiled codes."
+                  name="MetadataChecksum140"
+                  typeConverter="NOTBROWSABLE">39</property>
+                <property
+                  dataType="System.String"
+                  name="UserComponentTypeName">Microsoft.ScriptComponentHost</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\Import SCHEDULES\Script Component.Inputs[Input 0]"
+                  hasSideEffects="true"
+                  name="Input 0">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Import SCHEDULES\Script Component.Outputs[Output 0]"
+                  name="Output 0"
+                  synchronousInputId="Package\Import SCHEDULES\Script Component.Inputs[Input 0]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Import SCHEDULES\Script Component.Outputs[Output 0].Columns[scheduled_arr_id]"
+                      dataType="i4"
+                      lineageId="Package\Import SCHEDULES\Script Component.Outputs[Output 0].Columns[scheduled_arr_id]"
+                      name="scheduled_arr_id" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
               refId="Package\Import SCHEDULES\Sort"
               componentClassID="Microsoft.Sort"
               contactInfo="Sort;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
@@ -1332,348 +1980,31 @@
               name="Derived Column Output"
               startId="Package\Import SCHEDULES\Derived Column.Outputs[Derived Column Output]" />
             <path
+              refId="Package\Import SCHEDULES.Paths[Derived Column Output1]"
+              endId="Package\Import SCHEDULES\Lookup.Inputs[Lookup Input]"
+              name="Derived Column Output"
+              startId="Package\Import SCHEDULES\id.Outputs[Derived Column Output]" />
+            <path
               refId="Package\Import SCHEDULES.Paths[Multicast Output 1]"
               endId="Package\Import SCHEDULES\Derived Column.Inputs[Derived Column Input]"
               name="Multicast Output 1"
               startId="Package\Import SCHEDULES\Multicast.Outputs[Multicast Output 1]" />
             <path
+              refId="Package\Import SCHEDULES.Paths[Multicast Output 2]"
+              endId="Package\Import SCHEDULES\Script Component.Inputs[Input 0]"
+              name="Multicast Output 2"
+              startId="Package\Import SCHEDULES\Multicast.Outputs[Multicast Output 2]" />
+            <path
               refId="Package\Import SCHEDULES.Paths[OLE DB Source Output]"
               endId="Package\Import SCHEDULES\Multicast.Inputs[Multicast Input 1]"
               name="OLE DB Source Output"
               startId="Package\Import SCHEDULES\OLE DB Source.Outputs[OLE DB Source Output]" />
+            <path
+              refId="Package\Import SCHEDULES.Paths[Output 0]"
+              endId="Package\Import SCHEDULES\id.Inputs[Derived Column Input]"
+              name="Output 0"
+              startId="Package\Import SCHEDULES\Script Component.Outputs[Output 0]" />
           </paths>
-        </pipeline>
-      </DTS:ObjectData>
-    </DTS:Executable>
-    <DTS:Executable
-      DTS:refId="Package\Import STOPCODE"
-      DTS:CreationName="Microsoft.Pipeline"
-      DTS:Description="Data Flow Task"
-      DTS:DTSID="{b3f39d7e-07f3-4341-87d6-aaaa16cf8553}"
-      DTS:ExecutableType="Microsoft.Pipeline"
-      DTS:LocaleID="-1"
-      DTS:ObjectName="Import STOPCODE"
-      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
-      <DTS:Variables />
-      <DTS:ObjectData>
-        <pipeline
-          version="1">
-          <components>
-            <component
-              refId="Package\Import STOPCODE\OLE DB Source"
-              componentClassID="Microsoft.OLEDBSource"
-              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
-              description="OLE DB Source"
-              name="OLE DB Source"
-              usesDispositions="true"
-              version="7">
-              <properties>
-                <property
-                  dataType="System.Int32"
-                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
-                  name="CommandTimeout">0</property>
-                <property
-                  dataType="System.String"
-                  description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[dbo].[Stopcode]</property>
-                <property
-                  dataType="System.String"
-                  description="Specifies the variable that contains the name of the database object used to open a rowset."
-                  name="OpenRowsetVariable"></property>
-                <property
-                  dataType="System.String"
-                  description="The SQL command to be executed."
-                  name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
-                <property
-                  dataType="System.String"
-                  description="The variable that contains the SQL command to be executed."
-                  name="SqlCommandVariable"></property>
-                <property
-                  dataType="System.Int32"
-                  description="Specifies the column code page to use when code page information is unavailable from the data source."
-                  name="DefaultCodePage">1250</property>
-                <property
-                  dataType="System.Boolean"
-                  description="Forces the use of the DefaultCodePage property value when describing character data."
-                  name="AlwaysUseDefaultCodePage">false</property>
-                <property
-                  dataType="System.Int32"
-                  description="Specifies the mode used to access the database."
-                  name="AccessMode"
-                  typeConverter="AccessMode">0</property>
-                <property
-                  dataType="System.String"
-                  description="The mappings between the parameters in the SQL command and variables."
-                  name="ParameterMapping"></property>
-              </properties>
-              <connections>
-                <connection
-                  refId="Package\Import STOPCODE\OLE DB Source.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[DESKTOP-0E91BGO.HDiSBI_projekt.sa]"
-                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-0E91BGO.HDiSBI_projekt.sa]"
-                  description="The OLE DB runtime connection used to access the database."
-                  name="OleDbConnection" />
-              </connections>
-              <outputs>
-                <output
-                  refId="Package\Import STOPCODE\OLE DB Source.Outputs[OLE DB Source Output]"
-                  name="OLE DB Source Output">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\Import STOPCODE\OLE DB Source.Outputs[OLE DB Source Output].Columns[zespol]"
-                      codePage="1250"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Import STOPCODE\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[zespol]"
-                      length="255"
-                      lineageId="Package\Import STOPCODE\OLE DB Source.Outputs[OLE DB Source Output].Columns[zespol]"
-                      name="zespol"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Import STOPCODE\OLE DB Source.Outputs[OLE DB Source Output].Columns[nazwa]"
-                      codePage="1250"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Import STOPCODE\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[nazwa]"
-                      length="255"
-                      lineageId="Package\Import STOPCODE\OLE DB Source.Outputs[OLE DB Source Output].Columns[nazwa]"
-                      name="nazwa"
-                      truncationRowDisposition="FailComponent" />
-                  </outputColumns>
-                  <externalMetadataColumns
-                    isUsed="True">
-                    <externalMetadataColumn
-                      refId="Package\Import STOPCODE\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[zespol]"
-                      codePage="1250"
-                      dataType="str"
-                      length="255"
-                      name="zespol" />
-                    <externalMetadataColumn
-                      refId="Package\Import STOPCODE\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[nazwa]"
-                      codePage="1250"
-                      dataType="str"
-                      length="255"
-                      name="nazwa" />
-                  </externalMetadataColumns>
-                </output>
-                <output
-                  refId="Package\Import STOPCODE\OLE DB Source.Outputs[OLE DB Source Error Output]"
-                  isErrorOut="true"
-                  name="OLE DB Source Error Output">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\Import STOPCODE\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[zespol]"
-                      codePage="1250"
-                      dataType="str"
-                      length="255"
-                      lineageId="Package\Import STOPCODE\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[zespol]"
-                      name="zespol" />
-                    <outputColumn
-                      refId="Package\Import STOPCODE\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[nazwa]"
-                      codePage="1250"
-                      dataType="str"
-                      length="255"
-                      lineageId="Package\Import STOPCODE\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[nazwa]"
-                      name="nazwa" />
-                    <outputColumn
-                      refId="Package\Import STOPCODE\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
-                      dataType="i4"
-                      lineageId="Package\Import STOPCODE\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
-                      name="ErrorCode"
-                      specialFlags="1" />
-                    <outputColumn
-                      refId="Package\Import STOPCODE\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
-                      dataType="i4"
-                      lineageId="Package\Import STOPCODE\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
-                      name="ErrorColumn"
-                      specialFlags="2" />
-                  </outputColumns>
-                  <externalMetadataColumns />
-                </output>
-              </outputs>
-            </component>
-          </components>
-        </pipeline>
-      </DTS:ObjectData>
-    </DTS:Executable>
-    <DTS:Executable
-      DTS:refId="Package\Import STOPINFO"
-      DTS:CreationName="Microsoft.Pipeline"
-      DTS:Description="Data Flow Task"
-      DTS:DTSID="{ecb21745-0d3c-42aa-a228-36ab171f11e5}"
-      DTS:ExecutableType="Microsoft.Pipeline"
-      DTS:LocaleID="-1"
-      DTS:ObjectName="Import STOPINFO"
-      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
-      <DTS:Variables />
-      <DTS:ObjectData>
-        <pipeline
-          version="1">
-          <components>
-            <component
-              refId="Package\Import STOPINFO\OLE DB Source"
-              componentClassID="Microsoft.OLEDBSource"
-              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
-              description="OLE DB Source"
-              name="OLE DB Source"
-              usesDispositions="true"
-              version="7">
-              <properties>
-                <property
-                  dataType="System.Int32"
-                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
-                  name="CommandTimeout">0</property>
-                <property
-                  dataType="System.String"
-                  description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[dbo].[Stopinfo]</property>
-                <property
-                  dataType="System.String"
-                  description="Specifies the variable that contains the name of the database object used to open a rowset."
-                  name="OpenRowsetVariable"></property>
-                <property
-                  dataType="System.String"
-                  description="The SQL command to be executed."
-                  name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
-                <property
-                  dataType="System.String"
-                  description="The variable that contains the SQL command to be executed."
-                  name="SqlCommandVariable"></property>
-                <property
-                  dataType="System.Int32"
-                  description="Specifies the column code page to use when code page information is unavailable from the data source."
-                  name="DefaultCodePage">1250</property>
-                <property
-                  dataType="System.Boolean"
-                  description="Forces the use of the DefaultCodePage property value when describing character data."
-                  name="AlwaysUseDefaultCodePage">false</property>
-                <property
-                  dataType="System.Int32"
-                  description="Specifies the mode used to access the database."
-                  name="AccessMode"
-                  typeConverter="AccessMode">0</property>
-                <property
-                  dataType="System.String"
-                  description="The mappings between the parameters in the SQL command and variables."
-                  name="ParameterMapping"></property>
-              </properties>
-              <connections>
-                <connection
-                  refId="Package\Import STOPINFO\OLE DB Source.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[DESKTOP-0E91BGO.HDiSBI_projekt.sa]"
-                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-0E91BGO.HDiSBI_projekt.sa]"
-                  description="The OLE DB runtime connection used to access the database."
-                  name="OleDbConnection" />
-              </connections>
-              <outputs>
-                <output
-                  refId="Package\Import STOPINFO\OLE DB Source.Outputs[OLE DB Source Output]"
-                  name="OLE DB Source Output">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\Import STOPINFO\OLE DB Source.Outputs[OLE DB Source Output].Columns[zespol]"
-                      codePage="1250"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Import STOPINFO\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[zespol]"
-                      length="255"
-                      lineageId="Package\Import STOPINFO\OLE DB Source.Outputs[OLE DB Source Output].Columns[zespol]"
-                      name="zespol"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Import STOPINFO\OLE DB Source.Outputs[OLE DB Source Output].Columns[stop_nr]"
-                      codePage="1250"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Import STOPINFO\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[stop_nr]"
-                      length="255"
-                      lineageId="Package\Import STOPINFO\OLE DB Source.Outputs[OLE DB Source Output].Columns[stop_nr]"
-                      name="stop_nr"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Import STOPINFO\OLE DB Source.Outputs[OLE DB Source Output].Columns[linia]"
-                      codePage="1250"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Import STOPINFO\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[linia]"
-                      length="255"
-                      lineageId="Package\Import STOPINFO\OLE DB Source.Outputs[OLE DB Source Output].Columns[linia]"
-                      name="linia"
-                      truncationRowDisposition="FailComponent" />
-                  </outputColumns>
-                  <externalMetadataColumns
-                    isUsed="True">
-                    <externalMetadataColumn
-                      refId="Package\Import STOPINFO\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[zespol]"
-                      codePage="1250"
-                      dataType="str"
-                      length="255"
-                      name="zespol" />
-                    <externalMetadataColumn
-                      refId="Package\Import STOPINFO\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[stop_nr]"
-                      codePage="1250"
-                      dataType="str"
-                      length="255"
-                      name="stop_nr" />
-                    <externalMetadataColumn
-                      refId="Package\Import STOPINFO\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[linia]"
-                      codePage="1250"
-                      dataType="str"
-                      length="255"
-                      name="linia" />
-                  </externalMetadataColumns>
-                </output>
-                <output
-                  refId="Package\Import STOPINFO\OLE DB Source.Outputs[OLE DB Source Error Output]"
-                  isErrorOut="true"
-                  name="OLE DB Source Error Output">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\Import STOPINFO\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[zespol]"
-                      codePage="1250"
-                      dataType="str"
-                      length="255"
-                      lineageId="Package\Import STOPINFO\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[zespol]"
-                      name="zespol" />
-                    <outputColumn
-                      refId="Package\Import STOPINFO\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[stop_nr]"
-                      codePage="1250"
-                      dataType="str"
-                      length="255"
-                      lineageId="Package\Import STOPINFO\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[stop_nr]"
-                      name="stop_nr" />
-                    <outputColumn
-                      refId="Package\Import STOPINFO\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[linia]"
-                      codePage="1250"
-                      dataType="str"
-                      length="255"
-                      lineageId="Package\Import STOPINFO\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[linia]"
-                      name="linia" />
-                    <outputColumn
-                      refId="Package\Import STOPINFO\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
-                      dataType="i4"
-                      lineageId="Package\Import STOPINFO\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
-                      name="ErrorCode"
-                      specialFlags="1" />
-                    <outputColumn
-                      refId="Package\Import STOPINFO\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
-                      dataType="i4"
-                      lineageId="Package\Import STOPINFO\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
-                      name="ErrorColumn"
-                      specialFlags="2" />
-                  </outputColumns>
-                  <externalMetadataColumns />
-                </output>
-              </outputs>
-            </component>
-          </components>
         </pipeline>
       </DTS:ObjectData>
     </DTS:Executable>
@@ -2894,6 +3225,224 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
               </outputs>
             </component>
             <component
+              refId="Package\Import STOPS\Data Conversion 1"
+              componentClassID="Microsoft.DataConvert"
+              contactInfo="Data Conversion;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Data Conversion"
+              name="Data Conversion 1"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Import STOPS\Data Conversion 1.Inputs[Data Conversion Input]"
+                  name="Data Conversion Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Import STOPS\Data Conversion 1.Inputs[Data Conversion Input].Columns[zespol]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="255"
+                      cachedName="zespol"
+                      lineageId="Package\Import STOPS\Merge Join.Outputs[Merge Join Output].Columns[zespol]" />
+                    <inputColumn
+                      refId="Package\Import STOPS\Data Conversion 1.Inputs[Data Conversion Input].Columns[slupek]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="255"
+                      cachedName="slupek"
+                      lineageId="Package\Import STOPS\Merge Join.Outputs[Merge Join Output].Columns[slupek]" />
+                    <inputColumn
+                      refId="Package\Import STOPS\Data Conversion 1.Inputs[Data Conversion Input].Columns[lat]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="255"
+                      cachedName="lat"
+                      lineageId="Package\Import STOPS\Merge Join.Outputs[Merge Join Output].Columns[lat]" />
+                    <inputColumn
+                      refId="Package\Import STOPS\Data Conversion 1.Inputs[Data Conversion Input].Columns[lon]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="255"
+                      cachedName="lon"
+                      lineageId="Package\Import STOPS\Merge Join.Outputs[Merge Join Output].Columns[lon]" />
+                    <inputColumn
+                      refId="Package\Import STOPS\Data Conversion 1.Inputs[Data Conversion Input].Columns[stop_id]"
+                      cachedDataType="wstr"
+                      cachedLength="511"
+                      cachedName="stop_id"
+                      cachedSortKeyPosition="1"
+                      lineageId="Package\Import STOPS\Merge Join.Outputs[Merge Join Output].Columns[stop_id]" />
+                    <inputColumn
+                      refId="Package\Import STOPS\Data Conversion 1.Inputs[Data Conversion Input].Columns[nazwa_zespolu]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="255"
+                      cachedName="nazwa_zespolu"
+                      lineageId="Package\Import STOPS\Merge Join.Outputs[Merge Join Output].Columns[nazwa_zespolu]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Import STOPS\Data Conversion 1.Outputs[Data Conversion Output]"
+                  exclusionGroup="1"
+                  name="Data Conversion Output"
+                  synchronousInputId="Package\Import STOPS\Data Conversion 1.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Import STOPS\Data Conversion 1.Outputs[Data Conversion Output].Columns[zespol_id]"
+                      dataType="numeric"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Import STOPS\Data Conversion 1.Outputs[Data Conversion Output].Columns[zespol_id]"
+                      name="zespol_id"
+                      precision="18"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Import STOPS\Merge Join.Outputs[Merge Join Output].Columns[zespol]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import STOPS\Data Conversion 1.Outputs[Data Conversion Output].Columns[slupek_id]"
+                      dataType="numeric"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Import STOPS\Data Conversion 1.Outputs[Data Conversion Output].Columns[slupek_id]"
+                      name="slupek_id"
+                      precision="18"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Import STOPS\Merge Join.Outputs[Merge Join Output].Columns[slupek]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import STOPS\Data Conversion 1.Outputs[Data Conversion Output].Columns[lat]"
+                      dataType="r4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Import STOPS\Data Conversion 1.Outputs[Data Conversion Output].Columns[lat]"
+                      name="lat"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Import STOPS\Merge Join.Outputs[Merge Join Output].Columns[lat]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import STOPS\Data Conversion 1.Outputs[Data Conversion Output].Columns[lon]"
+                      dataType="r4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Import STOPS\Data Conversion 1.Outputs[Data Conversion Output].Columns[lon]"
+                      name="lon"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Import STOPS\Merge Join.Outputs[Merge Join Output].Columns[lon]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import STOPS\Data Conversion 1.Outputs[Data Conversion Output].Columns[stop_id]"
+                      codePage="1250"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="511"
+                      lineageId="Package\Import STOPS\Data Conversion 1.Outputs[Data Conversion Output].Columns[stop_id]"
+                      name="stop_id"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Import STOPS\Merge Join.Outputs[Merge Join Output].Columns[stop_id]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import STOPS\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of nazwa_zespolu]"
+                      codePage="1250"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="50"
+                      lineageId="Package\Import STOPS\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of nazwa_zespolu]"
+                      name="Copy of nazwa_zespolu"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Import STOPS\Merge Join.Outputs[Merge Join Output].Columns[nazwa_zespolu]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Import STOPS\Data Conversion 1.Outputs[Data Conversion Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Data Conversion Error Output"
+                  synchronousInputId="Package\Import STOPS\Data Conversion 1.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Import STOPS\Data Conversion 1.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Import STOPS\Data Conversion 1.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Import STOPS\Data Conversion 1.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Import STOPS\Data Conversion 1.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
               refId="Package\Import STOPS\Merge Join"
               componentClassID="Microsoft.MergeJoin"
               contactInfo="Merge Join;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
@@ -2954,13 +3503,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
                       cachedName="nazwa_zespolu"
                       lineageId="Package\Import STOPS\Sort.Outputs[Sort Output].Columns[nazwa_zespolu]" />
                     <inputColumn
-                      refId="Package\Import STOPS\Merge Join.Inputs[Merge Join Left Input].Columns[id_ulicy]"
-                      cachedCodepage="1250"
-                      cachedDataType="str"
-                      cachedLength="255"
-                      cachedName="id_ulicy"
-                      lineageId="Package\Import STOPS\Sort.Outputs[Sort Output].Columns[id_ulicy]" />
-                    <inputColumn
                       refId="Package\Import STOPS\Merge Join.Inputs[Merge Join Left Input].Columns[lat]"
                       cachedCodepage="1250"
                       cachedDataType="str"
@@ -2974,25 +3516,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
                       cachedLength="255"
                       cachedName="lon"
                       lineageId="Package\Import STOPS\Sort.Outputs[Sort Output].Columns[lon]" />
-                    <inputColumn
-                      refId="Package\Import STOPS\Merge Join.Inputs[Merge Join Left Input].Columns[kierunek]"
-                      cachedCodepage="1250"
-                      cachedDataType="str"
-                      cachedLength="255"
-                      cachedName="kierunek"
-                      lineageId="Package\Import STOPS\Sort.Outputs[Sort Output].Columns[kierunek]" />
-                    <inputColumn
-                      refId="Package\Import STOPS\Merge Join.Inputs[Merge Join Left Input].Columns[obowiazuje_od]"
-                      cachedCodepage="1250"
-                      cachedDataType="str"
-                      cachedLength="255"
-                      cachedName="obowiazuje_od"
-                      lineageId="Package\Import STOPS\Sort.Outputs[Sort Output].Columns[obowiazuje_od]" />
-                    <inputColumn
-                      refId="Package\Import STOPS\Merge Join.Inputs[Merge Join Left Input].Columns[stop_id]"
-                      cachedDataType="i4"
-                      cachedName="stop_id"
-                      lineageId="Package\Import STOPS\Sort.Outputs[Sort Output].Columns[stop_id]" />
                     <inputColumn
                       refId="Package\Import STOPS\Merge Join.Inputs[Merge Join Left Input].Columns[valid_since]"
                       cachedDataType="date"
@@ -3014,11 +3537,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
                       cachedName="zespol_slupek"
                       cachedSortKeyPosition="1"
                       lineageId="Package\Import STOPS\Sort 1.Outputs[Sort Output].Columns[zespol_slupek]" />
-                    <inputColumn
-                      refId="Package\Import STOPS\Merge Join.Inputs[Merge Join Right Input].Columns[stopcount]"
-                      cachedDataType="ui4"
-                      cachedName="stopcount"
-                      lineageId="Package\Import STOPS\Sort 1.Outputs[Sort Output].Columns[stopcount]" />
                     <inputColumn
                       refId="Package\Import STOPS\Merge Join.Inputs[Merge Join Right Input].Columns[valid_since]"
                       cachedDataType="date"
@@ -3081,21 +3599,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Import STOPS\Merge Join.Outputs[Merge Join Output].Columns[id_ulicy]"
-                      codePage="1250"
-                      dataType="str"
-                      length="255"
-                      lineageId="Package\Import STOPS\Merge Join.Outputs[Merge Join Output].Columns[id_ulicy]"
-                      name="id_ulicy">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="The input column associated with this output column"
-                          name="InputColumnID">#{Package\Import STOPS\Merge Join.Inputs[Merge Join Left Input].Columns[id_ulicy]}</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
                       refId="Package\Import STOPS\Merge Join.Outputs[Merge Join Output].Columns[lat]"
                       codePage="1250"
                       dataType="str"
@@ -3126,54 +3629,11 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Import STOPS\Merge Join.Outputs[Merge Join Output].Columns[kierunek]"
-                      codePage="1250"
-                      dataType="str"
-                      length="255"
-                      lineageId="Package\Import STOPS\Merge Join.Outputs[Merge Join Output].Columns[kierunek]"
-                      name="kierunek">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="The input column associated with this output column"
-                          name="InputColumnID">#{Package\Import STOPS\Merge Join.Inputs[Merge Join Left Input].Columns[kierunek]}</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Import STOPS\Merge Join.Outputs[Merge Join Output].Columns[obowiazuje_od]"
-                      codePage="1250"
-                      dataType="str"
-                      length="255"
-                      lineageId="Package\Import STOPS\Merge Join.Outputs[Merge Join Output].Columns[obowiazuje_od]"
-                      name="obowiazuje_od">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="The input column associated with this output column"
-                          name="InputColumnID">#{Package\Import STOPS\Merge Join.Inputs[Merge Join Left Input].Columns[obowiazuje_od]}</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
                       refId="Package\Import STOPS\Merge Join.Outputs[Merge Join Output].Columns[stop_id]"
-                      dataType="i4"
-                      lineageId="Package\Import STOPS\Merge Join.Outputs[Merge Join Output].Columns[stop_id]"
-                      name="stop_id">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="The input column associated with this output column"
-                          name="InputColumnID">#{Package\Import STOPS\Merge Join.Inputs[Merge Join Left Input].Columns[stop_id]}</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Import STOPS\Merge Join.Outputs[Merge Join Output].Columns[zespol_slupek]"
                       dataType="wstr"
                       length="511"
-                      lineageId="Package\Import STOPS\Merge Join.Outputs[Merge Join Output].Columns[zespol_slupek]"
-                      name="zespol_slupek"
+                      lineageId="Package\Import STOPS\Merge Join.Outputs[Merge Join Output].Columns[stop_id]"
+                      name="stop_id"
                       sortKeyPosition="1">
                       <properties>
                         <property
@@ -3181,33 +3641,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
                           dataType="System.Int32"
                           description="The input column associated with this output column"
                           name="InputColumnID">#{Package\Import STOPS\Merge Join.Inputs[Merge Join Left Input].Columns[zespol_slupek]}</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Import STOPS\Merge Join.Outputs[Merge Join Output].Columns[stopcount]"
-                      dataType="ui4"
-                      lineageId="Package\Import STOPS\Merge Join.Outputs[Merge Join Output].Columns[stopcount]"
-                      name="stopcount">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="The input column associated with this output column"
-                          name="InputColumnID">#{Package\Import STOPS\Merge Join.Inputs[Merge Join Right Input].Columns[stopcount]}</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Import STOPS\Merge Join.Outputs[Merge Join Output].Columns[valid_since]"
-                      dataType="date"
-                      lineageId="Package\Import STOPS\Merge Join.Outputs[Merge Join Output].Columns[valid_since]"
-                      name="valid_since"
-                      sortKeyPosition="2">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="The input column associated with this output column"
-                          name="InputColumnID">#{Package\Import STOPS\Merge Join.Inputs[Merge Join Left Input].Columns[valid_since]}</property>
                       </properties>
                     </outputColumn>
                   </outputColumns>
@@ -3266,8 +3699,8 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
               <connections>
                 <connection
                   refId="Package\Import STOPS\OLE DB Source.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[DESKTOP-0E91BGO.HDiSBI_projekt.sa]"
-                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-0E91BGO.HDiSBI_projekt.sa]"
+                  connectionManagerID="Package.ConnectionManagers[localhost.HDiSBI_projekt.sa 2]"
+                  connectionManagerRefId="Package.ConnectionManagers[localhost.HDiSBI_projekt.sa 2]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -3488,6 +3921,179 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
                       refId="Package\Import STOPS\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
                       dataType="i4"
                       lineageId="Package\Import STOPS\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Import STOPS\save to database"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="save to database"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[DimStops]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1250</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Import STOPS\save to database.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[localhost.DWH.sa]"
+                  connectionManagerRefId="Package.ConnectionManagers[localhost.DWH.sa]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Import STOPS\save to database.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="IgnoreFailure"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Import STOPS\save to database.Inputs[OLE DB Destination Input].Columns[lat]"
+                      cachedDataType="r4"
+                      cachedName="lat"
+                      externalMetadataColumnId="Package\Import STOPS\save to database.Inputs[OLE DB Destination Input].ExternalColumns[lat]"
+                      lineageId="Package\Import STOPS\Data Conversion 1.Outputs[Data Conversion Output].Columns[lat]" />
+                    <inputColumn
+                      refId="Package\Import STOPS\save to database.Inputs[OLE DB Destination Input].Columns[lon]"
+                      cachedDataType="r4"
+                      cachedName="lon"
+                      externalMetadataColumnId="Package\Import STOPS\save to database.Inputs[OLE DB Destination Input].ExternalColumns[lon]"
+                      lineageId="Package\Import STOPS\Data Conversion 1.Outputs[Data Conversion Output].Columns[lon]" />
+                    <inputColumn
+                      refId="Package\Import STOPS\save to database.Inputs[OLE DB Destination Input].Columns[stop_id]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="511"
+                      cachedName="stop_id"
+                      externalMetadataColumnId="Package\Import STOPS\save to database.Inputs[OLE DB Destination Input].ExternalColumns[stop_id]"
+                      lineageId="Package\Import STOPS\Data Conversion 1.Outputs[Data Conversion Output].Columns[stop_id]" />
+                    <inputColumn
+                      refId="Package\Import STOPS\save to database.Inputs[OLE DB Destination Input].Columns[zespol_id]"
+                      cachedDataType="numeric"
+                      cachedName="zespol_id"
+                      cachedPrecision="18"
+                      externalMetadataColumnId="Package\Import STOPS\save to database.Inputs[OLE DB Destination Input].ExternalColumns[zespol_id]"
+                      lineageId="Package\Import STOPS\Data Conversion 1.Outputs[Data Conversion Output].Columns[zespol_id]" />
+                    <inputColumn
+                      refId="Package\Import STOPS\save to database.Inputs[OLE DB Destination Input].Columns[slupek_id]"
+                      cachedDataType="numeric"
+                      cachedName="slupek_id"
+                      cachedPrecision="18"
+                      externalMetadataColumnId="Package\Import STOPS\save to database.Inputs[OLE DB Destination Input].ExternalColumns[slupek_id]"
+                      lineageId="Package\Import STOPS\Data Conversion 1.Outputs[Data Conversion Output].Columns[slupek_id]" />
+                    <inputColumn
+                      refId="Package\Import STOPS\save to database.Inputs[OLE DB Destination Input].Columns[Copy of nazwa_zespolu]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Copy of nazwa_zespolu"
+                      externalMetadataColumnId="Package\Import STOPS\save to database.Inputs[OLE DB Destination Input].ExternalColumns[nazwa_zespolu]"
+                      lineageId="Package\Import STOPS\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of nazwa_zespolu]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Import STOPS\save to database.Inputs[OLE DB Destination Input].ExternalColumns[stop_id]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="stop_id" />
+                    <externalMetadataColumn
+                      refId="Package\Import STOPS\save to database.Inputs[OLE DB Destination Input].ExternalColumns[zespol_id]"
+                      dataType="i4"
+                      name="zespol_id" />
+                    <externalMetadataColumn
+                      refId="Package\Import STOPS\save to database.Inputs[OLE DB Destination Input].ExternalColumns[slupek_id]"
+                      dataType="i4"
+                      name="slupek_id" />
+                    <externalMetadataColumn
+                      refId="Package\Import STOPS\save to database.Inputs[OLE DB Destination Input].ExternalColumns[nazwa_zespolu]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="nazwa_zespolu" />
+                    <externalMetadataColumn
+                      refId="Package\Import STOPS\save to database.Inputs[OLE DB Destination Input].ExternalColumns[lat]"
+                      dataType="r8"
+                      name="lat" />
+                    <externalMetadataColumn
+                      refId="Package\Import STOPS\save to database.Inputs[OLE DB Destination Input].ExternalColumns[lon]"
+                      dataType="r8"
+                      name="lon" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Import STOPS\save to database.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Import STOPS\save to database.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Import STOPS\save to database.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Import STOPS\save to database.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Import STOPS\save to database.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Import STOPS\save to database.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -4055,60 +4661,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
                 </output>
               </outputs>
             </component>
-            <component
-              refId="Package\Import STOPS\subset uniques or latest"
-              componentClassID="Microsoft.ConditionalSplit"
-              contactInfo="Conditional Split;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
-              description="Routes data rows to different outputs depending on the content of the data. Use conditions (SSIS expressions) to specify which rows are routed. For example, separate records that need to be cleaned from those that are ready to be loaded or route only a subset of records."
-              name="subset uniques or latest"
-              usesDispositions="true">
-              <inputs>
-                <input
-                  refId="Package\Import STOPS\subset uniques or latest.Inputs[Conditional Split Input]"
-                  description="Input to the Conditional Split Transformation"
-                  name="Conditional Split Input">
-                  <externalMetadataColumns />
-                </input>
-              </inputs>
-              <outputs>
-                <output
-                  refId="Package\Import STOPS\subset uniques or latest.Outputs[Conditional Split Default Output]"
-                  description="Default Output of the Conditional Split Transformation"
-                  exclusionGroup="1"
-                  name="Conditional Split Default Output"
-                  synchronousInputId="Package\Import STOPS\subset uniques or latest.Inputs[Conditional Split Input]">
-                  <properties>
-                    <property
-                      dataType="System.Boolean"
-                      name="IsDefaultOut">true</property>
-                  </properties>
-                  <externalMetadataColumns />
-                </output>
-                <output
-                  refId="Package\Import STOPS\subset uniques or latest.Outputs[Conditional Split Error Output]"
-                  description="Error Output of the Conditional Split Transformation"
-                  exclusionGroup="1"
-                  isErrorOut="true"
-                  name="Conditional Split Error Output"
-                  synchronousInputId="Package\Import STOPS\subset uniques or latest.Inputs[Conditional Split Input]">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\Import STOPS\subset uniques or latest.Outputs[Conditional Split Error Output].Columns[ErrorCode]"
-                      dataType="i4"
-                      lineageId="Package\Import STOPS\subset uniques or latest.Outputs[Conditional Split Error Output].Columns[ErrorCode]"
-                      name="ErrorCode"
-                      specialFlags="1" />
-                    <outputColumn
-                      refId="Package\Import STOPS\subset uniques or latest.Outputs[Conditional Split Error Output].Columns[ErrorColumn]"
-                      dataType="i4"
-                      lineageId="Package\Import STOPS\subset uniques or latest.Outputs[Conditional Split Error Output].Columns[ErrorColumn]"
-                      name="ErrorColumn"
-                      specialFlags="2" />
-                  </outputColumns>
-                  <externalMetadataColumns />
-                </output>
-              </outputs>
-            </component>
           </components>
           <paths>
             <path
@@ -4116,6 +4668,11 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
               endId="Package\Import STOPS\create column zespol-slupek.Inputs[Derived Column Input]"
               name="Data Conversion Output"
               startId="Package\Import STOPS\Data Conversion.Outputs[Data Conversion Output]" />
+            <path
+              refId="Package\Import STOPS.Paths[Data Conversion Output1]"
+              endId="Package\Import STOPS\save to database.Inputs[OLE DB Destination Input]"
+              name="Data Conversion Output"
+              startId="Package\Import STOPS\Data Conversion 1.Outputs[Data Conversion Output]" />
             <path
               refId="Package\Import STOPS.Paths[Derived Column Output]"
               endId="Package\Import STOPS\split.Inputs[Multicast Input 1]"
@@ -4128,7 +4685,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
               startId="Package\Import STOPS\count grouped by zespol + slupek.Outputs[grouped]" />
             <path
               refId="Package\Import STOPS.Paths[Merge Join Output]"
-              endId="Package\Import STOPS\subset uniques or latest.Inputs[Conditional Split Input]"
+              endId="Package\Import STOPS\Data Conversion 1.Inputs[Data Conversion Input]"
               name="Merge Join Output"
               startId="Package\Import STOPS\Merge Join.Outputs[Merge Join Output]" />
             <path
@@ -4165,25 +4722,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
         </pipeline>
       </DTS:ObjectData>
     </DTS:Executable>
-    <DTS:Executable
-      DTS:refId="Package\SUBSET UNIQUE"
-      DTS:CreationName="Microsoft.ExecuteSQLTask"
-      DTS:Description="Execute SQL Task"
-      DTS:DTSID="{493F0477-8E3D-4104-AB6B-F9994B2F1755}"
-      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
-      DTS:LocaleID="-1"
-      DTS:ObjectName="SUBSET UNIQUE"
-      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="0">
-      <DTS:Variables />
-      <DTS:ObjectData>
-        <SQLTask:SqlTaskData
-          SQLTask:Connection="{BA3E6007-681F-4ED1-A255-9B8ECD4A7BB6}"
-          SQLTask:BypassPrepare="False"
-          SQLTask:SqlStatementSource="SELECT count(*) &#xA;FROM STOPS s&#xA;LEFT JOIN (&#xA;    SELECT zespol, slupek, MAX(obowiazuje_od) AS latest_obowiazuje_od&#xA;    FROM STOPS&#xA;    GROUP BY zespol, slupek&#xA;    HAVING COUNT(*) &gt; 1&#xA;) subquery ON s.zespol = subquery.zespol AND s.slupek = subquery.slupek AND s.obowiazuje_od &lt; subquery.latest_obowiazuje_od&#xA;WHERE subquery.zespol IS NULL;"
-          SQLTask:ResultType="ResultSetType_Rowset" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
-      </DTS:ObjectData>
-    </DTS:Executable>
   </DTS:Executables>
   <DTS:PrecedenceConstraints>
     <DTS:PrecedenceConstraint
@@ -4197,43 +4735,11 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
       DTS:CreationName=""
-      DTS:DTSID="{4D008A4E-B118-4407-9C81-0D0279E70312}"
+      DTS:DTSID="{64567E49-1B12-441D-9DCB-CCD413512796}"
       DTS:From="Package\Import STOPS"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 1"
-      DTS:To="Package\SUBSET UNIQUE" />
-    <DTS:PrecedenceConstraint
-      DTS:refId="Package.PrecedenceConstraints[Constraint 2]"
-      DTS:CreationName=""
-      DTS:DTSID="{E7B49C8E-437A-4A49-8D7A-79515C70F500}"
-      DTS:From="Package\Import STOPINFO"
-      DTS:LogicalAnd="True"
-      DTS:ObjectName="Constraint 2"
-      DTS:To="Package\Execute SQL Task" />
-    <DTS:PrecedenceConstraint
-      DTS:refId="Package.PrecedenceConstraints[Constraint 3]"
-      DTS:CreationName=""
-      DTS:DTSID="{A157A30C-8B89-4A8B-AFF7-5982ABFC56E6}"
-      DTS:From="Package\Import STOPCODE"
-      DTS:LogicalAnd="True"
-      DTS:ObjectName="Constraint 3"
-      DTS:To="Package\Execute SQL Task" />
-    <DTS:PrecedenceConstraint
-      DTS:refId="Package.PrecedenceConstraints[Constraint 4]"
-      DTS:CreationName=""
-      DTS:DTSID="{D85AC2F4-1D2B-4460-8018-3E1914F31F7F}"
-      DTS:From="Package\IMPORT DICT"
-      DTS:LogicalAnd="True"
-      DTS:ObjectName="Constraint 4"
-      DTS:To="Package\Execute SQL Task" />
-    <DTS:PrecedenceConstraint
-      DTS:refId="Package.PrecedenceConstraints[Constraint 5]"
-      DTS:CreationName=""
-      DTS:DTSID="{1D1497DA-D330-4E4B-A612-9AB34BA9961A}"
-      DTS:From="Package\Import ROUTES"
-      DTS:LogicalAnd="True"
-      DTS:ObjectName="Constraint 5"
-      DTS:To="Package\Execute SQL Task" />
+      DTS:To="Package\Import SCHEDULES" />
   </DTS:PrecedenceConstraints>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
 <!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
@@ -4246,65 +4752,33 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
     design-time-name="Package">
     <LayoutInfo>
       <GraphLayout
-        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="170,42"
           Id="Package\Execute SQL Task"
-          TopLeft="642.375000009313,390.5" />
-        <NodeLayout
-          Size="150,42"
-          Id="Package\IMPORT DICT"
-          TopLeft="721.499998752027,34.6500010344386" />
-        <NodeLayout
-          Size="158.666666666667,42"
-          Id="Package\Import ROUTES"
-          TopLeft="546.874997736886,37.5500016620755" />
+          TopLeft="408.000003501772,456.184211762658" />
         <NodeLayout
           Size="165.333333333334,42"
           Id="Package\Import SCHEDULES"
-          TopLeft="553.000000242144,215.000000348687" />
-        <NodeLayout
-          Size="174.666666666667,42"
-          Id="Package\Import STOPCODE"
-          TopLeft="170.00000026077,241.399999872148" />
-        <NodeLayout
-          Size="169.333333333334,42"
-          Id="Package\Import STOPINFO"
-          TopLeft="361.50000026077,213.60000036031" />
+          TopLeft="410.500002365559,299.842107208787" />
         <NodeLayout
           Size="150,42"
           Id="Package\Import STOPS"
-          TopLeft="916.374998630955,115.549999860525" />
-        <NodeLayout
-          Size="169.333333333334,42"
-          Id="Package\SUBSET UNIQUE"
-          TopLeft="906.874998612329,215.249999883771" />
+          TopLeft="422.625005988403,138.813158193133" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="635.66666690881,257.000000348687">
+          TopLeft="493.083336266999,341.842107208787">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="118.708333100503,133.499999651313"
+              EndConnector="0,114.342104553871"
               Start="0,0"
-              End="118.708333100503,125.999999651313">
+              End="0,106.842104553871">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,75.3531466458856" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,75.3531466458856"
-                    Point2="0,79.3531466458856"
-                    Point3="4,79.3531466458856" />
-                  <mssgle:LineSegment
-                    End="114.708333100503,79.3531466458856" />
-                  <mssgle:CubicBezierSegment
-                    Point1="114.708333100503,79.3531466458856"
-                    Point2="118.708333100503,79.3531466458856"
-                    Point3="118.708333100503,83.3531466458856" />
-                  <mssgle:LineSegment
-                    End="118.708333100503,125.999999651313" />
+                    End="0,106.842104553871" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -4315,154 +4789,18 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 1]"
-          TopLeft="991.458331954975,157.549999860525">
+          TopLeft="495.395837510315,180.813158193133">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,57.7000000232457"
+              EndConnector="0,119.028949015654"
               Start="0,0"
-              End="0,50.2000000232457">
+              End="0,111.528949015654">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,50.2000000232457" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 2]"
-          TopLeft="446.166666927437,255.60000036031">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="254.208333081876,134.89999963969"
-              Start="0,0"
-              End="254.208333081876,127.39999963969">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,76.1853144711446" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,76.1853144711446"
-                    Point2="0,80.1853144711446"
-                    Point3="4,80.1853144711446" />
-                  <mssgle:LineSegment
-                    End="250.208333081876,80.1853144711446" />
-                  <mssgle:CubicBezierSegment
-                    Point1="250.208333081876,80.1853144711446"
-                    Point2="254.208333081876,80.1853144711446"
-                    Point3="254.208333081876,84.1853144711446" />
-                  <mssgle:LineSegment
-                    End="254.208333081876,127.39999963969" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 3]"
-          TopLeft="257.333333594103,283.399999872148">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="416.04166641521,107.100000127852"
-              Start="0,0"
-              End="416.04166641521,99.6000001278521">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,74.4784483695468" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,74.4784483695468"
-                    Point2="0,78.4784483695468"
-                    Point3="4,78.4784483695468" />
-                  <mssgle:LineSegment
-                    End="412.04166641521,78.4784483695468" />
-                  <mssgle:CubicBezierSegment
-                    Point1="412.04166641521,78.4784483695468"
-                    Point2="416.04166641521,78.4784483695468"
-                    Point3="416.04166641521,82.4784483695468" />
-                  <mssgle:LineSegment
-                    End="416.04166641521,99.6000001278521" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 4]"
-          TopLeft="796.499998752027,76.6500010344386">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-15.1249987427136,313.849998965561"
-              Start="0,0"
-              End="-15.1249987427136,306.349998965561">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,225.976292345454" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,225.976292345454"
-                    Point2="0,229.976292345454"
-                    Point3="-4,229.976292345454" />
-                  <mssgle:LineSegment
-                    End="-11.1249987427136,229.976292345454" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-11.1249987427136,229.976292345454"
-                    Point2="-15.1249987427136,229.976292345454"
-                    Point3="-15.1249987427136,233.976292345454" />
-                  <mssgle:LineSegment
-                    End="-15.1249987427136,306.349998965561" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 5]"
-          TopLeft="626.208331070219,79.5500016620755">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="124.916668585192,310.949998337924"
-              Start="0,0"
-              End="124.916668585192,303.449998337924">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,59.1750008194149" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,59.1750008194149"
-                    Point2="0,63.1750008194149"
-                    Point3="4,63.1750008194149" />
-                  <mssgle:LineSegment
-                    End="120.916668585192,63.1750008194149" />
-                  <mssgle:CubicBezierSegment
-                    Point1="120.916668585192,63.1750008194149"
-                    Point2="124.916668585192,63.1750008194149"
-                    Point3="124.916668585192,67.1750008194149" />
-                  <mssgle:LineSegment
-                    End="124.916668585192,303.449998337924" />
+                    End="0,111.528949015654" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -4475,75 +4813,89 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
     </LayoutInfo>
   </Package>
   <TaskHost
-    design-time-name="Package\IMPORT DICT">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
-        <NodeLayout
-          Size="134,54.6666666666667"
-          Id="Package\IMPORT DICT\OLE DB Source"
-          TopLeft="409,117" />
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\IMPORT DICT\OLE DB Source">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <TaskHost
-    design-time-name="Package\Import ROUTES">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
-        <NodeLayout
-          Size="157.333333333334,42"
-          Id="Package\Import ROUTES\OLE DB Source"
-          TopLeft="468.249999981373,163.649999988377" />
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\Import ROUTES\OLE DB Source">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <TaskHost
     design-time-name="Package\Import SCHEDULES">
     <LayoutInfo>
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="157.333333333334,42"
-          Id="Package\Import SCHEDULES\OLE DB Source"
-          TopLeft="573.503786013602,73.5136366584355" />
-        <NodeLayout
           Size="154.666666666667,42.6666666666667"
           Id="Package\Import SCHEDULES\Derived Column"
-          TopLeft="416.568181809715,221.848484827353" />
+          TopLeft="257.234848476382,214.51515149402" />
+        <NodeLayout
+          Size="157.333333333334,42"
+          Id="Package\Import SCHEDULES\OLE DB Source"
+          TopLeft="414.170452680269,66.1803033251022" />
+        <NodeLayout
+          Size="121.333333333334,42.6666666666667"
+          Id="Package\Import SCHEDULES\Multicast"
+          TopLeft="426.462112483089,133.257574056405" />
+        <NodeLayout
+          Size="98.6666666666667,42.6666666666667"
+          Id="Package\Import SCHEDULES\Sort"
+          TopLeft="243.109842487978,427.812113431115" />
         <NodeLayout
           Size="128,42.6666666666667"
           Id="Package\Import SCHEDULES\Aggregate"
-          TopLeft="408.749999981374,338.03333324035" />
+          TopLeft="249.416666648041,330.699999907017" />
+        <EdgeLayout
+          Id="Package\Import SCHEDULES.Paths[OLE DB Source Output]"
+          TopLeft="489.982949248345,108.180303325102">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,25.0772707313025"
+              Start="0,0"
+              End="0,17.5772707313025">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,17.5772707313025" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Import SCHEDULES.Paths[Multicast Output 1]"
+          TopLeft="487.128779149755,175.924240723071">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-152.56059734004,38.5909107709483"
+              Start="0,0"
+              End="-152.56059734004,31.0909107709483">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,15.2954553854742" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,15.2954553854742"
+                    Point2="0,19.2954553854742"
+                    Point3="-4,19.2954553854742" />
+                  <mssgle:LineSegment
+                    End="-148.56059734004,19.2954553854742" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-148.56059734004,19.2954553854742"
+                    Point2="-152.56059734004,19.2954553854742"
+                    Point3="-152.56059734004,23.2954553854742" />
+                  <mssgle:LineSegment
+                    End="-152.56059734004,31.0909107709483" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\Import SCHEDULES.Paths[Derived Column Output]"
-          TopLeft="493.901515143048,264.515151494019">
+          TopLeft="334.568181809715,257.181818160686">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -4575,19 +4927,15 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="98.6666666666667,42.6666666666667"
-          Id="Package\Import SCHEDULES\Sort"
-          TopLeft="402.443175821311,435.145446764448" />
         <EdgeLayout
           Id="Package\Import SCHEDULES.Paths[Aggregate Output 1]"
-          TopLeft="472.749999981374,380.699999907016">
+          TopLeft="313.416666648041,373.366666573683">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-20.9734908267289,54.4454468574313"
+              EndConnector="-20.9734908267297,54.4454468574314"
               Start="0,0"
-              End="-20.9734908267289,46.9454468574313">
+              End="-20.9734908267297,46.9454468574314">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
@@ -4598,41 +4946,60 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
                     Point2="0,27.2227234287157"
                     Point3="-4,27.2227234287157" />
                   <mssgle:LineSegment
-                    End="-16.9734908267289,27.2227234287157" />
+                    End="-16.9734908267297,27.2227234287157" />
                   <mssgle:CubicBezierSegment
-                    Point1="-16.9734908267289,27.2227234287157"
-                    Point2="-20.9734908267289,27.2227234287157"
-                    Point3="-20.9734908267289,31.2227234287157" />
+                    Point1="-16.9734908267297,27.2227234287157"
+                    Point2="-20.9734908267297,27.2227234287157"
+                    Point3="-20.9734908267297,31.2227234287157" />
                   <mssgle:LineSegment
-                    End="-20.9734908267289,46.9454468574313" />
+                    End="-20.9734908267297,46.9454468574314" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-18.4867454133645,32.2227234287157,16,16"
+              BoundingBox="-18.4867454133648,32.2227234287157,16,16"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <AnnotationLayout
+          Text="DIM_BUSES&#xD;&#xA;&#xD;&#xA;done"
+          ParentId="Package\Import SCHEDULES"
+          FontInfo="{assembly:Null}"
+          Size="90.6666666666667,72"
+          Id="46314342-b7a4-430d-8b33-2b18e86152b6"
+          TopLeft="79.1666666666667,444.166666666667" />
         <NodeLayout
-          Size="121.333333333334,42.6666666666667"
-          Id="Package\Import SCHEDULES\Multicast"
-          TopLeft="585.795445816422,140.590907389738" />
+          Size="165.333333333334,42.6666666666667"
+          Id="Package\Import SCHEDULES\Script Component"
+          TopLeft="560,244.666666666667" />
         <EdgeLayout
-          Id="Package\Import SCHEDULES.Paths[OLE DB Source Output]"
-          TopLeft="649.316282581679,115.513636658435">
+          Id="Package\Import SCHEDULES.Paths[Multicast Output 2]"
+          TopLeft="506.017668038644,175.924240723071">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,25.0772707313029"
+              EndConnector="136.648998628022,68.7424259435954"
               Start="0,0"
-              End="0,17.5772707313029">
+              End="136.648998628022,61.2424259435954">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,17.5772707313029" />
+                    End="0,24.0337875865422" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,24.0337875865422"
+                    Point2="0,28.0337875865422"
+                    Point3="4,28.0337875865422" />
+                  <mssgle:LineSegment
+                    End="132.648998628022,28.0337875865422" />
+                  <mssgle:CubicBezierSegment
+                    Point1="132.648998628022,28.0337875865422"
+                    Point2="136.648998628022,28.0337875865422"
+                    Point3="136.648998628022,32.0337875865421" />
+                  <mssgle:LineSegment
+                    End="136.648998628022,61.2424259435954" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -4641,32 +5008,50 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <NodeLayout
+          Size="88,42.6666666666667"
+          Id="Package\Import SCHEDULES\id"
+          TopLeft="602.666666666667,327.333333333333" />
         <EdgeLayout
-          Id="Package\Import SCHEDULES.Paths[Multicast Output 1]"
-          TopLeft="646.462112483089,183.257574056405">
+          Id="Package\Import SCHEDULES.Paths[Output 0]"
+          TopLeft="644.666666666667,287.333333333333">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-152.56059734004,38.5909107709476"
+              EndConnector="0,40.0000000000001"
               Start="0,0"
-              End="-152.56059734004,31.0909107709476">
+              End="0,32.5000000000001">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,15.2954553854738" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,15.2954553854738"
-                    Point2="0,19.2954553854738"
-                    Point3="-4,19.2954553854738" />
+                    End="0,32.5000000000001" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="114.666666666667,42.6666666666667"
+          Id="Package\Import SCHEDULES\Lookup"
+          TopLeft="589.333333333333,417.333333333333" />
+        <EdgeLayout
+          Id="Package\Import SCHEDULES.Paths[Derived Column Output1]"
+          TopLeft="646.666666666667,370">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,47.3333333333333"
+              Start="0,0"
+              End="0,39.8333333333333">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
                   <mssgle:LineSegment
-                    End="-148.56059734004,19.2954553854738" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-148.56059734004,19.2954553854738"
-                    Point2="-152.56059734004,19.2954553854738"
-                    Point3="-152.56059734004,23.2954553854738" />
-                  <mssgle:LineSegment
-                    End="-152.56059734004,31.0909107709476" />
+                    End="0,39.8333333333333" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -4680,56 +5065,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
   </TaskHost>
   <PipelineComponentMetadata
     design-time-name="Package\Import SCHEDULES\OLE DB Source">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <TaskHost
-    design-time-name="Package\Import STOPCODE">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
-        <NodeLayout
-          Size="157.333333333334,42"
-          Id="Package\Import STOPCODE\OLE DB Source"
-          TopLeft="466,161" />
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\Import STOPCODE\OLE DB Source">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <TaskHost
-    design-time-name="Package\Import STOPINFO">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
-        <NodeLayout
-          Size="170.666666666667,42"
-          Id="Package\Import STOPINFO\OLE DB Source"
-          TopLeft="408,116" />
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\Import STOPINFO\OLE DB Source">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -4758,10 +5093,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
           Size="102,42"
           Id="Package\Import STOPS\split"
           TopLeft="360,277" />
-        <NodeLayout
-          Size="216,42"
-          Id="Package\Import STOPS\subset uniques or latest"
-          TopLeft="185.615384615385,479.692307692308" />
         <NodeLayout
           Size="170.666666666667,42"
           Id="Package\Import STOPS\OLE DB Source"
@@ -4979,40 +5310,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Import STOPS.Paths[Merge Join Output]"
-          TopLeft="479.491091314031,458.884615384615">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-77.8757066986465,41.8076923076924"
-              Start="0,0"
-              End="-70.3757066986465,41.8076923076924">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="-34.9378533493232,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-34.9378533493232,0"
-                    Point2="-38.9378533493232,0"
-                    Point3="-38.9378533493232,4" />
-                  <mssgle:LineSegment
-                    End="-38.9378533493232,37.8076923076924" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-38.9378533493232,37.8076923076924"
-                    Point2="-38.9378533493232,41.8076923076924"
-                    Point3="-42.9378533493232,41.8076923076924" />
-                  <mssgle:LineSegment
-                    End="-70.3757066986465,41.8076923076924" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
           Id="Package\Import STOPS.Paths[grouped]"
           TopLeft="652.5,326.709951456311">
           <EdgeLayout.Curve>
@@ -5109,11 +5406,76 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
           Size="314,120"
           Id="daf115cf-9135-4b5b-ae34-c7dd5e1864ed"
           TopLeft="34,211" />
+        <NodeLayout
+          Size="160,42.6666666666667"
+          Id="Package\Import STOPS\save to database"
+          TopLeft="461.124993210659,630.868432823641" />
+        <NodeLayout
+          Size="168,42.6666666666667"
+          Id="Package\Import STOPS\Data Conversion 1"
+          TopLeft="463.1249930989,520.684220326905" />
+        <EdgeLayout
+          Id="Package\Import STOPS.Paths[Merge Join Output]"
+          TopLeft="548.974708873132,479.884615384615">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,40.7996049422895"
+              Start="0,0"
+              End="0,33.2996049422895">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,33.2996049422895" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Import STOPS.Paths[Data Conversion Output1]"
+          TopLeft="544.124993154779,563.350886993571">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,67.5175458300699"
+              Start="0,0"
+              End="0,60.0175458300699">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,60.0175458300699" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
     design-time-name="Package\Import STOPS\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Import STOPS\save to database">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
