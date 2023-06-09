@@ -1,4 +1,4 @@
-USE [HDiSBI_projekt]
+USE DWH
 GO
 
 -- Usuniêcie wymiaru czasu, jeœli ju¿ istnieje.
