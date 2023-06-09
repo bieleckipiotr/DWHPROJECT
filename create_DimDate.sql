@@ -1,4 +1,4 @@
-USE [HDiSBI_projekt]
+USE DWH
 GO
 
 -- Delete time dimension if it already exists.
