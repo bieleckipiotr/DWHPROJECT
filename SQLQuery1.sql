@@ -13,9 +13,9 @@ GO
 
 
 
---SELECT *
---	FROM [dbo].[Schedules]
---GO
+SELECT DISTINCT *
+	FROM [dbo].[Schedules]
+GO
 
 SELECT DISTINCT zespol, slupek, linia, brygada, czas, trasa
 	FROM [dbo].[Schedules]
