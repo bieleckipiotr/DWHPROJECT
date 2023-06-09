@@ -31,7 +31,7 @@ GO
 
 
 SELECT *
-	FROM [dbo].[DimDate]
+	FROM [dbo].[DimTime]
 GO
 
 
