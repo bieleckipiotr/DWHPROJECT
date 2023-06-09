@@ -11,8 +11,8 @@
   DTS:LocaleID="1045"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="46"
-  DTS:VersionGUID="{D96B2E93-F3CE-4862-83C9-437314B3116D}">
+  DTS:VersionBuild="80"
+  DTS:VersionGUID="{4C597ADA-2791-49E7-A98D-12706A801D6C}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -29,7 +29,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAVrRUbLU4JEO5cc8pfX1cUwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAtZCeMskgY6yXF+YCfn3XBSnbQLCrPfXOLbLYDDk7lewAAAAAOgAAAAAIAACAAAAC4THdpXzg+oJMI0kRCAKh9NBehB8YHlwaDoTpGZomppyAAAAAMgPaSdHCxM3222KU62c2sNaLc4kJJiJaUK4HWBAR/WUAAAAB85jpHItawDEmzu9HjVr2yoSLA7tXNLNWkFTOvAtXU7KzvqaskNaXXMsv0af0GtfAqC+3St7On43Kw7AbJ9FgZ</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAVrRUbLU4JEO5cc8pfX1cUwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABlRHr8GI0OEGN5wlGbbv5eho/i8JChqsxGyqIRZMMQnAAAAAAOgAAAAAIAACAAAACfZDC64FJEx4CwBtl+OhmchYR6A0+nUDSwGGWqL7lpYiAAAABWXHgy+SRHU8p+DXPmi8V1Vqwl237vJ4TWkZsfQVQKnUAAAABugolnJo8EHywUNS0wzD+x3/lN1uRh/T1lOxektS8TERKAcBg+lhXa6LZCpVtGqyjQWOzCQ5BZL6AQFLqVFOOT</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -46,7 +46,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAVrRUbLU4JEO5cc8pfX1cUwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAANAAuN6FKZso1w0eroEeqVeFoVVyrsMSu0c3FkRlcN6gAAAAAOgAAAAAIAACAAAAD+ImKRZsteHKEx3NRzqUSGRCRKjuJl05QUFPhojo6iuyAAAACf7tqiSIgd5uRtd1gBXab6yVk6rQQYmgQPMHUxDb5lJkAAAADi0Z0KOq4WQM2IrCIp4hSIqJ0sjSpzzPHWfq3rmEp5kA+Ux2ZXYnCNQ4xb6Muqmkvuy2NDJcZM0y10bZJbfnoO</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAVrRUbLU4JEO5cc8pfX1cUwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACUqYeFeESNxsygJmzqsC7k3xMBqKjvGKGX3koAIUHEpQAAAAAOgAAAAAIAACAAAACyPSvKhOiEL66Hj8rtRzJxhEXcAC4Yrhsmf2n2Fg8GkSAAAABPgLQV4Y9fXjwClIsuU6pTy+/HzVRpaPg47QqUMTFL0UAAAABbaKKtOCTyUwiybXQjqUNnJbMX12PiueNAlBpACBqeEmCUlz+dbwAxnzc7gUUCT9Vb4FDcWHj83rYaoUTZwtN+</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -63,7 +63,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAVrRUbLU4JEO5cc8pfX1cUwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAKvEIkVjkggq1AUJRkeVrULxoCRF2KNd+ch89IXJYSywAAAAAOgAAAAAIAACAAAACzjpRygIuSS7ylTqwErOlgoKQ4HtzPiR2tBq1lT0Z/uCAAAAA6qLV01sonjcONNEpbiqJlh4M7nK/EmQaBnNKv+llAZUAAAACVqJcryerzCEbUizYHNQ69N/3ztWFu0cM6FYgWSz7Aw2sk/znFx4MLJ0fZYiOYijYeVS/swRknGRpNoNx1ZyuP</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAVrRUbLU4JEO5cc8pfX1cUwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADASofn3iOUusWtL1LZn9Ye9vm/EpLSXG7Kl99T8KXphQAAAAAOgAAAAAIAACAAAACQgid0x2VwuX4hWFtmHjHfEh5XH7VwmQrqJCuIKDTz6SAAAACPBv3vKi/I5bFKqAa36h97M0zMXW7DkP4530R4Sg76pUAAAABDxDupJyWETn6I+wIh+yHmi/2GirYlAt4WXrt8VW4HCq6pDqQjyKFnHrgp9QGYcklBCs9qqE27xg70W+cfJe//</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -80,7 +80,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAVrRUbLU4JEO5cc8pfX1cUwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABMYqY18AMP4CBYjRvXQl8miQXTCkWxUtvtio4EttqfuwAAAAAOgAAAAAIAACAAAACvU4gKue2zoiFxj5YRKENg6oMvenLoupGWyFcHSeLGciAAAADWR65fVzZgT4N4Hcy+QFKDZru57vd0gYN+QyX+mOtu6UAAAACVt92d0Ql+kXSnBc4nFm+sJL1rxSWJS9arfHLWUH36tz0dor98tN0CDLNmHnemocDYseUL505twduaKTi/hnh+</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAVrRUbLU4JEO5cc8pfX1cUwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAsVSBjgrlTHjUQ+RX38covt7myAAvYHYMZHGR4G7q3jgAAAAAOgAAAAAIAACAAAAAdnCXwxmO56Av5dmD0XBSIIaae3fZ/ZJzLoNhAFJv1yiAAAAAVkx3Ri+qGUqEACf6o9Mdx9JqR2GGTg8/TIJ9Lde7r4EAAAABbTMu+NV0SlSLvgci/K8wRRMkhBtM3AFmZ+PemVcFMTF6mZsKXq7jyJtSDYpohQoscaIpWA9iwLhPSDIrsZEE0</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -97,7 +97,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAVrRUbLU4JEO5cc8pfX1cUwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADM1JogzQMr47LKTJEy3t4he7vjWnwcf/o74AM7w9rAwQAAAAAOgAAAAAIAACAAAADp7vFiEYm38SqfNxWb5sl6sc1+JwEnIs5ixQovxiWfBCAAAABnY7b1xW2BAdGf3j2C5k8byCjCwFrK7u976B/9T+KotEAAAACvBMTOMVbaERYX9SAwDWd7kGVIIlfJXvfjVS5ahQhGIB4Sz7XQ/TRMAq0QKW7P2XeQpdT+4eMwZXJP4E2dGT/I</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAVrRUbLU4JEO5cc8pfX1cUwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABbYY3gH2vxd4caj1YQss+PAvBys0CzoUbJ3838veup4gAAAAAOgAAAAAIAACAAAABDiYwdGEYnibqKHHHJc0l6H5louxQZHt0msYuA6UCD8iAAAACT630CH2/fI5xPdYC8Ut3ME96hVThtE7cxgGxjfGSy50AAAAB5tF0f62I20z2c4u5P03TCzUblDlNan3x7e/H/r8FOzD8NljWoiJApXMFp0lEuiL/n0Wovh9q3yNXlGkVRtE++</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -114,41 +114,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAVrRUbLU4JEO5cc8pfX1cUwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAbGFdPXXJFkUdR3Ie+fB4wRUp+RTPav0MR3ohujjyW+gAAAAAOgAAAAAIAACAAAADwKSrmfUSq6iJ8Ob2O3IuJl4aCAGjAkR2u/PyLB/35KCAAAABZFtbXMynNoldlLSNPXLGbsjd5C+qN0YrCI3YAoiyKg0AAAAB6frsTjUsf7/sNEdSPCGqENldYldVjypEC+RtWxscrJqaJYzjB55WFi7zvl5ND0cY03QQBBXLt3+S3fq1OSr+I</DTS:Password>
-        </DTS:ConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[DESKTOP-V5DA5NT.HDiSBI_projekt.sa]"
-      DTS:CreationName="OLEDB"
-      DTS:DTSID="{C8D643F5-95A2-40C1-81CD-408E0548F9AC}"
-      DTS:ObjectName="DESKTOP-V5DA5NT.HDiSBI_projekt.sa">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectRetryCount="1"
-          DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=DESKTOP-0E91BGO;User ID=sa;Initial Catalog=HDiSBI_projekt;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;Application Name=SSIS-Package-{C8D643F5-95A2-40C1-81CD-408E0548F9AC}DESKTOP-V5DA5NT.HDiSBI_projekt.sa;">
-          <DTS:Password
-            DTS:Name="Password"
-            Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAVrRUbLU4JEO5cc8pfX1cUwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABHBmLdpwQ24b8qFGFGTTrUvxm0H4iHqXzM5XTcz3JumgAAAAAOgAAAAAIAACAAAABFewv8CZHQ9WG9GtigKaZY/dUYH2mqRgAK9wiWlbrHXyAAAADtBye5+UU3YDvPLTjf78Cg8Df2/n+TGCvUX5hK8oG38EAAAABNJ+WX07xkOTThxuM9xl4F2G7PIQ0/pHwDCkyIm38qInNES5kmGX8H2495HM4NfpWY9M19E2cU3/FdwBm2XDLv</DTS:Password>
-        </DTS:ConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[DESKTOP-V5DA5NT.HDiSBI_projekt.sa 1]"
-      DTS:CreationName="OLEDB"
-      DTS:DTSID="{09DE53AB-CD0E-4F8A-8A67-F42A2703AE81}"
-      DTS:ObjectName="DESKTOP-V5DA5NT.HDiSBI_projekt.sa 1">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectRetryCount="1"
-          DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=DESKTOP-0E91BGO;User ID=sa;Initial Catalog=HDiSBI_projekt;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;Application Name=SSIS-Package-{09DE53AB-CD0E-4F8A-8A67-F42A2703AE81}DESKTOP-V5DA5NT.HDiSBI_projekt.sa 1;">
-          <DTS:Password
-            DTS:Name="Password"
-            Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAVrRUbLU4JEO5cc8pfX1cUwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAB+iK932LZ9/E7KnNBKoQmq5OPa6Mx+bD2n+i7g6IDm8gAAAAAOgAAAAAIAACAAAABKOKKDj6uZWT9lgAA2NI4yWbmOyfit+Td7FPS+IT/psSAAAABqYAlDExnQ2amR3lKBDvzRfvrd1aKt+zLBML8HcsEiekAAAAC6IHD0p0PZde/1CDcAsOAYOPw65gsZ9271kSeYpUGRvSZ1TOpAO8qNUwDsc8u0K18mFGBNZlAe62OVzEBFGppr</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAVrRUbLU4JEO5cc8pfX1cUwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADRVVTKNTYSmVaoASf4WSI6y5TpjGMyNHkCJvfVkIqtbgAAAAAOgAAAAAIAACAAAAAKjj3BSum5pcm9kebOJ+TM41ztZKxJ8VZouGBneNNpJSAAAABSudfJcjL+GXrphbx7BXd7oE6fznfvNvZ5bCfSiENtCUAAAAC+mSso0hNaQd77WGYP7aSm1tMDuqGEjNtRtBzXLs8NDsGgK3fdj9jOkHVOEOnzaUxjGKNqU0V8Ax8n7Qe126fc</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -165,7 +131,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAVrRUbLU4JEO5cc8pfX1cUwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADLxsAKVw+V14E1l57KD43WbNPJjZniD9O9DpJWnumAjgAAAAAOgAAAAAIAACAAAABs/7ld5focQhtvMapRYBPWdIQPGNJiw5MWVlGi7Oq/2CAAAAAC9FWoEiP6+V/ofOD/9yUnvkTYTqLphPbeDFPtI8LDw0AAAABWyTuDJ7GTbrOsTBPJOEVmcRv10/kjKpGasLrnWbSq9jfls4mlE9IKNnpR5rgzg/H+TUg8MDRu1ir6iq+5JNAc</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAVrRUbLU4JEO5cc8pfX1cUwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABja3UJH6kwbHGaGT51+OQgYBthwMwqEz4O80zGovTZ1AAAAAAOgAAAAAIAACAAAAAIeyFHvnBG+tG6K2LonspPRXEV9/0UgUwegvzYFhSV5iAAAABwyzF1RvGvo8PFpNN1T/ZBDh9K78N7X2nVc/Jd3xx+REAAAACSy51qhNlvT5t+v286RrWjID/0XsmXqT1mHE8sVDz6B+Uk06ecbSWF8pnMG+Mft9JAP6WQhYL4sIjf25/nhq1z</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -178,11 +144,11 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=localhost;User ID=sa;Initial Catalog=HDiSBI_projekt;Provider=SQLNCLI11.1;Auto Translate=False;Application Name=SSIS-Package-{0B4915A1-AC4B-43A2-A091-07CB0A1AF108}localhost.HDiSBI_projekt.sa;">
+          DTS:ConnectionString="Data Source=localhost;User ID=sa;Initial Catalog=HDiSBI_projekt;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;Application Name=SSIS-Package-{0B4915A1-AC4B-43A2-A091-07CB0A1AF108}localhost.HDiSBI_projekt.sa;">
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAVrRUbLU4JEO5cc8pfX1cUwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACrqq6R+wfHzrtBrUXraVjFcM1eAdH9Nc6x05jw2f90YgAAAAAOgAAAAAIAACAAAABBXZCPHRRYepueCOPO6cEagh8Pwq6C86X2vqLiUHUuZSAAAADxrVwUNZ1lTqYJHMXQaBhVJ4eBMxkesIEBmS+dT/CwYEAAAADW7uk1esiIia7XMa2FrDBZ2mHx09PpPLn3nNdPeMhU7WT2FefGF9JBCFVdyO0/YCXIEUmyeXh9bP7di41jt+ea</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAVrRUbLU4JEO5cc8pfX1cUwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABrKMBED9hN0CoR45lnWOHuj7ckoKcI8dMqcVYJSFPhJgAAAAAOgAAAAAIAACAAAAChYFIyQ3Dm8a43dICktU7OY1MG3O5qdPYaJQqO4HyB8yAAAADdgYpWIQiob1emiNt0UDs2L4jVjqdm6EfZKcLDy16OwUAAAACiK3KezlW3Jp5vAYUZ7EXxKEvph3nYFZOuQwwm++35ntg/s4hHSn6Z5PJbz2g1z7i1MsFHPBXEkOgX9C98LEZD</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -199,7 +165,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAVrRUbLU4JEO5cc8pfX1cUwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADhBjc8QF60D7rwGlCxh8MC0hl8iNQXKLaSWRcHcjqOFAAAAAAOgAAAAAIAACAAAADAaKzXwgCL/VhkEz1K2jUMv8FwMoyO8bNosC02/fJFqCAAAADvDoozoiISTU+SgChG9j3x5o2bhodfVkibu7NTXkQtvEAAAACTPVpZ5rmD3ERun0OcJp2hFPZTu+9WUfrzhLGWup+QmP2WHQzZjKJ9mrv2XAcKWGHVpLwmgWB+N15HjcH+x/pB</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAVrRUbLU4JEO5cc8pfX1cUwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADgY2ECyOTMAhWLkCgau7dgvYqGESf1aSJr+2KDI0Sl8AAAAAAOgAAAAAIAACAAAABvZX/UdpHsmgHjSzLBJyZTTnVS4sDxqvIOciJur0BKfyAAAAAs7H56ZlRxTgRQFGlQdqOZ1MLV9UYtL5AzpWCmTTADSUAAAAA4HUoXE8Xhlf3ZYuU3bfPyUfjHb/3RpNZI1wMXL+ya7M3yEx2s/63r3YCz9Z4AepxDsFrYU8uBQEmwUFURnXpe</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -215,11 +181,11 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="Execute SQL Task"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="0">
+      DTS:ThreadHint="1">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{C8D643F5-95A2-40C1-81CD-408E0548F9AC}"
+          SQLTask:Connection="{5824F1B3-8E4A-4A22-B7AA-242CD4A1FC36}"
           SQLTask:SqlStatementSource="select * from STOPS" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
@@ -714,6 +680,260 @@
           version="1">
           <components>
             <component
+              refId="Package\Import SCHEDULES\Aggregate"
+              componentClassID="Microsoft.Aggregate"
+              contactInfo="Aggregate;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;3"
+              description="Aggregates data with functions such as Average, Sum, Count, Max, and Min. For example, group data to compute the sum of sales per product or the average visits per day."
+              name="Aggregate"
+              version="3">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the approximate number of group by keys that the aggregation produces. Low indicates 500,000 key values, Medium indicates 5 million key values, and High indicates more than 25 million key values. Unspecified indicates no KeyScale value is used."
+                  name="KeyScale"
+                  typeConverter="KeyScaleType">0</property>
+                <property
+                  dataType="System.Null"
+                  description="Specifies the exact number of group by keys that the aggregation produces. If a KeyScale value is specified, the value in Keys takes precedence."
+                  name="Keys" />
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the approximate number of distinct values in a column that the aggregation counts distinctly. Low indicates 500,000 key values, Medium indicates 5 million key values, and High indicates more than 25 million key values. Unspecified indicates no CountDistinctScale value is used."
+                  name="CountDistinctScale"
+                  typeConverter="KeyScaleType">0</property>
+                <property
+                  dataType="System.Null"
+                  description="Specifies the exact number of distinct values in a column that the aggregation counts distinctly. If a CountDistinctScale value is specified, the value in CountDistinctKeys takes precedence."
+                  name="CountDistinctKeys" />
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the percentage by which memory can be extended during the aggregation. Valid values are between 1 and 100."
+                  name="AutoExtendFactor">25</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\Import SCHEDULES\Aggregate.Inputs[Aggregate Input 1]"
+                  name="Aggregate Input 1">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Import SCHEDULES\Aggregate.Inputs[Aggregate Input 1].Columns[bus_id]"
+                      cachedDataType="wstr"
+                      cachedLength="511"
+                      cachedName="bus_id"
+                      lineageId="Package\Import SCHEDULES\Derived Column.Outputs[Derived Column Output].Columns[bus_id]" />
+                    <inputColumn
+                      refId="Package\Import SCHEDULES\Aggregate.Inputs[Aggregate Input 1].Columns[linia]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="255"
+                      cachedName="linia"
+                      lineageId="Package\Import SCHEDULES\OLE DB Source.Outputs[OLE DB Source Output].Columns[linia]" />
+                    <inputColumn
+                      refId="Package\Import SCHEDULES\Aggregate.Inputs[Aggregate Input 1].Columns[brygada]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="255"
+                      cachedName="brygada"
+                      lineageId="Package\Import SCHEDULES\OLE DB Source.Outputs[OLE DB Source Output].Columns[brygada]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Import SCHEDULES\Aggregate.Outputs[Aggregate Output 1]"
+                  name="Aggregate Output 1">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the approximate number of group by keys that the aggregation produces. Low indicates 500,000 key values, Medium indicates 5 million key values, and High indicates more than 25 million key values. Unspecified indicates no KeyScale value is used."
+                      name="KeyScale"
+                      typeConverter="KeyScaleType">0</property>
+                    <property
+                      dataType="System.Null"
+                      description="Specifies the exact number of group by keys that the aggregation produces. If a KeyScale value is specified, the value in Keys takes precedence."
+                      name="Keys" />
+                  </properties>
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Import SCHEDULES\Aggregate.Outputs[Aggregate Output 1].Columns[bus_id]"
+                      dataType="wstr"
+                      length="511"
+                      lineageId="Package\Import SCHEDULES\Aggregate.Outputs[Aggregate Output 1].Columns[bus_id]"
+                      name="bus_id">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the ID of the input column used in the aggregation."
+                          name="AggregationColumnId">#{Package\Import SCHEDULES\Derived Column.Outputs[Derived Column Output].Columns[bus_id]}</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the type of aggregation."
+                          name="AggregationType"
+                          typeConverter="AggregationType">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Indicates whether the column requires special handling because it may contain oversized data or it requires precision beyond a float data type."
+                          name="IsBig">1</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the string comparison options."
+                          name="AggregationComparisonFlags">0</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import SCHEDULES\Aggregate.Outputs[Aggregate Output 1].Columns[linia]"
+                      codePage="1250"
+                      dataType="str"
+                      length="255"
+                      lineageId="Package\Import SCHEDULES\Aggregate.Outputs[Aggregate Output 1].Columns[linia]"
+                      name="linia">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the ID of the input column used in the aggregation."
+                          name="AggregationColumnId">#{Package\Import SCHEDULES\OLE DB Source.Outputs[OLE DB Source Output].Columns[linia]}</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the type of aggregation."
+                          name="AggregationType"
+                          typeConverter="AggregationType">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Indicates whether the column requires special handling because it may contain oversized data or it requires precision beyond a float data type."
+                          name="IsBig">1</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the string comparison options."
+                          name="AggregationComparisonFlags">0</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import SCHEDULES\Aggregate.Outputs[Aggregate Output 1].Columns[brygada]"
+                      codePage="1250"
+                      dataType="str"
+                      length="255"
+                      lineageId="Package\Import SCHEDULES\Aggregate.Outputs[Aggregate Output 1].Columns[brygada]"
+                      name="brygada">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the ID of the input column used in the aggregation."
+                          name="AggregationColumnId">#{Package\Import SCHEDULES\OLE DB Source.Outputs[OLE DB Source Output].Columns[brygada]}</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the type of aggregation."
+                          name="AggregationType"
+                          typeConverter="AggregationType">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Indicates whether the column requires special handling because it may contain oversized data or it requires precision beyond a float data type."
+                          name="IsBig">1</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the string comparison options."
+                          name="AggregationComparisonFlags">0</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Import SCHEDULES\Derived Column"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="Derived Column"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Import SCHEDULES\Derived Column.Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Import SCHEDULES\Derived Column.Inputs[Derived Column Input].Columns[linia]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="255"
+                      cachedName="linia"
+                      lineageId="Package\Import SCHEDULES\OLE DB Source.Outputs[OLE DB Source Output].Columns[linia]" />
+                    <inputColumn
+                      refId="Package\Import SCHEDULES\Derived Column.Inputs[Derived Column Input].Columns[brygada]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="255"
+                      cachedName="brygada"
+                      lineageId="Package\Import SCHEDULES\OLE DB Source.Outputs[OLE DB Source Output].Columns[brygada]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Import SCHEDULES\Derived Column.Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\Import SCHEDULES\Derived Column.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Import SCHEDULES\Derived Column.Outputs[Derived Column Output].Columns[bus_id]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      length="511"
+                      lineageId="Package\Import SCHEDULES\Derived Column.Outputs[Derived Column Output].Columns[bus_id]"
+                      name="bus_id"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">#{Package\Import SCHEDULES\OLE DB Source.Outputs[OLE DB Source Output].Columns[linia]} + "-" + #{Package\Import SCHEDULES\OLE DB Source.Outputs[OLE DB Source Output].Columns[brygada]}</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">linia + "-" + brygada</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Import SCHEDULES\Derived Column.Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\Import SCHEDULES\Derived Column.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Import SCHEDULES\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Import SCHEDULES\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Import SCHEDULES\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Import SCHEDULES\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
               refId="Package\Import SCHEDULES\OLE DB Source"
               componentClassID="Microsoft.OLEDBSource"
               contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
@@ -1017,7 +1237,160 @@
                 </output>
               </outputs>
             </component>
+            <component
+              refId="Package\Import SCHEDULES\Sort"
+              componentClassID="Microsoft.Sort"
+              contactInfo="Sort;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Sorts input data in ascending or descending order when it cannot be sorted at its source. For example, sort sales data by 'customer id' before it is written to a flat file and delivered to another department. Note: We do not recommend this transformation for large data flows."
+              name="Sort"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the Sort transformation removes rows with duplicate sort values."
+                  name="EliminateDuplicates">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the maximum number of threads to use for sorting."
+                  expressionType="Notify"
+                  name="MaximumThreads">-1</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\Import SCHEDULES\Sort.Inputs[Sort Input]"
+                  name="Sort Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Import SCHEDULES\Sort.Inputs[Sort Input].Columns[bus_id]"
+                      cachedDataType="wstr"
+                      cachedLength="511"
+                      cachedName="bus_id"
+                      lineageId="Package\Import SCHEDULES\Aggregate.Outputs[Aggregate Output 1].Columns[bus_id]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">1</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Import SCHEDULES\Sort.Inputs[Sort Input].Columns[linia]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="255"
+                      cachedName="linia"
+                      lineageId="Package\Import SCHEDULES\Aggregate.Outputs[Aggregate Output 1].Columns[linia]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Import SCHEDULES\Sort.Inputs[Sort Input].Columns[brygada]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="255"
+                      cachedName="brygada"
+                      lineageId="Package\Import SCHEDULES\Aggregate.Outputs[Aggregate Output 1].Columns[brygada]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Import SCHEDULES\Sort.Outputs[Sort Output]"
+                  isSorted="true"
+                  name="Sort Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Import SCHEDULES\Sort.Outputs[Sort Output].Columns[bus_id]"
+                      dataType="wstr"
+                      length="511"
+                      lineageId="Package\Import SCHEDULES\Sort.Outputs[Sort Output].Columns[bus_id]"
+                      name="bus_id"
+                      sortKeyPosition="1">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Import SCHEDULES\Aggregate.Outputs[Aggregate Output 1].Columns[bus_id]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import SCHEDULES\Sort.Outputs[Sort Output].Columns[linia]"
+                      codePage="1250"
+                      dataType="str"
+                      length="255"
+                      lineageId="Package\Import SCHEDULES\Sort.Outputs[Sort Output].Columns[linia]"
+                      name="linia">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Import SCHEDULES\Aggregate.Outputs[Aggregate Output 1].Columns[linia]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import SCHEDULES\Sort.Outputs[Sort Output].Columns[brygada]"
+                      codePage="1250"
+                      dataType="str"
+                      length="255"
+                      lineageId="Package\Import SCHEDULES\Sort.Outputs[Sort Output].Columns[brygada]"
+                      name="brygada">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Import SCHEDULES\Aggregate.Outputs[Aggregate Output 1].Columns[brygada]}</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
           </components>
+          <paths>
+            <path
+              refId="Package\Import SCHEDULES.Paths[Aggregate Output 1]"
+              endId="Package\Import SCHEDULES\Sort.Inputs[Sort Input]"
+              name="Aggregate Output 1"
+              startId="Package\Import SCHEDULES\Aggregate.Outputs[Aggregate Output 1]" />
+            <path
+              refId="Package\Import SCHEDULES.Paths[Derived Column Output]"
+              endId="Package\Import SCHEDULES\Aggregate.Inputs[Aggregate Input 1]"
+              name="Derived Column Output"
+              startId="Package\Import SCHEDULES\Derived Column.Outputs[Derived Column Output]" />
+            <path
+              refId="Package\Import SCHEDULES.Paths[OLE DB Source Output]"
+              endId="Package\Import SCHEDULES\Derived Column.Inputs[Derived Column Input]"
+              name="OLE DB Source Output"
+              startId="Package\Import SCHEDULES\OLE DB Source.Outputs[OLE DB Source Output]" />
+          </paths>
         </pipeline>
       </DTS:ObjectData>
     </DTS:Executable>
@@ -3850,7 +4223,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
       DTS:LocaleID="-1"
       DTS:ObjectName="SUBSET UNIQUE"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="1">
+      DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -3865,7 +4238,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint]"
       DTS:CreationName=""
-      DTS:DTSID="{F640F9FE-2FC0-4ED6-8946-BB96114DFE3A}"
+      DTS:DTSID="{9296B8DE-F886-4CB0-ACD3-556877893D1C}"
       DTS:From="Package\Import SCHEDULES"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint"
@@ -3926,7 +4299,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
         <NodeLayout
           Size="170,42"
           Id="Package\Execute SQL Task"
-          TopLeft="643,390.5" />
+          TopLeft="642.375000009313,390.5" />
         <NodeLayout
           Size="150,42"
           Id="Package\IMPORT DICT"
@@ -3934,53 +4307,53 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
         <NodeLayout
           Size="158.666666666667,42"
           Id="Package\Import ROUTES"
-          TopLeft="468.749998901039,34.30000172019" />
+          TopLeft="546.874997736886,37.5500016620755" />
         <NodeLayout
           Size="165.333333333334,42"
           Id="Package\Import SCHEDULES"
-          TopLeft="568.625000009313,235.799999976754" />
+          TopLeft="533.625000530854,167.550001197159" />
         <NodeLayout
           Size="174.666666666667,42"
           Id="Package\Import STOPCODE"
-          TopLeft="187.5,234.25" />
+          TopLeft="169.375000270083,240.749999883771" />
         <NodeLayout
           Size="169.333333333334,42"
           Id="Package\Import STOPINFO"
-          TopLeft="379,233.75" />
+          TopLeft="361.50000026077,213.60000036031" />
         <NodeLayout
           Size="150,42"
           Id="Package\Import STOPS"
-          TopLeft="917.624998612329,114.249999883771" />
+          TopLeft="916.999998621642,113.599999895394" />
         <NodeLayout
           Size="169.333333333334,42"
           Id="Package\SUBSET UNIQUE"
           TopLeft="906.874998612329,215.249999883771" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="651.29166667598,277.799999976754">
+          TopLeft="616.29166719752,209.550001197159">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="78.7083336965493,112.700000023246"
+              EndConnector="111.083332811793,180.949998802841"
               Start="0,0"
-              End="78.7083336965493,105.200000023246">
+              End="111.083332811793,173.449998802841">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,45.4395108171464" />
+                    End="0,86.4749994014206" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,45.4395108171464"
-                    Point2="0,49.4395108171464"
-                    Point3="4,49.4395108171464" />
+                    Point1="0,86.4749994014206"
+                    Point2="0,90.4749994014206"
+                    Point3="4,90.4749994014206" />
                   <mssgle:LineSegment
-                    End="74.7083336965493,49.4395108171464" />
+                    End="107.083332811793,90.4749994014206" />
                   <mssgle:CubicBezierSegment
-                    Point1="74.7083336965493,49.4395108171464"
-                    Point2="78.7083336965493,49.4395108171464"
-                    Point3="78.7083336965493,53.4395108171464" />
+                    Point1="107.083332811793,90.4749994014206"
+                    Point2="111.083332811793,90.4749994014206"
+                    Point3="111.083332811793,94.4749994014206" />
                   <mssgle:LineSegment
-                    End="78.7083336965493,105.200000023246" />
+                    End="111.083332811793,173.449998802841" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -3991,18 +4364,18 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 1]"
-          TopLeft="991.999998612329,156.249999883771">
+          TopLeft="991.770831950319,155.599999895394">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,59"
+              EndConnector="0,59.6499999883771"
               Start="0,0"
-              End="0,51.5">
+              End="0,52.1499999883771">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,51.5" />
+                    End="0,52.1499999883771" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -4013,30 +4386,30 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 2]"
-          TopLeft="463.5,275.75">
+          TopLeft="446.166666927437,255.60000036031">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="237.5,114.75"
+              EndConnector="254.208333081876,134.89999963969"
               Start="0,0"
-              End="237.5,107.25">
+              End="254.208333081876,127.39999963969">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,70.0580418534359" />
+                    End="0,76.1853144711446" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,70.0580418534359"
-                    Point2="0,74.0580418534359"
-                    Point3="4,74.0580418534359" />
+                    Point1="0,76.1853144711446"
+                    Point2="0,80.1853144711446"
+                    Point3="4,80.1853144711446" />
                   <mssgle:LineSegment
-                    End="233.5,74.0580418534359" />
+                    End="250.208333081876,80.1853144711446" />
                   <mssgle:CubicBezierSegment
-                    Point1="233.5,74.0580418534359"
-                    Point2="237.5,74.0580418534359"
-                    Point3="237.5,78.0580418534359" />
+                    Point1="250.208333081876,80.1853144711446"
+                    Point2="254.208333081876,80.1853144711446"
+                    Point3="254.208333081876,84.1853144711446" />
                   <mssgle:LineSegment
-                    End="237.5,107.25" />
+                    End="254.208333081876,127.39999963969" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -4047,30 +4420,30 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 3]"
-          TopLeft="275,276.25">
+          TopLeft="256.708333603417,282.749999883771">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="399,114.25"
+              EndConnector="416.666666405896,107.750000116229"
               Start="0,0"
-              End="399,106.75">
+              End="416.666666405896,100.250000116229">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,89.4676722394495" />
+                    End="0,74.9547414644782" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,89.4676722394495"
-                    Point2="0,93.4676722394495"
-                    Point3="4,93.4676722394495" />
+                    Point1="0,74.9547414644782"
+                    Point2="0,78.9547414644782"
+                    Point3="4,78.9547414644782" />
                   <mssgle:LineSegment
-                    End="395,93.4676722394495" />
+                    End="412.666666405896,78.9547414644782" />
                   <mssgle:CubicBezierSegment
-                    Point1="395,93.4676722394495"
-                    Point2="399,93.4676722394495"
-                    Point3="399,97.4676722394495" />
+                    Point1="412.666666405896,78.9547414644782"
+                    Point2="416.666666405896,78.9547414644782"
+                    Point3="416.666666405896,82.9547414644782" />
                   <mssgle:LineSegment
-                    End="399,106.75" />
+                    End="416.666666405896,100.250000116229" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -4085,9 +4458,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-14.4999987520274,313.849998965561"
+              EndConnector="-15.1249987427136,313.849998965561"
               Start="0,0"
-              End="-14.4999987520274,306.349998965561">
+              End="-15.1249987427136,306.349998965561">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
@@ -4098,13 +4471,13 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
                     Point2="0,229.976292345454"
                     Point3="-4,229.976292345454" />
                   <mssgle:LineSegment
-                    End="-10.4999987520274,229.976292345454" />
+                    End="-11.1249987427136,229.976292345454" />
                   <mssgle:CubicBezierSegment
-                    Point1="-10.4999987520274,229.976292345454"
-                    Point2="-14.4999987520274,229.976292345454"
-                    Point3="-14.4999987520274,233.976292345454" />
+                    Point1="-11.1249987427136,229.976292345454"
+                    Point2="-15.1249987427136,229.976292345454"
+                    Point3="-15.1249987427136,233.976292345454" />
                   <mssgle:LineSegment
-                    End="-14.4999987520274,306.349998965561" />
+                    End="-15.1249987427136,306.349998965561" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -4115,30 +4488,30 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 5]"
-          TopLeft="548.083332234373,76.30000172019">
+          TopLeft="626.208331070219,79.5500016620755">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="179.916667765627,314.19999827981"
+              EndConnector="124.916668585192,310.949998337924"
               Start="0,0"
-              End="179.916667765627,306.69999827981">
+              End="124.916668585192,303.449998337924">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,153.099999139905" />
+                    End="0,59.1750008194149" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,153.099999139905"
-                    Point2="0,157.099999139905"
-                    Point3="4,157.099999139905" />
+                    Point1="0,59.1750008194149"
+                    Point2="0,63.1750008194149"
+                    Point3="4,63.1750008194149" />
                   <mssgle:LineSegment
-                    End="175.916667765627,157.099999139905" />
+                    End="120.916668585192,63.1750008194149" />
                   <mssgle:CubicBezierSegment
-                    Point1="175.916667765627,157.099999139905"
-                    Point2="179.916667765627,157.099999139905"
-                    Point3="179.916667765627,161.099999139905" />
+                    Point1="120.916668585192,63.1750008194149"
+                    Point2="124.916668585192,63.1750008194149"
+                    Point3="124.916668585192,67.1750008194149" />
                   <mssgle:LineSegment
-                    End="179.916667765627,306.69999827981" />
+                    End="124.916668585192,303.449998337924" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -4183,7 +4556,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
         <NodeLayout
           Size="157.333333333334,42"
           Id="Package\Import ROUTES\OLE DB Source"
-          TopLeft="466,161" />
+          TopLeft="467.249999981373,161.649999988377" />
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
@@ -4204,11 +4577,127 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
     design-time-name="Package\Import SCHEDULES">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="157.333333333334,42"
           Id="Package\Import SCHEDULES\OLE DB Source"
-          TopLeft="467,162" />
+          TopLeft="434.299242633366,107.786363318319" />
+        <NodeLayout
+          Size="154.666666666667,42.6666666666667"
+          Id="Package\Import SCHEDULES\Derived Column"
+          TopLeft="416,220.666666666667" />
+        <NodeLayout
+          Size="128,42.6666666666667"
+          Id="Package\Import SCHEDULES\Aggregate"
+          TopLeft="408.749999981374,338.03333324035" />
+        <EdgeLayout
+          Id="Package\Import SCHEDULES.Paths[Derived Column Output]"
+          TopLeft="493.333333333333,263.333333333334">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-20.5833333519598,74.699999907016"
+              Start="0,0"
+              End="-20.5833333519598,67.199999907016">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,33.349999953508" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,33.349999953508"
+                    Point2="0,37.349999953508"
+                    Point3="-4,37.349999953508" />
+                  <mssgle:LineSegment
+                    End="-16.5833333519598,37.349999953508" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-16.5833333519598,37.349999953508"
+                    Point2="-20.5833333519598,37.349999953508"
+                    Point3="-20.5833333519598,41.349999953508" />
+                  <mssgle:LineSegment
+                    End="-20.5833333519598,67.199999907016" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Import SCHEDULES.Paths[OLE DB Source Output]"
+          TopLeft="512.965909300033,149.786363318319">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-19.6325759666997,70.8803033483483"
+              Start="0,0"
+              End="-19.6325759666997,63.3803033483483">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,31.4401516741742" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,31.4401516741742"
+                    Point2="0,35.4401516741742"
+                    Point3="-4,35.4401516741742" />
+                  <mssgle:LineSegment
+                    End="-15.6325759666997,35.4401516741742" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-15.6325759666997,35.4401516741742"
+                    Point2="-19.6325759666997,35.4401516741742"
+                    Point3="-19.6325759666997,39.4401516741742" />
+                  <mssgle:LineSegment
+                    End="-19.6325759666997,63.3803033483483" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="98.6666666666667,42.6666666666667"
+          Id="Package\Import SCHEDULES\Sort"
+          TopLeft="508.124992428348,431.599992282391" />
+        <EdgeLayout
+          Id="Package\Import SCHEDULES.Paths[Aggregate Output 1]"
+          TopLeft="472.749999981374,380.699999907016">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="84.7083257803075,50.8999923753744"
+              Start="0,0"
+              End="84.7083257803075,43.3999923753744">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,21.4499961876872" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,21.4499961876872"
+                    Point2="0,25.4499961876872"
+                    Point3="4,25.4499961876872" />
+                  <mssgle:LineSegment
+                    End="80.7083257803075,25.4499961876872" />
+                  <mssgle:CubicBezierSegment
+                    Point1="80.7083257803075,25.4499961876872"
+                    Point2="84.7083257803075,25.4499961876872"
+                    Point3="84.7083257803075,29.4499961876872" />
+                  <mssgle:LineSegment
+                    End="84.7083257803075,43.3999923753744" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="34.3541628901538,30.4499961876872,16,16"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
@@ -4279,7 +4768,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
     design-time-name="Package\Import STOPS">
     <LayoutInfo>
       <GraphLayout
-        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="244,42"
           Id="Package\Import STOPS\create column zespol-slupek"
@@ -4303,7 +4792,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
         <NodeLayout
           Size="161.333333333334,42"
           Id="Package\Import STOPS\create stop_id"
-          TopLeft="407,63.6666666666667" />
+          TopLeft="406.333333333333,63.6666666666667" />
         <NodeLayout
           Size="114,42"
           Id="Package\Import STOPS\Sort 1"
@@ -4351,9 +4840,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-43.5044543429845,26.1537911797572,16,16"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -4387,45 +4874,41 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="34.9955456570155,24.51244813278,16,16"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Import STOPS.Paths[Output 0]"
-          TopLeft="407,90.3333333333333">
+          TopLeft="406.333333333333,90.3333333333334">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-1.5,56.1666666666667"
+              EndConnector="-0.833333333333314,56.1666666666666"
               Start="0,0"
-              End="-9,56.1666666666667">
+              End="-8.33333333333331,56.1666666666666">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="-20,0" />
+                    End="-19.3333333333333,0" />
                   <mssgle:CubicBezierSegment
-                    Point1="-20,0"
-                    Point2="-24,0"
-                    Point3="-24,4" />
+                    Point1="-19.3333333333333,0"
+                    Point2="-23.3333333333333,0"
+                    Point3="-23.3333333333333,4" />
                   <mssgle:LineSegment
-                    End="-24,52.1666666666667" />
+                    End="-23.3333333333333,52.1666666666666" />
                   <mssgle:CubicBezierSegment
-                    Point1="-24,52.1666666666667"
-                    Point2="-24,56.1666666666667"
-                    Point3="-20,56.1666666666667" />
+                    Point1="-23.3333333333333,52.1666666666666"
+                    Point2="-23.3333333333333,56.1666666666666"
+                    Point3="-19.3333333333333,56.1666666666666" />
                   <mssgle:LineSegment
-                    End="-9,56.1666666666667" />
+                    End="-8.33333333333331,56.1666666666666" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-32,-22,16,16"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -4434,34 +4917,32 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="12,57.6666666666667"
+              EndConnector="11.3333333333333,57.6666666666667"
               Start="0,0"
-              End="4.5,57.6666666666667">
+              End="3.83333333333331,57.6666666666667">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="-17.8333333333334,0" />
+                    End="-19.1666666666666,0" />
                   <mssgle:CubicBezierSegment
-                    Point1="-17.8333333333334,0"
-                    Point2="-21.8333333333334,0"
-                    Point3="-21.8333333333334,4" />
+                    Point1="-19.1666666666666,0"
+                    Point2="-23.1666666666666,0"
+                    Point3="-23.1666666666666,4" />
                   <mssgle:LineSegment
-                    End="-21.8333333333334,53.6666666666667" />
+                    End="-23.1666666666666,53.6666666666667" />
                   <mssgle:CubicBezierSegment
-                    Point1="-21.8333333333334,53.6666666666667"
-                    Point2="-21.8333333333334,57.6666666666667"
-                    Point3="-17.8333333333334,57.6666666666667" />
+                    Point1="-23.1666666666666,53.6666666666667"
+                    Point2="-23.1666666666666,57.6666666666667"
+                    Point3="-19.1666666666666,57.6666666666667" />
                   <mssgle:LineSegment
-                    End="4.5,57.6666666666667" />
+                    End="3.83333333333331,57.6666666666667" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-29.8333333333334,-22,16,16"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -4495,9 +4976,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="7.75,27,16,16"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -4519,9 +4998,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="15.5,5,16,16"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -4555,9 +5032,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-46.9378533493232,-22,16,16"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -4591,9 +5066,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-12,21.7619345014897,16,16"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -4627,9 +5100,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-47.5,26,16,16"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -4651,9 +5122,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-8,1,16,16"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <AnnotationLayout
