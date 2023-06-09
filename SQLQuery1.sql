@@ -13,13 +13,13 @@ GO
 
 
 
-SELECT DISTINCT *
-	FROM [dbo].[Schedules]
-GO
+--SELECT DISTINCT *
+--	FROM [dbo].[Schedules]
+--GO
 
-SELECT DISTINCT zespol, slupek, linia, brygada, czas, trasa
-	FROM [dbo].[Schedules]
-GO
+--SELECT DISTINCT zespol, slupek, linia, brygada, czas, trasa
+--	FROM [dbo].[Schedules]
+--GO
 
 
 
@@ -27,4 +27,11 @@ GO
 --	FROM [dbo].[Routes]
 --	ORDER BY kod ASC
 --GO
+
+
+
+SELECT *
+	FROM [dbo].[DimDate]
+GO
+
 
