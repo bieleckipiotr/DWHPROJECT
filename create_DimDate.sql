@@ -90,7 +90,7 @@ BEGIN
     Values
     (
     @Date,
-    CONVERT(varchar(10), @Date, 105), -- See links for 105 explanation
+    CONVERT(varchar(10), @Date, 120), -- See links for 105 explanation
     Day(@Date),
     DATEPART(dy, @Date),
     DATEPART(dw, @Date),
