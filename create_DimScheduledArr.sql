@@ -14,6 +14,15 @@ CREATE TABLE [dbo].[DimScheduledArr](
 	[kod_trasy] [varchar](50) NOT NULL,
 	zespol_id varchar(50) NOT NULL,
 	slupek_id varchar(50) NOT NULL,
+	linia varchar(50) NOT NULL,
+	brygada varchar(50) NOT NULL,
+	StopOnRoute int NOT NULL,
+	TypeName varchar(50),
 	PRIMARY KEY(scheduled_arr_id)
 ) ON [PRIMARY]
 GO
+
+
+use HDiSBI_projekt
+go
+select count(*) from routes

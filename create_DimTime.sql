@@ -12,15 +12,17 @@ GO
 CREATE TABLE DimTime (
     TimeID INT PRIMARY KEY,
     hour_val INT,
-    minute_val INT
+    minute_val INT,
+	TimeFull Time
 );
 
 -- Wype³nianie tabeli DimTime wartoœciami od godziny 00:00 do 23:59
-INSERT INTO DimTime (TimeID, hour_val, minute_val)
+INSERT INTO DimTime (TimeID, hour_val, minute_val, TimeFull)
 SELECT 
     (hour_vals.n * 60 + minute_vals.n) AS TimeID,
     hour_vals.n AS hour_val,
-    minute_vals.n AS minute_val
+    minute_vals.n AS minute_val,
+	CONVERT(TIME, CONCAT(hour_vals.n, ':', minute_vals.n, ':00')) AS TimeFull
 FROM
     (SELECT 0 AS n UNION SELECT 1 UNION SELECT 2 UNION SELECT 3 UNION SELECT 4 UNION SELECT 5 UNION SELECT 6 UNION SELECT 7 UNION SELECT 8 UNION SELECT 9
 	UNION SELECT 10 UNION SELECT 11 UNION SELECT 12 UNION SELECT 13 UNION SELECT 14 UNION SELECT 15 UNION SELECT 16 UNION SELECT 17 UNION SELECT 18 UNION SELECT 19
