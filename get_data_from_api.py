@@ -1,14 +1,12 @@
 import requests
 import pyodbc
 import pandas as pd
-import numpy as np
 
 def connect():
-    # TODO: zamień na swoje :)))
-    server = 'DESKTOP-V5DA5NT'
-    database = 'HDiSBI_projekt'
-    username = 'sa'
-    password = 'mipecki123'
+    server = '' # WYPEŁNIĆ WŁASNYMI DANYMI
+    database = '' # BAZA PRZEJŚCIOWA
+    username = ''
+    password = ''
     connection_string = f'DRIVER={{ODBC Driver 17 for SQL Server}};SERVER={server};DATABASE={database};UID={username};PWD={password}'
 
     # Nawiązanie połączenia do bazy danych
@@ -40,8 +38,8 @@ def check_for_table(conn, table_name, names):
 
 if __name__ == "__main__":
 
-    # TODO: kluczyk też możesz zmienić jeśli chcesz :))
-    apikey = '9e511e7a-be05-47fe-a578-34190f4bfe2c'
+    # KLUCZ DO WARSZAWSKIEGO API
+    apikey = ''
 
 
     df = pd.read_csv('./listaprzystanków.csv', index_col=0)
