@@ -1,0 +1,3340 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="6/11/2023 11:42:44 AM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="DESKTOP-V5DA5NT"
+  DTS:CreatorName="DESKTOP-V5DA5NT\admin"
+  DTS:DTSID="{40DAD6F1-19AE-4F11-8477-91F65742071E}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.5035.3"
+  DTS:LocaleID="1045"
+  DTS:ObjectName="Package1"
+  DTS:PackageType="5"
+  DTS:VersionBuild="16"
+  DTS:VersionGUID="{190CE434-DA04-4000-8616-5221982A23DD}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[localhost.DWH.sa]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{76E664B2-9720-4B8A-9042-851FA973060F}"
+      DTS:ObjectName="localhost.DWH.sa">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=localhost;User ID=sa;Initial Catalog=DWH;Provider=SQLNCLI11.1;Persist Security Info=True;Application Name=SSIS-Package1-{76E664B2-9720-4B8A-9042-851FA973060F}localhost.DWH.sa;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAIvQr4IoCD02aiFhp6utwWAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADPjfZtEUgeYw+pg8lvwfw8GwcsChspuSQ15AoVjDgONQAAAAAOgAAAAAIAACAAAADGMzjyT1J9LB1GkLbUoGeZrXuqkwDIW9LETsBju02ooCAAAAD34Jyh0k6BSF7OIeyjH2zF5fROiiiXPTVebDfY61v5RUAAAADdsxUxBuQBP3py7FWdxiebes92tJCMhWOsqHcUwyz3p7LDHh/JgHiQKuZ3YLLOmQxKYfYMRufNGuJYgAs+Aakn</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[localhost.DWH.sa 4]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{61766C72-60AE-4AF7-8310-09D9DD0EBF5C}"
+      DTS:ObjectName="localhost.DWH.sa 4">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=localhost;User ID=sa;Initial Catalog=DWH;Provider=SQLNCLI11.1;Persist Security Info=True;Application Name=SSIS-Package-{61766C72-60AE-4AF7-8310-09D9DD0EBF5C}localhost.DWH.sa 4;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAIvQr4IoCD02aiFhp6utwWAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAsJUWEiDvHQ3r+oOpNR7ULnp+y67nPoTKycXoSandBwQAAAAAOgAAAAAIAACAAAABNEbhnRsu/YhSXhH5gLC0jUNA6m97coZgX9neW4oqwgyAAAACULbrLEfLbmvFljySvAjbEkzpV04yjo1Xblulux2GvekAAAABSWXDyVgWAV5AO1l75nlPfSPKS2TeplaNQkXirKaZrLRQjPEOxGzPqX5QeSvTuyrF7cbG+H0G3o43oIv7wgwzi</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[localhost.HDiSBI_projekt.sa]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{E1661337-29AA-4143-ADB6-B43746FC6D5F}"
+      DTS:ObjectName="localhost.HDiSBI_projekt.sa">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=localhost;User ID=sa;Initial Catalog=HDiSBI_projekt;Provider=SQLNCLI11.1;Application Name=SSIS-Package1-{E1661337-29AA-4143-ADB6-B43746FC6D5F}localhost.HDiSBI_projekt.sa;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAIvQr4IoCD02aiFhp6utwWAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACRMLNPpSL+y+73+F5ZuUcszc0kkxOkFfEjzn+fdtHxaAAAAAAOgAAAAAIAACAAAAAD+PdNMY2cXDEl0SSMlHNquOba68reoF+8DA5IyP2dDCAAAABABFOoNjucPjKO/DsnvgyzPIv2nqx5KdPnaiYl5mbD8EAAAACWLrzejXVf+51tVbcxxNkojOSRdlEUU0jFD4wx6LqM4URadC+7li96v65JvpwagMg0ynrV6BS6rd6S7WpzzX+5</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\calculate metrics"
+      DTS:CreationName="Microsoft.ExecuteProcess"
+      DTS:Description="Execute Process Task"
+      DTS:DTSID="{e15f98f8-b451-4c0d-8d29-3b8c5004f763}"
+      DTS:ExecutableType="Microsoft.ExecuteProcess"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="calculate metrics"
+      DTS:TaskContact="Execute Process Task;Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <ExecuteProcessData
+          Executable="C:\Users\mipec\Documents\github\DWHPROJECT\virtual_env\Scripts\python.exe"
+          Arguments="calculate_metrics.py"
+          WorkingDirectory="C:\Users\mipec\Documents\github\DWHPROJECT" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\FACT TRANSFORMATIONS"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{dd924b1b-b3b9-4933-8618-85dd12874acb}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="FACT TRANSFORMATIONS"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\FACT TRANSFORMATIONS\BusID lookup"
+              componentClassID="Microsoft.Lookup"
+              contactInfo="Lookup;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;6"
+              description="Joins additional columns to the data flow by looking up values in a table. For example, join to the 'employee id' column the employees table to get 'hire date' and 'employee name'. We recommend this transformation when the lookup table can fit into memory."
+              name="BusID lookup"
+              usesDispositions="true"
+              version="6">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Specifies the SQL statement that generates the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from [dbo].[DimBuses]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies a SQL statement that uses parameters to generate the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommandParam"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select * from [dbo].[DimBuses]) [refTable]
+where [refTable].[linia] = ? and [refTable].[brygada] = ?</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the type of connection used to access the reference dataset."
+                  name="ConnectionType"
+                  typeConverter="LookupConnectionType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the cache type of the lookup table."
+                  name="CacheType"
+                  typeConverter="CacheType">2</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies how the Lookup transformation handles rows without matching entries in the reference data set."
+                  name="NoMatchBehavior"
+                  typeConverter="LookupNoMatchBehavior">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the percentage of the cache that is allocated for rows with no matching entries in the reference dataset."
+                  name="NoMatchCachePercentage">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Maximum Memory Usage for Reference Cache on a 32 bit platform."
+                  name="MaxMemoryUsage">25</property>
+                <property
+                  dataType="System.Int64"
+                  description="Maximum Memory Usage for Reference Cache on a 64 bit platform."
+                  name="MaxMemoryUsage64">25</property>
+                <property
+                  dataType="System.String"
+                  description="Indicates whether to reference metadata in an XML format."
+                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="bus_id" dataType="DT_STR" length="50" precision="0" scale="0" codePage="1250"/&gt;&lt;referenceColumn name="linia" dataType="DT_STR" length="50" precision="0" scale="0" codePage="1250"/&gt;&lt;referenceColumn name="brygada" dataType="DT_STR" length="50" precision="0" scale="0" codePage="1250"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
+                <property
+                  containsID="true"
+                  dataType="System.String"
+                  description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
+                  name="ParameterMap">#{Package\FACT TRANSFORMATIONS\OLE DB Source.Outputs[OLE DB Source Output].Columns[linia]};#{Package\FACT TRANSFORMATIONS\OLE DB Source.Outputs[OLE DB Source Output].Columns[Brigade]};</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1250</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Determines whether duplicate keys in the reference data should be treated as errors when full cache mode is used."
+                  name="TreatDuplicateKeysAsError">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\FACT TRANSFORMATIONS\BusID lookup.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[localhost.DWH.sa]"
+                  connectionManagerRefId="Package.ConnectionManagers[localhost.DWH.sa]"
+                  description="Connection manager used to access lookup data."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\FACT TRANSFORMATIONS\BusID lookup.Inputs[Lookup Input]"
+                  name="Lookup Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\FACT TRANSFORMATIONS\BusID lookup.Inputs[Lookup Input].Columns[linia]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="255"
+                      cachedName="linia"
+                      lineageId="Package\FACT TRANSFORMATIONS\OLE DB Source.Outputs[OLE DB Source Output].Columns[linia]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table that a column joins."
+                          name="JoinToReferenceColumn">linia</property>
+                        <property
+                          dataType="System.Null"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn" />
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\FACT TRANSFORMATIONS\BusID lookup.Inputs[Lookup Input].Columns[Brigade]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="255"
+                      cachedName="Brigade"
+                      lineageId="Package\FACT TRANSFORMATIONS\OLE DB Source.Outputs[OLE DB Source Output].Columns[Brigade]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table that a column joins."
+                          name="JoinToReferenceColumn">brygada</property>
+                        <property
+                          dataType="System.Null"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn" />
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\FACT TRANSFORMATIONS\BusID lookup.Outputs[Lookup Match Output]"
+                  errorOrTruncationOperation="Lookup"
+                  errorRowDisposition="IgnoreFailure"
+                  exclusionGroup="1"
+                  name="Lookup Match Output"
+                  synchronousInputId="Package\FACT TRANSFORMATIONS\BusID lookup.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\FACT TRANSFORMATIONS\BusID lookup.Outputs[Lookup Match Output].Columns[bus_id]"
+                      codePage="1250"
+                      dataType="str"
+                      errorOrTruncationOperation="Copy Column"
+                      length="50"
+                      lineageId="Package\FACT TRANSFORMATIONS\BusID lookup.Outputs[Lookup Match Output].Columns[bus_id]"
+                      name="bus_id"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn">bus_id</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\FACT TRANSFORMATIONS\BusID lookup.Outputs[Lookup No Match Output]"
+                  description="The Lookup output that handles rows with no matching entries in the reference dataset. Use this output when the NoMatchBehavior property is set to &quot;Send rows with no matching entries to the no match output.&quot;"
+                  exclusionGroup="1"
+                  name="Lookup No Match Output"
+                  synchronousInputId="Package\FACT TRANSFORMATIONS\BusID lookup.Inputs[Lookup Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\FACT TRANSFORMATIONS\BusID lookup.Outputs[Lookup Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Lookup Error Output"
+                  synchronousInputId="Package\FACT TRANSFORMATIONS\BusID lookup.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\FACT TRANSFORMATIONS\BusID lookup.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\FACT TRANSFORMATIONS\BusID lookup.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\FACT TRANSFORMATIONS\BusID lookup.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\FACT TRANSFORMATIONS\BusID lookup.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\FACT TRANSFORMATIONS\DateID lookup"
+              componentClassID="Microsoft.Lookup"
+              contactInfo="Lookup;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;6"
+              description="Joins additional columns to the data flow by looking up values in a table. For example, join to the 'employee id' column the employees table to get 'hire date' and 'employee name'. We recommend this transformation when the lookup table can fit into memory."
+              name="DateID lookup"
+              usesDispositions="true"
+              version="6">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Specifies the SQL statement that generates the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from [dbo].[DimDate]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies a SQL statement that uses parameters to generate the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommandParam"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select * from [dbo].[DimDate]) [refTable]
+where [refTable].[DateString] = ?</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the type of connection used to access the reference dataset."
+                  name="ConnectionType"
+                  typeConverter="LookupConnectionType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the cache type of the lookup table."
+                  name="CacheType"
+                  typeConverter="CacheType">2</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies how the Lookup transformation handles rows without matching entries in the reference data set."
+                  name="NoMatchBehavior"
+                  typeConverter="LookupNoMatchBehavior">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the percentage of the cache that is allocated for rows with no matching entries in the reference dataset."
+                  name="NoMatchCachePercentage">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Maximum Memory Usage for Reference Cache on a 32 bit platform."
+                  name="MaxMemoryUsage">25</property>
+                <property
+                  dataType="System.Int64"
+                  description="Maximum Memory Usage for Reference Cache on a 64 bit platform."
+                  name="MaxMemoryUsage64">25</property>
+                <property
+                  dataType="System.String"
+                  description="Indicates whether to reference metadata in an XML format."
+                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="DateID" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Date" dataType="DT_DBDATE" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="DateString" dataType="DT_STR" length="10" precision="0" scale="0" codePage="1250"/&gt;&lt;referenceColumn name="Day" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="DayofYear" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="DayofWeek" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="DayofWeekName" dataType="DT_STR" length="10" precision="0" scale="0" codePage="1250"/&gt;&lt;referenceColumn name="Week" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Month" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="MonthName" dataType="DT_STR" length="10" precision="0" scale="0" codePage="1250"/&gt;&lt;referenceColumn name="Quarter" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Year" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="IsWeekend" dataType="DT_BOOL" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="IsLeapYear" dataType="DT_BOOL" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
+                <property
+                  containsID="true"
+                  dataType="System.String"
+                  description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
+                  name="ParameterMap">#{Package\FACT TRANSFORMATIONS\Hour, Minute.Outputs[Derived Column Output].Columns[date_str]};</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1250</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Determines whether duplicate keys in the reference data should be treated as errors when full cache mode is used."
+                  name="TreatDuplicateKeysAsError">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\FACT TRANSFORMATIONS\DateID lookup.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[localhost.DWH.sa]"
+                  connectionManagerRefId="Package.ConnectionManagers[localhost.DWH.sa]"
+                  description="Connection manager used to access lookup data."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\FACT TRANSFORMATIONS\DateID lookup.Inputs[Lookup Input]"
+                  name="Lookup Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\FACT TRANSFORMATIONS\DateID lookup.Inputs[Lookup Input].Columns[date_str]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="10"
+                      cachedName="date_str"
+                      lineageId="Package\FACT TRANSFORMATIONS\Hour, Minute.Outputs[Derived Column Output].Columns[date_str]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table that a column joins."
+                          name="JoinToReferenceColumn">DateString</property>
+                        <property
+                          dataType="System.Null"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn" />
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\FACT TRANSFORMATIONS\DateID lookup.Outputs[Lookup Match Output]"
+                  errorOrTruncationOperation="Lookup"
+                  errorRowDisposition="IgnoreFailure"
+                  exclusionGroup="1"
+                  name="Lookup Match Output"
+                  synchronousInputId="Package\FACT TRANSFORMATIONS\DateID lookup.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\FACT TRANSFORMATIONS\DateID lookup.Outputs[Lookup Match Output].Columns[DateID]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Copy Column"
+                      lineageId="Package\FACT TRANSFORMATIONS\DateID lookup.Outputs[Lookup Match Output].Columns[DateID]"
+                      name="DateID"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn">DateID</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\FACT TRANSFORMATIONS\DateID lookup.Outputs[Lookup No Match Output]"
+                  description="The Lookup output that handles rows with no matching entries in the reference dataset. Use this output when the NoMatchBehavior property is set to &quot;Send rows with no matching entries to the no match output.&quot;"
+                  exclusionGroup="1"
+                  name="Lookup No Match Output"
+                  synchronousInputId="Package\FACT TRANSFORMATIONS\DateID lookup.Inputs[Lookup Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\FACT TRANSFORMATIONS\DateID lookup.Outputs[Lookup Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Lookup Error Output"
+                  synchronousInputId="Package\FACT TRANSFORMATIONS\DateID lookup.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\FACT TRANSFORMATIONS\DateID lookup.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\FACT TRANSFORMATIONS\DateID lookup.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\FACT TRANSFORMATIONS\DateID lookup.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\FACT TRANSFORMATIONS\DateID lookup.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\FACT TRANSFORMATIONS\Hour, Minute"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="Hour, Minute"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\FACT TRANSFORMATIONS\Hour, Minute.Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\FACT TRANSFORMATIONS\Hour, Minute.Inputs[Derived Column Input].Columns[Time]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="255"
+                      cachedName="Time"
+                      lineageId="Package\FACT TRANSFORMATIONS\OLE DB Source.Outputs[OLE DB Source Output].Columns[Time]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\FACT TRANSFORMATIONS\Hour, Minute.Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\FACT TRANSFORMATIONS\Hour, Minute.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\FACT TRANSFORMATIONS\Hour, Minute.Outputs[Derived Column Output].Columns[date_str]"
+                      codePage="1250"
+                      dataType="str"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      length="10"
+                      lineageId="Package\FACT TRANSFORMATIONS\Hour, Minute.Outputs[Derived Column Output].Columns[date_str]"
+                      name="date_str"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">(DT_STR,10,1250)[SUBSTRING](#{Package\FACT TRANSFORMATIONS\OLE DB Source.Outputs[OLE DB Source Output].Columns[Time]},1,10)</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">(DT_STR,10,1250)SUBSTRING(Time,1,10)</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\FACT TRANSFORMATIONS\Hour, Minute.Outputs[Derived Column Output].Columns[hour]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\FACT TRANSFORMATIONS\Hour, Minute.Outputs[Derived Column Output].Columns[hour]"
+                      name="hour"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">(DT_I4)([SUBSTRING](#{Package\FACT TRANSFORMATIONS\OLE DB Source.Outputs[OLE DB Source Output].Columns[Time]},12,2))</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">(DT_I4)(SUBSTRING(Time,12,2))</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\FACT TRANSFORMATIONS\Hour, Minute.Outputs[Derived Column Output].Columns[minute]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\FACT TRANSFORMATIONS\Hour, Minute.Outputs[Derived Column Output].Columns[minute]"
+                      name="minute"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">(DT_I4)([SUBSTRING](#{Package\FACT TRANSFORMATIONS\OLE DB Source.Outputs[OLE DB Source Output].Columns[Time]},15,2))</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">(DT_I4)(SUBSTRING(Time,15,2))</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\FACT TRANSFORMATIONS\Hour, Minute.Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\FACT TRANSFORMATIONS\Hour, Minute.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\FACT TRANSFORMATIONS\Hour, Minute.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\FACT TRANSFORMATIONS\Hour, Minute.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\FACT TRANSFORMATIONS\Hour, Minute.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\FACT TRANSFORMATIONS\Hour, Minute.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\FACT TRANSFORMATIONS\Lookup"
+              componentClassID="Microsoft.Lookup"
+              contactInfo="Lookup;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;6"
+              description="Joins additional columns to the data flow by looking up values in a table. For example, join to the 'employee id' column the employees table to get 'hire date' and 'employee name'. We recommend this transformation when the lookup table can fit into memory."
+              name="Lookup"
+              usesDispositions="true"
+              version="6">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Specifies the SQL statement that generates the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from [dbo].[DimScheduledArr]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies a SQL statement that uses parameters to generate the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommandParam"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select * from [dbo].[DimScheduledArr]) [refTable]
+where [refTable].[scheduled_arr_id] = ?</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the type of connection used to access the reference dataset."
+                  name="ConnectionType"
+                  typeConverter="LookupConnectionType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the cache type of the lookup table."
+                  name="CacheType"
+                  typeConverter="CacheType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies how the Lookup transformation handles rows without matching entries in the reference data set."
+                  name="NoMatchBehavior"
+                  typeConverter="LookupNoMatchBehavior">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the percentage of the cache that is allocated for rows with no matching entries in the reference dataset."
+                  name="NoMatchCachePercentage">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Maximum Memory Usage for Reference Cache on a 32 bit platform."
+                  name="MaxMemoryUsage">25</property>
+                <property
+                  dataType="System.Int64"
+                  description="Maximum Memory Usage for Reference Cache on a 64 bit platform."
+                  name="MaxMemoryUsage64">25</property>
+                <property
+                  dataType="System.String"
+                  description="Indicates whether to reference metadata in an XML format."
+                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="scheduled_arr_id" dataType="DT_STR" length="255" precision="0" scale="0" codePage="1250"/&gt;&lt;referenceColumn name="time_scheduled_id" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="kod_trasy" dataType="DT_STR" length="50" precision="0" scale="0" codePage="1250"/&gt;&lt;referenceColumn name="zespol_id" dataType="DT_STR" length="50" precision="0" scale="0" codePage="1250"/&gt;&lt;referenceColumn name="slupek_id" dataType="DT_STR" length="50" precision="0" scale="0" codePage="1250"/&gt;&lt;referenceColumn name="linia" dataType="DT_STR" length="50" precision="0" scale="0" codePage="1250"/&gt;&lt;referenceColumn name="brygada" dataType="DT_STR" length="50" precision="0" scale="0" codePage="1250"/&gt;&lt;referenceColumn name="StopOnRoute" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="TypeName" dataType="DT_STR" length="50" precision="0" scale="0" codePage="1250"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
+                <property
+                  containsID="true"
+                  dataType="System.String"
+                  description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
+                  name="ParameterMap">#{Package\FACT TRANSFORMATIONS\schedule ID.Outputs[Output 0].Columns[schID]};</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1250</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Determines whether duplicate keys in the reference data should be treated as errors when full cache mode is used."
+                  name="TreatDuplicateKeysAsError">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\FACT TRANSFORMATIONS\Lookup.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[localhost.DWH.sa]"
+                  connectionManagerRefId="Package.ConnectionManagers[localhost.DWH.sa]"
+                  description="Connection manager used to access lookup data."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\FACT TRANSFORMATIONS\Lookup.Inputs[Lookup Input]"
+                  name="Lookup Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\FACT TRANSFORMATIONS\Lookup.Inputs[Lookup Input].Columns[schID]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="schID"
+                      lineageId="Package\FACT TRANSFORMATIONS\schedule ID.Outputs[Output 0].Columns[schID]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table that a column joins."
+                          name="JoinToReferenceColumn">scheduled_arr_id</property>
+                        <property
+                          dataType="System.Null"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn" />
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\FACT TRANSFORMATIONS\Lookup.Outputs[Lookup Match Output]"
+                  errorOrTruncationOperation="Lookup"
+                  errorRowDisposition="IgnoreFailure"
+                  exclusionGroup="1"
+                  name="Lookup Match Output"
+                  synchronousInputId="Package\FACT TRANSFORMATIONS\Lookup.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\FACT TRANSFORMATIONS\Lookup.Outputs[Lookup Match Output].Columns[zespol_id]"
+                      codePage="1250"
+                      dataType="str"
+                      errorOrTruncationOperation="Copy Column"
+                      length="50"
+                      lineageId="Package\FACT TRANSFORMATIONS\Lookup.Outputs[Lookup Match Output].Columns[zespol_id]"
+                      name="zespol_id"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn">zespol_id</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\FACT TRANSFORMATIONS\Lookup.Outputs[Lookup Match Output].Columns[slupek_id]"
+                      codePage="1250"
+                      dataType="str"
+                      errorOrTruncationOperation="Copy Column"
+                      length="50"
+                      lineageId="Package\FACT TRANSFORMATIONS\Lookup.Outputs[Lookup Match Output].Columns[slupek_id]"
+                      name="slupek_id"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn">slupek_id</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\FACT TRANSFORMATIONS\Lookup.Outputs[Lookup No Match Output]"
+                  description="The Lookup output that handles rows with no matching entries in the reference dataset. Use this output when the NoMatchBehavior property is set to &quot;Send rows with no matching entries to the no match output.&quot;"
+                  exclusionGroup="1"
+                  name="Lookup No Match Output"
+                  synchronousInputId="Package\FACT TRANSFORMATIONS\Lookup.Inputs[Lookup Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\FACT TRANSFORMATIONS\Lookup.Outputs[Lookup Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Lookup Error Output"
+                  synchronousInputId="Package\FACT TRANSFORMATIONS\Lookup.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\FACT TRANSFORMATIONS\Lookup.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\FACT TRANSFORMATIONS\Lookup.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\FACT TRANSFORMATIONS\Lookup.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\FACT TRANSFORMATIONS\Lookup.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\FACT TRANSFORMATIONS\Lookup 1"
+              componentClassID="Microsoft.Lookup"
+              contactInfo="Lookup;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;6"
+              description="Joins additional columns to the data flow by looking up values in a table. For example, join to the 'employee id' column the employees table to get 'hire date' and 'employee name'. We recommend this transformation when the lookup table can fit into memory."
+              name="Lookup 1"
+              usesDispositions="true"
+              version="6">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Specifies the SQL statement that generates the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from [dbo].[FactDelays]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies a SQL statement that uses parameters to generate the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommandParam"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select * from [dbo].[FactDelays]) [refTable]
+where [refTable].[Time_id] = ? and [refTable].[Date_id] = ? and [refTable].[bus_id] = ? and [refTable].[scheduled_arr_id] = ? and [refTable].[stop_id] = ?</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the type of connection used to access the reference dataset."
+                  name="ConnectionType"
+                  typeConverter="LookupConnectionType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the cache type of the lookup table."
+                  name="CacheType"
+                  typeConverter="CacheType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies how the Lookup transformation handles rows without matching entries in the reference data set."
+                  name="NoMatchBehavior"
+                  typeConverter="LookupNoMatchBehavior">1</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the percentage of the cache that is allocated for rows with no matching entries in the reference dataset."
+                  name="NoMatchCachePercentage">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Maximum Memory Usage for Reference Cache on a 32 bit platform."
+                  name="MaxMemoryUsage">25</property>
+                <property
+                  dataType="System.Int64"
+                  description="Maximum Memory Usage for Reference Cache on a 64 bit platform."
+                  name="MaxMemoryUsage64">25</property>
+                <property
+                  dataType="System.String"
+                  description="Indicates whether to reference metadata in an XML format."
+                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="bus_id" dataType="DT_STR" length="50" precision="0" scale="0" codePage="1250"/&gt;&lt;referenceColumn name="stop_id" dataType="DT_STR" length="50" precision="0" scale="0" codePage="1250"/&gt;&lt;referenceColumn name="scheduled_arr_id" dataType="DT_STR" length="50" precision="0" scale="0" codePage="1250"/&gt;&lt;referenceColumn name="Time_id" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Date_id" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="lat" dataType="DT_R8" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="lon" dataType="DT_R8" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="delay" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="distance" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="time_estimated_id" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
+                <property
+                  containsID="true"
+                  dataType="System.String"
+                  description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
+                  name="ParameterMap">#{Package\FACT TRANSFORMATIONS\TimeID lookup.Outputs[Lookup Match Output].Columns[TimeID]};#{Package\FACT TRANSFORMATIONS\DateID lookup.Outputs[Lookup Match Output].Columns[DateID]};#{Package\FACT TRANSFORMATIONS\BusID lookup.Outputs[Lookup Match Output].Columns[bus_id]};#{Package\FACT TRANSFORMATIONS\schedule ID.Outputs[Output 0].Columns[schID]};#{Package\FACT TRANSFORMATIONS\stop_id.Outputs[Lookup Match Output].Columns[stop_id]};</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1250</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Determines whether duplicate keys in the reference data should be treated as errors when full cache mode is used."
+                  name="TreatDuplicateKeysAsError">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\FACT TRANSFORMATIONS\Lookup 1.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[localhost.DWH.sa]"
+                  connectionManagerRefId="Package.ConnectionManagers[localhost.DWH.sa]"
+                  description="Connection manager used to access lookup data."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\FACT TRANSFORMATIONS\Lookup 1.Inputs[Lookup Input]"
+                  name="Lookup Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\FACT TRANSFORMATIONS\Lookup 1.Inputs[Lookup Input].Columns[bus_id]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="bus_id"
+                      lineageId="Package\FACT TRANSFORMATIONS\BusID lookup.Outputs[Lookup Match Output].Columns[bus_id]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table that a column joins."
+                          name="JoinToReferenceColumn">bus_id</property>
+                        <property
+                          dataType="System.Null"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn" />
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\FACT TRANSFORMATIONS\Lookup 1.Inputs[Lookup Input].Columns[stop_id]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="stop_id"
+                      lineageId="Package\FACT TRANSFORMATIONS\stop_id.Outputs[Lookup Match Output].Columns[stop_id]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table that a column joins."
+                          name="JoinToReferenceColumn">stop_id</property>
+                        <property
+                          dataType="System.Null"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn" />
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\FACT TRANSFORMATIONS\Lookup 1.Inputs[Lookup Input].Columns[schID]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="schID"
+                      lineageId="Package\FACT TRANSFORMATIONS\schedule ID.Outputs[Output 0].Columns[schID]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table that a column joins."
+                          name="JoinToReferenceColumn">scheduled_arr_id</property>
+                        <property
+                          dataType="System.Null"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn" />
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\FACT TRANSFORMATIONS\Lookup 1.Inputs[Lookup Input].Columns[TimeID]"
+                      cachedDataType="i4"
+                      cachedName="TimeID"
+                      lineageId="Package\FACT TRANSFORMATIONS\TimeID lookup.Outputs[Lookup Match Output].Columns[TimeID]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table that a column joins."
+                          name="JoinToReferenceColumn">Time_id</property>
+                        <property
+                          dataType="System.Null"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn" />
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\FACT TRANSFORMATIONS\Lookup 1.Inputs[Lookup Input].Columns[DateID]"
+                      cachedDataType="i4"
+                      cachedName="DateID"
+                      lineageId="Package\FACT TRANSFORMATIONS\DateID lookup.Outputs[Lookup Match Output].Columns[DateID]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table that a column joins."
+                          name="JoinToReferenceColumn">Date_id</property>
+                        <property
+                          dataType="System.Null"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn" />
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\FACT TRANSFORMATIONS\Lookup 1.Outputs[Lookup Match Output]"
+                  errorOrTruncationOperation="Lookup"
+                  exclusionGroup="1"
+                  name="Lookup Match Output"
+                  synchronousInputId="Package\FACT TRANSFORMATIONS\Lookup 1.Inputs[Lookup Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\FACT TRANSFORMATIONS\Lookup 1.Outputs[Lookup No Match Output]"
+                  description="The Lookup output that handles rows with no matching entries in the reference dataset. Use this output when the NoMatchBehavior property is set to &quot;Send rows with no matching entries to the no match output.&quot;"
+                  exclusionGroup="1"
+                  name="Lookup No Match Output"
+                  synchronousInputId="Package\FACT TRANSFORMATIONS\Lookup 1.Inputs[Lookup Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\FACT TRANSFORMATIONS\Lookup 1.Outputs[Lookup Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Lookup Error Output"
+                  synchronousInputId="Package\FACT TRANSFORMATIONS\Lookup 1.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\FACT TRANSFORMATIONS\Lookup 1.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\FACT TRANSFORMATIONS\Lookup 1.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\FACT TRANSFORMATIONS\Lookup 1.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\FACT TRANSFORMATIONS\Lookup 1.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\FACT TRANSFORMATIONS\OLE DB Destination"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[FactDelays]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1250</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\FACT TRANSFORMATIONS\OLE DB Destination.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[localhost.DWH.sa 4]"
+                  connectionManagerRefId="Package.ConnectionManagers[localhost.DWH.sa 4]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\FACT TRANSFORMATIONS\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\FACT TRANSFORMATIONS\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Lon]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="255"
+                      cachedName="Lon"
+                      externalMetadataColumnId="Package\FACT TRANSFORMATIONS\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[lon]"
+                      lineageId="Package\FACT TRANSFORMATIONS\OLE DB Source.Outputs[OLE DB Source Output].Columns[Lon]" />
+                    <inputColumn
+                      refId="Package\FACT TRANSFORMATIONS\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Lat]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="255"
+                      cachedName="Lat"
+                      externalMetadataColumnId="Package\FACT TRANSFORMATIONS\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[lat]"
+                      lineageId="Package\FACT TRANSFORMATIONS\OLE DB Source.Outputs[OLE DB Source Output].Columns[Lat]" />
+                    <inputColumn
+                      refId="Package\FACT TRANSFORMATIONS\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[bus_id]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="bus_id"
+                      externalMetadataColumnId="Package\FACT TRANSFORMATIONS\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[bus_id]"
+                      lineageId="Package\FACT TRANSFORMATIONS\BusID lookup.Outputs[Lookup Match Output].Columns[bus_id]" />
+                    <inputColumn
+                      refId="Package\FACT TRANSFORMATIONS\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[stop_id]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="stop_id"
+                      externalMetadataColumnId="Package\FACT TRANSFORMATIONS\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[stop_id]"
+                      lineageId="Package\FACT TRANSFORMATIONS\stop_id.Outputs[Lookup Match Output].Columns[stop_id]" />
+                    <inputColumn
+                      refId="Package\FACT TRANSFORMATIONS\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[schID]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="schID"
+                      externalMetadataColumnId="Package\FACT TRANSFORMATIONS\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[scheduled_arr_id]"
+                      lineageId="Package\FACT TRANSFORMATIONS\schedule ID.Outputs[Output 0].Columns[schID]" />
+                    <inputColumn
+                      refId="Package\FACT TRANSFORMATIONS\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[TimeID]"
+                      cachedDataType="i4"
+                      cachedName="TimeID"
+                      externalMetadataColumnId="Package\FACT TRANSFORMATIONS\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Time_id]"
+                      lineageId="Package\FACT TRANSFORMATIONS\TimeID lookup.Outputs[Lookup Match Output].Columns[TimeID]" />
+                    <inputColumn
+                      refId="Package\FACT TRANSFORMATIONS\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[DateID]"
+                      cachedDataType="i4"
+                      cachedName="DateID"
+                      externalMetadataColumnId="Package\FACT TRANSFORMATIONS\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Date_id]"
+                      lineageId="Package\FACT TRANSFORMATIONS\DateID lookup.Outputs[Lookup Match Output].Columns[DateID]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\FACT TRANSFORMATIONS\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[bus_id]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="bus_id" />
+                    <externalMetadataColumn
+                      refId="Package\FACT TRANSFORMATIONS\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[stop_id]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="stop_id" />
+                    <externalMetadataColumn
+                      refId="Package\FACT TRANSFORMATIONS\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[scheduled_arr_id]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="scheduled_arr_id" />
+                    <externalMetadataColumn
+                      refId="Package\FACT TRANSFORMATIONS\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Time_id]"
+                      dataType="i4"
+                      name="Time_id" />
+                    <externalMetadataColumn
+                      refId="Package\FACT TRANSFORMATIONS\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Date_id]"
+                      dataType="i4"
+                      name="Date_id" />
+                    <externalMetadataColumn
+                      refId="Package\FACT TRANSFORMATIONS\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[lat]"
+                      dataType="r8"
+                      name="lat" />
+                    <externalMetadataColumn
+                      refId="Package\FACT TRANSFORMATIONS\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[lon]"
+                      dataType="r8"
+                      name="lon" />
+                    <externalMetadataColumn
+                      refId="Package\FACT TRANSFORMATIONS\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[delay]"
+                      dataType="i4"
+                      name="delay" />
+                    <externalMetadataColumn
+                      refId="Package\FACT TRANSFORMATIONS\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[distance]"
+                      dataType="i4"
+                      name="distance" />
+                    <externalMetadataColumn
+                      refId="Package\FACT TRANSFORMATIONS\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[time_estimated_id]"
+                      dataType="i4"
+                      name="time_estimated_id" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\FACT TRANSFORMATIONS\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\FACT TRANSFORMATIONS\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\FACT TRANSFORMATIONS\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\FACT TRANSFORMATIONS\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\FACT TRANSFORMATIONS\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\FACT TRANSFORMATIONS\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\FACT TRANSFORMATIONS\OLE DB Source"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="OLE DB Source"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[CurrentPosition]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SELECT * FROM currentposition</property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1250</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\FACT TRANSFORMATIONS\OLE DB Source.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[localhost.HDiSBI_projekt.sa]"
+                  connectionManagerRefId="Package.ConnectionManagers[localhost.HDiSBI_projekt.sa]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\FACT TRANSFORMATIONS\OLE DB Source.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\FACT TRANSFORMATIONS\OLE DB Source.Outputs[OLE DB Source Output].Columns[linia]"
+                      codePage="1250"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\FACT TRANSFORMATIONS\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[linia]"
+                      length="255"
+                      lineageId="Package\FACT TRANSFORMATIONS\OLE DB Source.Outputs[OLE DB Source Output].Columns[linia]"
+                      name="linia"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\FACT TRANSFORMATIONS\OLE DB Source.Outputs[OLE DB Source Output].Columns[Lon]"
+                      codePage="1250"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\FACT TRANSFORMATIONS\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Lon]"
+                      length="255"
+                      lineageId="Package\FACT TRANSFORMATIONS\OLE DB Source.Outputs[OLE DB Source Output].Columns[Lon]"
+                      name="Lon"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\FACT TRANSFORMATIONS\OLE DB Source.Outputs[OLE DB Source Output].Columns[VehicleNumber]"
+                      codePage="1250"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\FACT TRANSFORMATIONS\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[VehicleNumber]"
+                      length="255"
+                      lineageId="Package\FACT TRANSFORMATIONS\OLE DB Source.Outputs[OLE DB Source Output].Columns[VehicleNumber]"
+                      name="VehicleNumber"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\FACT TRANSFORMATIONS\OLE DB Source.Outputs[OLE DB Source Output].Columns[Time]"
+                      codePage="1250"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\FACT TRANSFORMATIONS\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Time]"
+                      length="255"
+                      lineageId="Package\FACT TRANSFORMATIONS\OLE DB Source.Outputs[OLE DB Source Output].Columns[Time]"
+                      name="Time"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\FACT TRANSFORMATIONS\OLE DB Source.Outputs[OLE DB Source Output].Columns[Lat]"
+                      codePage="1250"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\FACT TRANSFORMATIONS\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Lat]"
+                      length="255"
+                      lineageId="Package\FACT TRANSFORMATIONS\OLE DB Source.Outputs[OLE DB Source Output].Columns[Lat]"
+                      name="Lat"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\FACT TRANSFORMATIONS\OLE DB Source.Outputs[OLE DB Source Output].Columns[Brigade]"
+                      codePage="1250"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\FACT TRANSFORMATIONS\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Brigade]"
+                      length="255"
+                      lineageId="Package\FACT TRANSFORMATIONS\OLE DB Source.Outputs[OLE DB Source Output].Columns[Brigade]"
+                      name="Brigade"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\FACT TRANSFORMATIONS\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[linia]"
+                      codePage="1250"
+                      dataType="str"
+                      length="255"
+                      name="linia" />
+                    <externalMetadataColumn
+                      refId="Package\FACT TRANSFORMATIONS\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Lon]"
+                      codePage="1250"
+                      dataType="str"
+                      length="255"
+                      name="Lon" />
+                    <externalMetadataColumn
+                      refId="Package\FACT TRANSFORMATIONS\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[VehicleNumber]"
+                      codePage="1250"
+                      dataType="str"
+                      length="255"
+                      name="VehicleNumber" />
+                    <externalMetadataColumn
+                      refId="Package\FACT TRANSFORMATIONS\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Time]"
+                      codePage="1250"
+                      dataType="str"
+                      length="255"
+                      name="Time" />
+                    <externalMetadataColumn
+                      refId="Package\FACT TRANSFORMATIONS\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Lat]"
+                      codePage="1250"
+                      dataType="str"
+                      length="255"
+                      name="Lat" />
+                    <externalMetadataColumn
+                      refId="Package\FACT TRANSFORMATIONS\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Brigade]"
+                      codePage="1250"
+                      dataType="str"
+                      length="255"
+                      name="Brigade" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\FACT TRANSFORMATIONS\OLE DB Source.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\FACT TRANSFORMATIONS\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[linia]"
+                      codePage="1250"
+                      dataType="str"
+                      length="255"
+                      lineageId="Package\FACT TRANSFORMATIONS\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[linia]"
+                      name="linia" />
+                    <outputColumn
+                      refId="Package\FACT TRANSFORMATIONS\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Lon]"
+                      codePage="1250"
+                      dataType="str"
+                      length="255"
+                      lineageId="Package\FACT TRANSFORMATIONS\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Lon]"
+                      name="Lon" />
+                    <outputColumn
+                      refId="Package\FACT TRANSFORMATIONS\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[VehicleNumber]"
+                      codePage="1250"
+                      dataType="str"
+                      length="255"
+                      lineageId="Package\FACT TRANSFORMATIONS\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[VehicleNumber]"
+                      name="VehicleNumber" />
+                    <outputColumn
+                      refId="Package\FACT TRANSFORMATIONS\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Time]"
+                      codePage="1250"
+                      dataType="str"
+                      length="255"
+                      lineageId="Package\FACT TRANSFORMATIONS\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Time]"
+                      name="Time" />
+                    <outputColumn
+                      refId="Package\FACT TRANSFORMATIONS\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Lat]"
+                      codePage="1250"
+                      dataType="str"
+                      length="255"
+                      lineageId="Package\FACT TRANSFORMATIONS\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Lat]"
+                      name="Lat" />
+                    <outputColumn
+                      refId="Package\FACT TRANSFORMATIONS\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Brigade]"
+                      codePage="1250"
+                      dataType="str"
+                      length="255"
+                      lineageId="Package\FACT TRANSFORMATIONS\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Brigade]"
+                      name="Brigade" />
+                    <outputColumn
+                      refId="Package\FACT TRANSFORMATIONS\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\FACT TRANSFORMATIONS\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\FACT TRANSFORMATIONS\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\FACT TRANSFORMATIONS\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\FACT TRANSFORMATIONS\schedule ID"
+              componentClassID="Microsoft.ManagedComponentHost"
+              contactInfo="Includes and runs custom script code. For example, apply a business rule that limits the range of valid values in an &quot;income&quot; column or add values in two columns and calculate the average of the sum.;Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;13"
+              description="Includes and runs custom script code. For example, apply a business rule that limits the range of valid values in an &quot;income&quot; column or add values in two columns and calculate the average of the sum."
+              name="schedule ID"
+              version="13">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Stores the source code of the component"
+                  isArray="true"
+                  name="SourceCode"
+                  state="cdata">
+                  <arrayElements
+                    arrayElementCount="30">
+                    <arrayElement
+                      dataType="System.String"><![CDATA[ComponentWrapper.cs]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[/* THIS IS AUTO-GENERATED CODE THAT WILL BE OVERWRITTEN! DO NOT EDIT!
+*  Microsoft SQL Server Integration Services component wrapper
+*  This module defines the base class for your component
+*  THIS IS AUTO-GENERATED CODE THAT WILL BE OVERWRITTEN! DO NOT EDIT! */
+
+using System;
+using System.Data;
+using Microsoft.SqlServer.Dts.Pipeline;
+using Microsoft.SqlServer.Dts.Pipeline.Wrapper;
+using Microsoft.SqlServer.Dts.Runtime.Wrapper;
+
+public class UserComponent: ScriptComponent
+{
+    public Connections Connections;
+    public Variables Variables;
+    public UserComponent()
+    {
+        Connections = new Connections(this);
+        Variables = new Variables(this);
+    }
+
+    public override void ProcessInput(int InputID, string InputName, PipelineBuffer Buffer, OutputNameMap OutputMap)
+    {
+
+        if (InputName.Equals(@"Input 0", StringComparison.Ordinal))
+        {
+            Input0_ProcessInput(new Input0Buffer(Buffer, GetColumnIndexes(InputID), OutputMap));
+        }
+
+    }
+
+    public virtual void Input0_ProcessInput(Input0Buffer Buffer)
+    {
+        while (Buffer.NextRow())
+        {
+            Input0_ProcessInputRow(Buffer);
+        }
+    }
+
+    public virtual void Input0_ProcessInputRow(Input0Buffer Row)
+    {
+    }
+
+}
+
+public class Connections
+{
+    ScriptComponent ParentComponent;
+
+    public Connections(ScriptComponent Component)
+    {
+        ParentComponent = Component;
+    }
+
+}
+
+public class Variables
+{
+    ScriptComponent ParentComponent;
+
+    public Variables(ScriptComponent Component)
+    {
+        ParentComponent = Component;
+    }
+
+}
+]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[Properties\Resources.resx]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+</root>]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[main.cs]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[#region Help:  Introduction to the Script Component
+/* The Script Component allows you to perform virtually any operation that can be accomplished in
+ * a .Net application within the context of an Integration Services data flow.
+ *
+ * Expand the other regions which have "Help" prefixes for examples of specific ways to use
+ * Integration Services features within this script component. */
+#endregion
+
+#region Namespaces
+using System;
+using System.Data;
+using Microsoft.SqlServer.Dts.Pipeline.Wrapper;
+using Microsoft.SqlServer.Dts.Runtime.Wrapper;
+using System.Data.SqlClient;
+#endregion
+
+/// <summary>
+/// This is the class to which to add your code.  Do not change the name, attributes, or parent
+/// of this class.
+/// </summary>
+[Microsoft.SqlServer.Dts.Pipeline.SSISScriptComponentEntryPointAttribute]
+public class ScriptMain : UserComponent
+{
+    #region Help:  Using Integration Services variables and parameters
+    /* To use a variable in this script, first ensure that the variable has been added to
+     * either the list contained in the ReadOnlyVariables property or the list contained in
+     * the ReadWriteVariables property of this script component, according to whether or not your
+     * code needs to write into the variable.  To do so, save this script, close this instance of
+     * Visual Studio, and update the ReadOnlyVariables and ReadWriteVariables properties in the
+     * Script Transformation Editor window.
+     * To use a parameter in this script, follow the same steps. Parameters are always read-only.
+     *
+     * Example of reading from a variable or parameter:
+     *  DateTime startTime = Variables.MyStartTime;
+     *
+     * Example of writing to a variable:
+     *  Variables.myStringVariable = "new value";
+     */
+    #endregion
+
+    #region Help:  Using Integration Services Connnection Managers
+    /* Some types of connection managers can be used in this script component.  See the help topic
+     * "Working with Connection Managers Programatically" for details.
+     *
+     * To use a connection manager in this script, first ensure that the connection manager has
+     * been added to either the list of connection managers on the Connection Managers page of the
+     * script component editor.  To add the connection manager, save this script, close this instance of
+     * Visual Studio, and add the Connection Manager to the list.
+     *
+     * If the component needs to hold a connection open while processing rows, override the
+     * AcquireConnections and ReleaseConnections methods.
+     * 
+     * Example of using an ADO.Net connection manager to acquire a SqlConnection:
+     *  object rawConnection = Connections.SalesDB.AcquireConnection(transaction);
+     *  SqlConnection salesDBConn = (SqlConnection)rawConnection;
+     *
+     * Example of using a File connection manager to acquire a file path:
+     *  object rawConnection = Connections.Prices_zip.AcquireConnection(transaction);
+     *  string filePath = (string)rawConnection;
+     *
+     * Example of releasing a connection manager:
+     *  Connections.SalesDB.ReleaseConnection(rawConnection);
+     */
+    #endregion
+
+    #region Help:  Firing Integration Services Events
+    /* This script component can fire events.
+     *
+     * Example of firing an error event:
+     *  ComponentMetaData.FireError(10, "Process Values", "Bad value", "", 0, out cancel);
+     *
+     * Example of firing an information event:
+     *  ComponentMetaData.FireInformation(10, "Process Values", "Processing has started", "", 0, fireAgain);
+     *
+     * Example of firing a warning event:
+     *  ComponentMetaData.FireWarning(10, "Process Values", "No rows were received", "", 0);
+     */
+    #endregion
+
+    /// <summary>
+    /// This method is called once, before rows begin to be processed in the data flow.
+    ///
+    /// You can remove this method if you don't need to do anything here.
+    /// </summary>
+    public override void PreExecute()
+    {
+        base.PreExecute();
+        /*
+         * Add your code here
+         */
+    }
+
+    /// <summary>
+    /// This method is called after all the rows have passed through this component.
+    ///
+    /// You can delete this method if you don't need to do anything here.
+    /// </summary>
+    public override void PostExecute()
+    {
+        base.PostExecute();
+        /*
+         * Add your code here
+         */
+    }
+
+    /// <summary>
+    /// This method is called once for every row that passes through the component from Input0.
+    ///
+    /// Example of reading a value from a column in the the row:
+    ///  string zipCode = Row.ZipCode
+    ///
+    /// Example of writing a value to a column in the row:
+    ///  Row.ZipCode = zipCode
+    /// </summary>
+    /// <param name="Row">The row that is currently passing through the component</param>
+    /// 
+
+    public override void Input0_ProcessInputRow(Input0Buffer Row)
+    {
+        string brigada = Row.Brigade;
+        string linia = Row.linia;
+        int timeID = Row.TimeID;
+
+        // Connection string for the DWH database
+        string connectionString = "Data Source=DESKTOP-V5DA5NT;Initial Catalog=DWH;User ID=sa;Password=mipecki123";
+
+        using (SqlConnection connection = new SqlConnection(connectionString))
+        {
+            connection.Open();
+
+            // Create a SQL query with parameterized values
+            string sqlQuery = "SELECT TOP 1 s.scheduled_arr_id " +
+                              "FROM DimScheduledArr s " +
+                              "JOIN DimTime t ON s.time_scheduled_id = t.TimeID " +
+                              "WHERE s.time_scheduled_id > @TimeID " +
+                              "AND s.linia = @Linia " +
+                              "AND s.brygada = @Brigada " +
+                              "ORDER BY t.TimeFull ASC";
+
+            using (SqlCommand command = new SqlCommand(sqlQuery, connection))
+            {
+                // Set the parameter values
+                command.Parameters.AddWithValue("@TimeID", timeID);
+                command.Parameters.AddWithValue("@Linia", linia);
+                command.Parameters.AddWithValue("@Brigada", brigada);
+
+                // Execute the query and retrieve the single cell result
+                object result = command.ExecuteScalar();
+
+                // Assign the result to the schid column
+                Row.schID = (result != null) ? result.ToString() : string.Empty;
+            }
+
+            connection.Close();
+        }
+    }
+
+}]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[BufferWrapper.cs]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[/* THIS IS AUTO-GENERATED CODE THAT WILL BE OVERWRITTEN! DO NOT EDIT!
+*  Microsoft SQL Server Integration Services buffer wrappers
+*  This module defines classes for accessing data flow buffers
+*  THIS IS AUTO-GENERATED CODE THAT WILL BE OVERWRITTEN! DO NOT EDIT! */
+
+
+
+using System;
+using System.Data;
+using Microsoft.SqlServer.Dts.Pipeline;
+using Microsoft.SqlServer.Dts.Pipeline.Wrapper;
+
+public class Input0Buffer: ScriptBuffer
+
+{
+    public Input0Buffer(PipelineBuffer Buffer, int[] BufferColumnIndexes, OutputNameMap OutputMap)
+        : base(Buffer, BufferColumnIndexes, OutputMap)
+    {
+    }
+
+    public String linia
+    {
+        get
+        {
+            return Buffer.GetString(BufferColumnIndexes[0]);
+        }
+    }
+    public bool linia_IsNull
+    {
+        get
+        {
+            return IsNull(0);
+        }
+    }
+
+    public String Brigade
+    {
+        get
+        {
+            return Buffer.GetString(BufferColumnIndexes[1]);
+        }
+    }
+    public bool Brigade_IsNull
+    {
+        get
+        {
+            return IsNull(1);
+        }
+    }
+
+    public Int32 TimeID
+    {
+        get
+        {
+            return Buffer.GetInt32(BufferColumnIndexes[2]);
+        }
+    }
+    public bool TimeID_IsNull
+    {
+        get
+        {
+            return IsNull(2);
+        }
+    }
+
+    public String schID
+    {
+        set
+        {
+            this[3] = value;
+        }
+    }
+    public bool schID_IsNull
+    {
+        set
+        {
+            if (value)
+            {
+                SetNull(3);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
+    new public bool NextRow()
+    {
+        return base.NextRow();
+    }
+
+    new public bool EndOfRowset()
+    {
+        return base.EndOfRowset();
+    }
+
+}
+]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[Properties\Settings.Designer.cs]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
+
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="SC_61b9f6b8ca10449c826f5fcebda07f52.Properties.Settings.get_Default():SC_61b9f6b8ca10449c826f5fcebda07f52.Properties.Sett" +
+    "ings")]
+
+namespace SC_61b9f6b8ca10449c826f5fcebda07f52.Properties {
+    
+    
+    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
+        
+        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
+        private static Settings defaultInstance = new Settings();
+        
+        public static Settings Default {
+            get {
+                return defaultInstance;
+            }
+        }
+    }
+}
+]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[SC_61b9f6b8ca10449c826f5fcebda07f52.csproj]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectTypeGuids>{30D016F9-3734-4E33-A861-5E7D899E18F3};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{131fc256-1d9e-4d7b-a71d-f883e7c02e7b}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SC_61b9f6b8ca10449c826f5fcebda07f52</RootNamespace>
+    <AssemblyName>SC_61b9f6b8ca10449c826f5fcebda07f52</AssemblyName>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>true</ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>
+    <TargetFrameworkProfile></TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>.\bin\Debug\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <OutputPath>.\bin\Release\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.SqlServer.TxScript, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.SqlServer.DTSRuntimeWrap, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.SqlServer.DTSPipelineWrap, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.SqlServer.PipelineHost, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Compile Include="main.cs" />
+    <Compile Include="BufferWrapper.cs" />
+    <Compile Include="ComponentWrapper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <!-- Include the build rules for a C# project.-->
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- This section defines VSTA properties that describe the host-changable project properties. -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{30D016F9-3734-4E33-A861-5E7D899E18F3}">
+        <ProjectProperties HostName="ScriptComponent" HostPackage="{B3A685AA-7EAF-4BC6-9940-57959FA5AC07}" ApplicationType="usd" Language="cs" TemplatesPath="" DebugInfoExeName="" DebugInfoCommandLine="" DebugInfoWorkingDir="" IconImageList="" />
+        <Host Name="ScriptComponent" GeneratedNamespace="SC_61b9f6b8ca10449c826f5fcebda07f52" IconIndex="0"></Host>
+        <ProjectClient>
+          <HostIdentifier>SSIS_SC160</HostIdentifier>
+        </ProjectClient>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[Project]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF16LE]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[<?xml version="1.0" encoding="UTF-16" standalone="yes"?>
+<c:Project xmlns:c="http://schemas.microsoft.com/codeprojectml/2010/08/main" xmlns:msb="http://schemas.microsoft.com/developer/msbuild/2003" runtimeVersion="4.0" schemaVersion="1.0">
+  <msb:PropertyGroup>
+    <msb:CodeName>SC_61b9f6b8ca10449c826f5fcebda07f52</msb:CodeName>
+    <msb:Language>msBuild</msb:Language>
+    <msb:DisplayName>SC_61b9f6b8ca10449c826f5fcebda07f52</msb:DisplayName>
+    <msb:ProjectId>{7191DC3D-EB0D-46CB-8577-72EF496BF7C7}</msb:ProjectId>
+  </msb:PropertyGroup>
+  <msb:ItemGroup>
+    <msb:Project Include="SC_61b9f6b8ca10449c826f5fcebda07f52.csproj" />
+    <msb:File Include="Properties\Settings.Designer.cs" />
+    <msb:File Include="main.cs" />
+    <msb:File Include="BufferWrapper.cs" />
+    <msb:File Include="ComponentWrapper.cs" />
+    <msb:File Include="Properties\Settings.settings" />
+    <msb:File Include="Properties\AssemblyInfo.cs" />
+    <msb:File Include="Properties\Resources.resx" />
+    <msb:File Include="Properties\Resources.Designer.cs" />
+  </msb:ItemGroup>
+</c:Project>]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[Properties\AssemblyInfo.cs]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[using System.Reflection;
+using System.Runtime.CompilerServices;
+
+//
+// General Information about an assembly is controlled through the following 
+// set of attributes. Change these attribute values to modify the information
+// associated with an assembly.
+//
+[assembly: AssemblyTitle("SC_61b9f6b8ca10449c826f5fcebda07f52")]
+[assembly: AssemblyDescription("")]
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("SC_61b9f6b8ca10449c826f5fcebda07f52")]
+[assembly: AssemblyCopyright("Copyright @  2023")]
+[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCulture("")]
+//
+// Version information for an assembly consists of the following four values:
+//
+//      Major Version
+//      Minor Version 
+//      Build Number
+//      Revision
+//
+// You can specify all the values or you can default the Revision and Build Numbers 
+// by using the '*' as shown below:
+
+[assembly: AssemblyVersion("1.0.0.0")]
+]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[Properties\Settings.settings]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
+<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
+  <Profiles>
+    <Profile Name="(Default)" />
+  </Profiles>
+  <Settings />
+</SettingsFile>]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[Properties\Resources.Designer.cs]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
+
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="SC_61b9f6b8ca10449c826f5fcebda07f52.Properties.Resources.get_ResourceManager():System.Resources.Resou" +
+    "rceManager")]
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="SC_61b9f6b8ca10449c826f5fcebda07f52.Properties.Resources.get_Culture():System.Globalization.CultureIn" +
+    "fo")]
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="SC_61b9f6b8ca10449c826f5fcebda07f52.Properties.Resources.set_Culture(System.Globalization.CultureInfo" +
+    "):Void")]
+
+namespace SC_61b9f6b8ca10449c826f5fcebda07f52.Properties {
+    
+    
+    /// <summary>
+    ///   A strongly-typed resource class, for looking up localized strings, etc.
+    /// </summary>
+    // This class was auto-generated by the StronglyTypedResourceBuilder
+    // class via a tool like ResGen or Visual Studio.
+    // To add or remove a member, edit your .ResX file then rerun ResGen
+    // with the /str option, or rebuild your VS project.
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+    internal class Resources {
+        
+        private static global::System.Resources.ResourceManager resourceMan;
+        
+        private static global::System.Globalization.CultureInfo resourceCulture;
+        
+        [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
+        internal Resources() {
+        }
+        
+        /// <summary>
+        ///   Returns the cached ResourceManager instance used by this class.
+        /// </summary>
+        [global::System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        internal static global::System.Resources.ResourceManager ResourceManager {
+            get {
+                if ((resourceMan == null)) {
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("SC_61b9f6b8ca10449c826f5fcebda07f52.Properties.Resources", typeof(Resources).Assembly);
+                    resourceMan = temp;
+                }
+                return resourceMan;
+            }
+        }
+        
+        /// <summary>
+        ///   Overrides the current thread's CurrentUICulture property for all
+        ///   resource lookups using this strongly typed resource class.
+        /// </summary>
+        [global::System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        internal static global::System.Globalization.CultureInfo Culture {
+            get {
+                return resourceCulture;
+            }
+            set {
+                resourceCulture = value;
+            }
+        }
+    }
+}
+]]></arrayElement>
+                  </arrayElements>
+                </property>
+                <property
+                  dataType="System.String"
+                  description="Stores the binary representation of the component"
+                  isArray="true"
+                  name="BinaryCode"
+                  state="cdata">
+                  <arrayElements
+                    arrayElementCount="2">
+                    <arrayElement
+                      dataType="System.String"><![CDATA[SC_61b9f6b8ca10449c826f5fcebda07f52.dll]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[TVqQAAMAAAAEAAAA//8AALgAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAgAAAAA4fug4AtAnNIbgBTM0hVGhpcyBwcm9ncmFtIGNhbm5vdCBiZSBydW4gaW4gRE9TIG1v
+ZGUuDQ0KJAAAAAAAAABQRQAATAEDALzbhWQAAAAAAAAAAOAAIiALATAAABgAAAAIAAAAAAAASjcA
+AAAgAAAAQAAAAAAAEAAgAAAAAgAABAAAAAAAAAAGAAAAAAAAAACAAAAAAgAAAAAAAAMAYIUAABAA
+ABAAAAAAEAAAEAAAAAAAABAAAAAAAAAAAAAAAPg2AABPAAAAAEAAAEgEAAAAAAAAAAAAAAAAAAAA
+AAAAAGAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAIAAACAAAAAAAAAAAAAAACCAAAEgAAAAAAAAAAAAAAC50ZXh0AAAAUBcAAAAgAAAAGAAAAAIA
+AAAAAAAAAAAAAAAAACAAAGAucnNyYwAAAEgEAAAAQAAAAAYAAAAaAAAAAAAAAAAAAAAAAABAAABA
+LnJlbG9jAAAMAAAAAGAAAAACAAAAIAAAAAAAAAAAAAAAAAAAQAAAQgAAAAAAAAAAAAAAAAAAAAAs
+NwAAAAAAAEgAAAACAAUAsCIAAJATAAABAAAAAAAAAEA2AAC4AAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAB4CKBAAAAoqHgIoEQAACiobMAMAswAAAAEAABEDbwgAAAYK
+A28GAAAGCwNvCgAABgxyAQAAcHMSAAAKDQlvEwAACnKgAABwCXMUAAAKEwQRBG8VAAAKckUCAHAI
+jB4AAAFvFgAACiYRBG8VAAAKclUCAHAHbxYAAAomEQRvFQAACnJjAgBwBm8WAAAKJhEEbxcAAAoT
+BQMRBS0HfhgAAAorBxEFbxkAAApvDAAABt4MEQQsBxEEbxoAAArcCW8bAAAK3goJLAYJbxoAAArc
+KgABHAAAAgAzAGGUAAwAAAAAAgAgAIioAAoAAAAAHgIoEAAABioqAgMEBSgcAAAKKlICex0AAAoC
+ex4AAAoWlG8fAAAKKiICFiggAAAKKlICex0AAAoCex4AAAoXlG8fAAAKKiICFyggAAAKKlICex0A
+AAoCex4AAAoYlG8hAAAKKiICGCggAAAKKiYCGQMoIgAACipaAywIAhkoIwAACipydQIAcHMkAAAK
+eh4CKCUAAAoqHgIoJgAACip+AignAAAKAgJzFAAABn0BAAAEAgJzFQAABn0CAAAEKpIEchIDAHAa
+bygAAAosFQIFAgMoKQAACg4EcwUAAAZvEgAABipKKwcCA28TAAAGA28OAAAGLfEqBio6AigqAAAK
+AgN9AwAABCo6AigqAAAKAgN9BAAABCoeAigqAAAKKq5+BQAABC0eciIDAHDQBwAAAigrAAAKbywA
+AApzLQAACoAFAAAEfgUAAAQqGn4GAAAEKh4CgAYAAAQqGn4HAAAEKh4CKC4AAAoqLnMbAAAGgAcA
+AAQqQlNKQgEAAQAAAAAADAAAAHY0LjAuMzAzMTkAAAAABQBsAAAAWAYAACN+AADEBgAAUAcAACNT
+dHJpbmdzAAAAABQOAACUAwAAI1VTAKgRAAAQAAAAI0dVSUQAAAC4EQAA2AEAACNCbG9iAAAAAAAA
+AAIAAAFXFaIBCQEAAAD6ATMAFgAAAQAAACcAAAAIAAAABwAAABwAAAAPAAAALgAAABAAAAABAAAA
+AwAAAAsAAAAMAAAAAQAAAAUAAAABAAAAAAByAwEAAAAAAAYAUwJdBQYA5wJdBQYAnwFKBQ8A0QUA
+AAYAzAE/BAYANgI/BAYAFwI/BAYAzgI/BAYAcwI/BAYAjAI/BAYA4wE/BAYA/gEvAwoApwLeAA4A
+dQSIBg4AfQCIBgYAaQbyAwoADwXeABIAAAXeAAoAzQTeAAoAvAbeAAYAggFKBQYAIAV9BQYAwQQq
+BBYAUgFcAxYAswFcAxYALAEVBAYAZwFdBQ4AaASdBA4AUQSIBgYABADyAw4AMAWIBg4AcwCdBAYA
+VQPyAwYApADyAwYAgwTyAwYAsATyAwYA/wDyAwYAsADyAwYAQQc/BAAAAAAuAAAAAAABAAEAAQAQ
+AAoEAAAQAAEAAQABABAA8wQAAEUAAQAFAAEAEACeBgAAUQABABAAAQAQAE4GAABBAAMAFAABABAA
+DwYAAEEABAAVAAAAEACEBeAFQQAFABYAAAEQAD4G4AVpAAcAGgAGAE4GpgAGAA8GqgABAKwGrgAB
+AKwGrgARAPkDsgARABwBtgARAIgAugBQIAAAAADGAAUDBgABAFggAAAAAMYAEAMGAAEAYCAAAAAA
+xgAeB74AAQA8IQAAAACGGD0FBgACAEQhAAAAAIYYPQVEAAIATyEAAAAAhghUAEAABQBkIQAAAACG
+CL0DawAFAG0hAAAAAIYImABAAAUAgiEAAAAAhgjOA2sABQCLIQAAAACGCDcAxAAFAKAhAAAAAIYI
+mgNrAAUAqSEAAAAAhghCABAABQCzIQAAAACGCKwDyAAGAMohAAAAAIYANQdrAAcA0iEAAAAAhgBw
+BmsABwDaIQAAAACGGD0FBgAHAPohAAAAAMYAEQfNAAcAHyIAAAAAxgEKB74ACwAyIgAAAADGAR4H
+vgAMADQiAAAAAIYYPQXXAA0AQyIAAAAAhhg9BdcADgBSIgAAAACDGD0FBgAPAFoiAAAAAJMIHAXd
+AA8AhiIAAAAAkwgEAeIADwCNIgAAAACTCBAB5wAPAJUiAAAAAJYIfAbtABAAnCIAAAAAhhg9BQYA
+EACkIgAAAACRGEMF8gAQAAAAAQA5BwAAAQAVBQAAAgAZBgAAAwDbBAAAAQApAwAAAQApAwAAAQBM
+AAAAAgDUAAAAAwAVBQAABADbBAAAAQAVBQAAAQA5BwAAAQDCBgAAAQDCBgAAAQApAwkAPQUBABEA
+PQUGABkAPQUKACkAPQUQADEAPQUQADkAPQUQAEEAPQUQAEkAPQUQAFEAPQUQAFkAPQUQAGEAPQUQ
+AGkAPQUGAKkAPQUGAMkAPQUVANkAPQUGAKEABQMGAKEAEAMGAHEAPQUQAOEABQQGAHkAPQUmAHkA
+WgYtAOkAHAMyAAEB5QQ5AAkBSgc9AIEASQNAABEBSgEGAOEARAEGAIkAPQVEAIkAFQVOAIkAGQZS
+AJEAUgNWAIkA2gNbAJEAAQBgAIkA6QNlAIkA4QMBABkBPQUQAIkANQdrAIkAcAZrAKEAPQUGAAkB
+RwZvAKEALQZ3AIEAPQUGACkBwgB9ACkBPQeGALEAPQWMANEAPQUGAC4ACwARAS4AEwAaAS4AGwA5
+AS4AIwBCAS4AKwBrAS4AMwBrAS4AOwBrAS4AQwBCAS4ASwBxAS4AUwBrAS4AWwCIAUMAYwDSAeEA
+ewDSAeMAawDSASkBcwA5AUkBcwA5ARsAAwABAAcACQAIAAsAAABYAPYAAADBA/oAAACcAPYAAADS
+A/oAAAA7AP4AAACeA/oAAABGAPYAAACwA/oAAAAgBQIBAAAkAQcBAACABgwBAgAGAAMAAgAHAAUA
+AgAIAAcAAgAJAAkAAgAKAAsAAgALAA0AAQAMAA8AAQANABEAAgAXABMAAgAYABUAAQAZABUAAgAa
+ABcABIAAAAEAAAAAAAAAAAAAAAAACgAAAAQAAAAAAAAAAAAAAJQAagAAAAAAEAAAAAAAAAAAAAAA
+nQDMBgAAAAAEAAAAAAAAAAAAAACUAF4AAAAAABAAAAAAAAAAAAAAAJ0A6QYAAAAABAAAAAAAAAAA
+AAAAlADyAwAAAAAAAAAAAQAAAI4FAAAAAABHZXRJbnQzMgBTQ182MWI5ZjZiOGNhMTA0NDljODI2
+ZjVmY2ViZGEwN2Y1MgA8TW9kdWxlPgBnZXRfVGltZUlEAHNldF9zY2hJRABJbnB1dElEAGdldF9s
+aW5pYQBTeXN0ZW0uRGF0YQBtc2NvcmxpYgBEYkNvbW1hbmQAU3FsQ29tbWFuZABkZWZhdWx0SW5z
+dGFuY2UAZ2V0X0JyaWdhZGUASURpc3Bvc2FibGUAUnVudGltZVR5cGVIYW5kbGUAR2V0VHlwZUZy
+b21IYW5kbGUASW5wdXROYW1lAE1pY3Jvc29mdC5TcWxTZXJ2ZXIuRHRzLlBpcGVsaW5lAFR5cGUA
+Z2V0X0N1bHR1cmUAc2V0X0N1bHR1cmUAcmVzb3VyY2VDdWx0dXJlAEFwcGxpY2F0aW9uU2V0dGlu
+Z3NCYXNlAENsb3NlAERpc3Bvc2UARWRpdG9yQnJvd3NhYmxlU3RhdGUAQ29tcGlsZXJHZW5lcmF0
+ZWRBdHRyaWJ1dGUARGVidWdnZXJOb25Vc2VyQ29kZUF0dHJpYnV0ZQBEZWJ1Z2dhYmxlQXR0cmli
+dXRlAEVkaXRvckJyb3dzYWJsZUF0dHJpYnV0ZQBBc3NlbWJseVRpdGxlQXR0cmlidXRlAEFzc2Vt
+Ymx5VHJhZGVtYXJrQXR0cmlidXRlAFRhcmdldEZyYW1ld29ya0F0dHJpYnV0ZQBBc3NlbWJseUNv
+bmZpZ3VyYXRpb25BdHRyaWJ1dGUAQXNzZW1ibHlEZXNjcmlwdGlvbkF0dHJpYnV0ZQBDb21waWxh
+dGlvblJlbGF4YXRpb25zQXR0cmlidXRlAEFzc2VtYmx5UHJvZHVjdEF0dHJpYnV0ZQBBc3NlbWJs
+eUNvcHlyaWdodEF0dHJpYnV0ZQBTU0lTU2NyaXB0Q29tcG9uZW50RW50cnlQb2ludEF0dHJpYnV0
+ZQBBc3NlbWJseUNvbXBhbnlBdHRyaWJ1dGUAUnVudGltZUNvbXBhdGliaWxpdHlBdHRyaWJ1dGUA
+UHJlRXhlY3V0ZQBQb3N0RXhlY3V0ZQBBZGRXaXRoVmFsdWUAdmFsdWUAU3lzdGVtLlJ1bnRpbWUu
+VmVyc2lvbmluZwBUb1N0cmluZwBHZXRTdHJpbmcAU3lzdGVtLkNvbXBvbmVudE1vZGVsAFNDXzYx
+YjlmNmI4Y2ExMDQ0OWM4MjZmNWZjZWJkYTA3ZjUyLmRsbABnZXRfVGltZUlEX0lzTnVsbABzZXRf
+c2NoSURfSXNOdWxsAGdldF9saW5pYV9Jc051bGwAZ2V0X0JyaWdhZGVfSXNOdWxsAFNldE51bGwA
+c2V0X0l0ZW0AU3lzdGVtAHJlc291cmNlTWFuAE9wZW4AU2NyaXB0TWFpbgBTeXN0ZW0uQ29uZmln
+dXJhdGlvbgBTeXN0ZW0uR2xvYmFsaXphdGlvbgBTeXN0ZW0uUmVmbGVjdGlvbgBTcWxQYXJhbWV0
+ZXJDb2xsZWN0aW9uAERiQ29ubmVjdGlvbgBTcWxDb25uZWN0aW9uAEludmFsaWRPcGVyYXRpb25F
+eGNlcHRpb24AU3lzdGVtLkRhdGEuQ29tbW9uAFN0cmluZ0NvbXBhcmlzb24AQ3VsdHVyZUluZm8A
+T3V0cHV0TmFtZU1hcABPdXRwdXRNYXAARXhlY3V0ZVNjYWxhcgBJbnB1dDBCdWZmZXIAUGlwZWxp
+bmVCdWZmZXIAU2NyaXB0QnVmZmVyAGdldF9SZXNvdXJjZU1hbmFnZXIAU3FsUGFyYW1ldGVyAC5j
+dG9yAC5jY3RvcgBTeXN0ZW0uRGlhZ25vc3RpY3MAU3lzdGVtLlJ1bnRpbWUuQ29tcGlsZXJTZXJ2
+aWNlcwBTeXN0ZW0uUmVzb3VyY2VzAFNDXzYxYjlmNmI4Y2ExMDQ0OWM4MjZmNWZjZWJkYTA3ZjUy
+LlByb3BlcnRpZXMuUmVzb3VyY2VzLnJlc291cmNlcwBEZWJ1Z2dpbmdNb2RlcwBTQ182MWI5ZjZi
+OGNhMTA0NDljODI2ZjVmY2ViZGEwN2Y1Mi5Qcm9wZXJ0aWVzAFZhcmlhYmxlcwBCdWZmZXJDb2x1
+bW5JbmRleGVzAEdldENvbHVtbkluZGV4ZXMAU2V0dGluZ3MARXF1YWxzAENvbm5lY3Rpb25zAGdl
+dF9QYXJhbWV0ZXJzAE9iamVjdABFbmRPZlJvd3NldABnZXRfRGVmYXVsdABTeXN0ZW0uRGF0YS5T
+cWxDbGllbnQAVXNlckNvbXBvbmVudABQYXJlbnRDb21wb25lbnQAU2NyaXB0Q29tcG9uZW50AE1p
+Y3Jvc29mdC5TcWxTZXJ2ZXIuVHhTY3JpcHQATWljcm9zb2Z0LlNxbFNlcnZlci5QaXBlbGluZUhv
+c3QASW5wdXQwX1Byb2Nlc3NJbnB1dABJbnB1dDBfUHJvY2Vzc0lucHV0Um93AE5leHRSb3cAZ2V0
+X0Fzc2VtYmx5AEVtcHR5AACAnUQAYQB0AGEAIABTAG8AdQByAGMAZQA9AEQARQBTAEsAVABPAFAA
+LQBWADUARABBADUATgBUADsASQBuAGkAdABpAGEAbAAgAEMAYQB0AGEAbABvAGcAPQBEAFcASAA7
+AFUAcwBlAHIAIABJAEQAPQBzAGEAOwBQAGEAcwBzAHcAbwByAGQAPQBtAGkAcABlAGMAawBpADEA
+MgAzAAGBo1MARQBMAEUAQwBUACAAVABPAFAAIAAxACAAcwAuAHMAYwBoAGUAZAB1AGwAZQBkAF8A
+YQByAHIAXwBpAGQAIABGAFIATwBNACAARABpAG0AUwBjAGgAZQBkAHUAbABlAGQAQQByAHIAIABz
+ACAASgBPAEkATgAgAEQAaQBtAFQAaQBtAGUAIAB0ACAATwBOACAAcwAuAHQAaQBtAGUAXwBzAGMA
+aABlAGQAdQBsAGUAZABfAGkAZAAgAD0AIAB0AC4AVABpAG0AZQBJAEQAIABXAEgARQBSAEUAIABz
+AC4AdABpAG0AZQBfAHMAYwBoAGUAZAB1AGwAZQBkAF8AaQBkACAAPgAgAEAAVABpAG0AZQBJAEQA
+IABBAE4ARAAgAHMALgBsAGkAbgBpAGEAIAA9ACAAQABMAGkAbgBpAGEAIABBAE4ARAAgAHMALgBi
+AHIAeQBnAGEAZABhACAAPQAgAEAAQgByAGkAZwBhAGQAYQAgAE8AUgBEAEUAUgAgAEIAWQAgAHQA
+LgBUAGkAbQBlAEYAdQBsAGwAIABBAFMAQwAAD0AAVABpAG0AZQBJAEQAAA1AAEwAaQBuAGkAYQAA
+EUAAQgByAGkAZwBhAGQAYQAAgJtJAHMATgB1AGwAbAAgAHAAcgBvAHAAZQByAHQAeQAgAGMAYQBu
+AG4AbwB0ACAAYgBlACAAcwBlAHQAIAB0AG8AIABGAGEAbABzAGUALgAgAEEAcwBzAGkAZwBuACAA
+YQAgAHYAYQBsAHUAZQAgAHQAbwAgAHQAaABlACAAYwBvAGwAdQBtAG4AIABpAG4AcwB0AGUAYQBk
+AC4AAA9JAG4AcAB1AHQAIAAwAABxUwBDAF8ANgAxAGIAOQBmADYAYgA4AGMAYQAxADAANAA0ADkA
+YwA4ADIANgBmADUAZgBjAGUAYgBkAGEAMAA3AGYANQAyAC4AUAByAG8AcABlAHIAdABpAGUAcwAu
+AFIAZQBzAG8AdQByAGMAZQBzAAA/JuwGqKqMQrCTxI5/VUN3AAQgAQEIAyAAAQUgAQEREQQgAQEO
+BSABARFhCgcGDg4IEjkSPRwGIAIBDhI5BCAAEnUGIAISfQ4cAyAAHAIGDgMgAA4JIAMBEkkdCBJN
+AwYSSQMGHQgEIAEOCAQgAQIIBCABCAgFIAIBCBwDIAACByACAg4RgJEFIAEdCAgIAAESgJURgJkF
+IAASgJ0HIAIBDhKAnQi3elxWGTTgiQiJhF3NgIDMkQMGEhQDBhIYAwYSUQMGElkDBhJdAwYSIAUg
+AQESDAMgAAgEIAEBAgkgBAEIDhJJEk0FIAEBElEEAAASWQQAABJdBQABARJdBAAAEiADAAABAygA
+DgMoAAIDKAAIBAgAElkECAASXQQIABIgCAEACAAAAAAAHgEAAQBUAhZXcmFwTm9uRXhjZXB0aW9u
+VGhyb3dzAQgBAAIAAAAAACgBACNTQ182MWI5ZjZiOGNhMTA0NDljODI2ZjVmY2ViZGEwN2Y1MgAA
+BQEAAAAAFgEAEUNvcHlyaWdodCBAICAyMDIzAABJAQAaLk5FVEZyYW1ld29yayxWZXJzaW9uPXY0
+LjcBAFQOFEZyYW1ld29ya0Rpc3BsYXlOYW1lEi5ORVQgRnJhbWV3b3JrIDQuNwQBAAAAALQAAADO
+yu++AQAAAJEAAABsU3lzdGVtLlJlc291cmNlcy5SZXNvdXJjZVJlYWRlciwgbXNjb3JsaWIsIFZl
+cnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iNzdhNWM1NjE5
+MzRlMDg5I1N5c3RlbS5SZXNvdXJjZXMuUnVudGltZVJlc291cmNlU2V0AgAAAAAAAAAAAAAAUEFE
+UEFEULQAAAAgNwAAAAAAAAAAAAA6NwAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALDcAAAAAAAAA
+AAAAAABfQ29yRGxsTWFpbgBtc2NvcmVlLmRsbAAAAAAA/yUAIAAQAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAEAEAAAABgAAIAAAAAAAAAAAAAAAAAAAAEAAQAAADAAAIAAAAAAAAAAAAAAAAAAAAEAAAAAAEgA
+AABYQAAA7AMAAAAAAAAAAAAA7AM0AAAAVgBTAF8AVgBFAFIAUwBJAE8ATgBfAEkATgBGAE8AAAAA
+AL0E7/4AAAEAAAABAAAAAAAAAAEAAAAAAD8AAAAAAAAABAAAAAIAAAAAAAAAAAAAAAAAAABEAAAA
+AQBWAGEAcgBGAGkAbABlAEkAbgBmAG8AAAAAACQABAAAAFQAcgBhAG4AcwBsAGEAdABpAG8AbgAA
+AAAAAACwBEwDAAABAFMAdAByAGkAbgBnAEYAaQBsAGUASQBuAGYAbwAAACgDAAABADAAMAAwADAA
+MAA0AGIAMAAAABoAAQABAEMAbwBtAG0AZQBuAHQAcwAAAAAAAAAiAAEAAQBDAG8AbQBwAGEAbgB5
+AE4AYQBtAGUAAAAAAAAAAABwACQAAQBGAGkAbABlAEQAZQBzAGMAcgBpAHAAdABpAG8AbgAAAAAA
+UwBDAF8ANgAxAGIAOQBmADYAYgA4AGMAYQAxADAANAA0ADkAYwA4ADIANgBmADUAZgBjAGUAYgBk
+AGEAMAA3AGYANQAyAAAAMAAIAAEARgBpAGwAZQBWAGUAcgBzAGkAbwBuAAAAAAAxAC4AMAAuADAA
+LgAwAAAAcAAoAAEASQBuAHQAZQByAG4AYQBsAE4AYQBtAGUAAABTAEMAXwA2ADEAYgA5AGYANgBi
+ADgAYwBhADEAMAA0ADQAOQBjADgAMgA2AGYANQBmAGMAZQBiAGQAYQAwADcAZgA1ADIALgBkAGwA
+bAAAAEgAEgABAEwAZQBnAGEAbABDAG8AcAB5AHIAaQBnAGgAdAAAAEMAbwBwAHkAcgBpAGcAaAB0
+ACAAQAAgACAAMgAwADIAMwAAACoAAQABAEwAZQBnAGEAbABUAHIAYQBkAGUAbQBhAHIAawBzAAAA
+AAAAAAAAeAAoAAEATwByAGkAZwBpAG4AYQBsAEYAaQBsAGUAbgBhAG0AZQAAAFMAQwBfADYAMQBi
+ADkAZgA2AGIAOABjAGEAMQAwADQANAA5AGMAOAAyADYAZgA1AGYAYwBlAGIAZABhADAANwBmADUA
+MgAuAGQAbABsAAAAaAAkAAEAUAByAG8AZAB1AGMAdABOAGEAbQBlAAAAAABTAEMAXwA2ADEAYgA5
+AGYANgBiADgAYwBhADEAMAA0ADQAOQBjADgAMgA2AGYANQBmAGMAZQBiAGQAYQAwADcAZgA1ADIA
+AAA0AAgAAQBQAHIAbwBkAHUAYwB0AFYAZQByAHMAaQBvAG4AAAAxAC4AMAAuADAALgAwAAAAOAAI
+AAEAQQBzAHMAZQBtAGIAbAB5ACAAVgBlAHIAcwBpAG8AbgAAADEALgAwAC4AMAAuADAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMAAADAAAAEw3AAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
+                  </arrayElements>
+                </property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the Microsoft Visual Studio Tools for Applications project. Project names must be unique within a package."
+                  name="VSTAProjectName"
+                  typeConverter="NOTBROWSABLE">SC_61b9f6b8ca10449c826f5fcebda07f52</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the programming language used by the script."
+                  name="ScriptLanguage"
+                  typeConverter="Microsoft.SqlServer.VSTAHosting.ScriptingLanguages">CSharp</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies a comma-separated list of read-only variables."
+                  name="ReadOnlyVariables"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ScriptUIVariablePickerDlg"></property>
+                <property
+                  dataType="System.String"
+                  description="Specifies a comma-separated list of read/write variables."
+                  name="ReadWriteVariables"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ScriptUIWriteableVariablePickerDlg"></property>
+                <property
+                  dataType="System.String"
+                  description="List of breakpoints present on the script."
+                  isArray="true"
+                  name="BreakpointCollection"
+                  typeConverter="NOTBROWSABLE">
+                  <arrayElements
+                    arrayElementCount="0" />
+                </property>
+                <property
+                  dataType="System.String"
+                  description="Checksum to match component metedata against compiled codes."
+                  name="MetadataChecksum140"
+                  typeConverter="NOTBROWSABLE">0B</property>
+                <property
+                  dataType="System.String"
+                  name="UserComponentTypeName">Microsoft.ScriptComponentHost</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\FACT TRANSFORMATIONS\schedule ID.Inputs[Input 0]"
+                  hasSideEffects="true"
+                  name="Input 0">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\FACT TRANSFORMATIONS\schedule ID.Inputs[Input 0].Columns[linia]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="255"
+                      cachedName="linia"
+                      lineageId="Package\FACT TRANSFORMATIONS\OLE DB Source.Outputs[OLE DB Source Output].Columns[linia]" />
+                    <inputColumn
+                      refId="Package\FACT TRANSFORMATIONS\schedule ID.Inputs[Input 0].Columns[Brigade]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="255"
+                      cachedName="Brigade"
+                      lineageId="Package\FACT TRANSFORMATIONS\OLE DB Source.Outputs[OLE DB Source Output].Columns[Brigade]" />
+                    <inputColumn
+                      refId="Package\FACT TRANSFORMATIONS\schedule ID.Inputs[Input 0].Columns[TimeID]"
+                      cachedDataType="i4"
+                      cachedName="TimeID"
+                      lineageId="Package\FACT TRANSFORMATIONS\TimeID lookup.Outputs[Lookup Match Output].Columns[TimeID]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\FACT TRANSFORMATIONS\schedule ID.Outputs[Output 0]"
+                  name="Output 0"
+                  synchronousInputId="Package\FACT TRANSFORMATIONS\schedule ID.Inputs[Input 0]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\FACT TRANSFORMATIONS\schedule ID.Outputs[Output 0].Columns[schID]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\FACT TRANSFORMATIONS\schedule ID.Outputs[Output 0].Columns[schID]"
+                      name="schID" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\FACT TRANSFORMATIONS\stop_id"
+              componentClassID="Microsoft.Lookup"
+              contactInfo="Lookup;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;6"
+              description="Joins additional columns to the data flow by looking up values in a table. For example, join to the 'employee id' column the employees table to get 'hire date' and 'employee name'. We recommend this transformation when the lookup table can fit into memory."
+              name="stop_id"
+              usesDispositions="true"
+              version="6">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Specifies the SQL statement that generates the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from [dbo].[DimStops]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies a SQL statement that uses parameters to generate the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommandParam"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select * from [dbo].[DimStops]) [refTable]
+where [refTable].[zespol_id] = ? and [refTable].[slupek_id] = ?</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the type of connection used to access the reference dataset."
+                  name="ConnectionType"
+                  typeConverter="LookupConnectionType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the cache type of the lookup table."
+                  name="CacheType"
+                  typeConverter="CacheType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies how the Lookup transformation handles rows without matching entries in the reference data set."
+                  name="NoMatchBehavior"
+                  typeConverter="LookupNoMatchBehavior">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the percentage of the cache that is allocated for rows with no matching entries in the reference dataset."
+                  name="NoMatchCachePercentage">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Maximum Memory Usage for Reference Cache on a 32 bit platform."
+                  name="MaxMemoryUsage">25</property>
+                <property
+                  dataType="System.Int64"
+                  description="Maximum Memory Usage for Reference Cache on a 64 bit platform."
+                  name="MaxMemoryUsage64">25</property>
+                <property
+                  dataType="System.String"
+                  description="Indicates whether to reference metadata in an XML format."
+                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="stop_id" dataType="DT_STR" length="50" precision="0" scale="0" codePage="1250"/&gt;&lt;referenceColumn name="zespol_id" dataType="DT_STR" length="50" precision="0" scale="0" codePage="1250"/&gt;&lt;referenceColumn name="slupek_id" dataType="DT_STR" length="50" precision="0" scale="0" codePage="1250"/&gt;&lt;referenceColumn name="nazwa_zespolu" dataType="DT_STR" length="50" precision="0" scale="0" codePage="1250"/&gt;&lt;referenceColumn name="lat" dataType="DT_R8" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="lon" dataType="DT_R8" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
+                <property
+                  containsID="true"
+                  dataType="System.String"
+                  description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
+                  name="ParameterMap">#{Package\FACT TRANSFORMATIONS\377:invalid};#{Package\FACT TRANSFORMATIONS\378:invalid};</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1250</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Determines whether duplicate keys in the reference data should be treated as errors when full cache mode is used."
+                  name="TreatDuplicateKeysAsError">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\FACT TRANSFORMATIONS\stop_id.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[localhost.DWH.sa 4]"
+                  connectionManagerRefId="Package.ConnectionManagers[localhost.DWH.sa 4]"
+                  description="Connection manager used to access lookup data."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\FACT TRANSFORMATIONS\stop_id.Inputs[Lookup Input]"
+                  name="Lookup Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\FACT TRANSFORMATIONS\stop_id.Inputs[Lookup Input].Columns[zespol_id]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="zespol_id"
+                      lineageId="Package\FACT TRANSFORMATIONS\Lookup.Outputs[Lookup Match Output].Columns[zespol_id]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table that a column joins."
+                          name="JoinToReferenceColumn">zespol_id</property>
+                        <property
+                          dataType="System.Null"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn" />
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\FACT TRANSFORMATIONS\stop_id.Inputs[Lookup Input].Columns[slupek_id]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="slupek_id"
+                      lineageId="Package\FACT TRANSFORMATIONS\Lookup.Outputs[Lookup Match Output].Columns[slupek_id]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table that a column joins."
+                          name="JoinToReferenceColumn">slupek_id</property>
+                        <property
+                          dataType="System.Null"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn" />
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\FACT TRANSFORMATIONS\stop_id.Outputs[Lookup Match Output]"
+                  errorOrTruncationOperation="Lookup"
+                  errorRowDisposition="RedirectRow"
+                  exclusionGroup="1"
+                  name="Lookup Match Output"
+                  synchronousInputId="Package\FACT TRANSFORMATIONS\stop_id.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\FACT TRANSFORMATIONS\stop_id.Outputs[Lookup Match Output].Columns[stop_id]"
+                      codePage="1250"
+                      dataType="str"
+                      errorOrTruncationOperation="Copy Column"
+                      length="50"
+                      lineageId="Package\FACT TRANSFORMATIONS\stop_id.Outputs[Lookup Match Output].Columns[stop_id]"
+                      name="stop_id"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn">stop_id</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\FACT TRANSFORMATIONS\stop_id.Outputs[Lookup No Match Output]"
+                  description="The Lookup output that handles rows with no matching entries in the reference dataset. Use this output when the NoMatchBehavior property is set to &quot;Send rows with no matching entries to the no match output.&quot;"
+                  exclusionGroup="1"
+                  name="Lookup No Match Output"
+                  synchronousInputId="Package\FACT TRANSFORMATIONS\stop_id.Inputs[Lookup Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\FACT TRANSFORMATIONS\stop_id.Outputs[Lookup Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Lookup Error Output"
+                  synchronousInputId="Package\FACT TRANSFORMATIONS\stop_id.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\FACT TRANSFORMATIONS\stop_id.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\FACT TRANSFORMATIONS\stop_id.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\FACT TRANSFORMATIONS\stop_id.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\FACT TRANSFORMATIONS\stop_id.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\FACT TRANSFORMATIONS\TimeID lookup"
+              componentClassID="Microsoft.Lookup"
+              contactInfo="Lookup;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;6"
+              description="Joins additional columns to the data flow by looking up values in a table. For example, join to the 'employee id' column the employees table to get 'hire date' and 'employee name'. We recommend this transformation when the lookup table can fit into memory."
+              name="TimeID lookup"
+              usesDispositions="true"
+              version="6">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Specifies the SQL statement that generates the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from [dbo].[DimTime]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies a SQL statement that uses parameters to generate the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommandParam"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select * from [dbo].[DimTime]) [refTable]
+where [refTable].[hour_val] = ? and [refTable].[minute_val] = ?</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the type of connection used to access the reference dataset."
+                  name="ConnectionType"
+                  typeConverter="LookupConnectionType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the cache type of the lookup table."
+                  name="CacheType"
+                  typeConverter="CacheType">2</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies how the Lookup transformation handles rows without matching entries in the reference data set."
+                  name="NoMatchBehavior"
+                  typeConverter="LookupNoMatchBehavior">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the percentage of the cache that is allocated for rows with no matching entries in the reference dataset."
+                  name="NoMatchCachePercentage">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Maximum Memory Usage for Reference Cache on a 32 bit platform."
+                  name="MaxMemoryUsage">25</property>
+                <property
+                  dataType="System.Int64"
+                  description="Maximum Memory Usage for Reference Cache on a 64 bit platform."
+                  name="MaxMemoryUsage64">25</property>
+                <property
+                  dataType="System.String"
+                  description="Indicates whether to reference metadata in an XML format."
+                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="TimeID" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="hour_val" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="minute_val" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="TimeFull" dataType="DT_DBTIME2" length="0" precision="0" scale="7" codePage="0"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
+                <property
+                  containsID="true"
+                  dataType="System.String"
+                  description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
+                  name="ParameterMap">#{Package\FACT TRANSFORMATIONS\Hour, Minute.Outputs[Derived Column Output].Columns[hour]};#{Package\FACT TRANSFORMATIONS\Hour, Minute.Outputs[Derived Column Output].Columns[minute]};</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1250</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Determines whether duplicate keys in the reference data should be treated as errors when full cache mode is used."
+                  name="TreatDuplicateKeysAsError">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\FACT TRANSFORMATIONS\TimeID lookup.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[localhost.DWH.sa]"
+                  connectionManagerRefId="Package.ConnectionManagers[localhost.DWH.sa]"
+                  description="Connection manager used to access lookup data."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\FACT TRANSFORMATIONS\TimeID lookup.Inputs[Lookup Input]"
+                  name="Lookup Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\FACT TRANSFORMATIONS\TimeID lookup.Inputs[Lookup Input].Columns[hour]"
+                      cachedDataType="i4"
+                      cachedName="hour"
+                      lineageId="Package\FACT TRANSFORMATIONS\Hour, Minute.Outputs[Derived Column Output].Columns[hour]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table that a column joins."
+                          name="JoinToReferenceColumn">hour_val</property>
+                        <property
+                          dataType="System.Null"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn" />
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\FACT TRANSFORMATIONS\TimeID lookup.Inputs[Lookup Input].Columns[minute]"
+                      cachedDataType="i4"
+                      cachedName="minute"
+                      lineageId="Package\FACT TRANSFORMATIONS\Hour, Minute.Outputs[Derived Column Output].Columns[minute]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table that a column joins."
+                          name="JoinToReferenceColumn">minute_val</property>
+                        <property
+                          dataType="System.Null"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn" />
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\FACT TRANSFORMATIONS\TimeID lookup.Outputs[Lookup Match Output]"
+                  errorOrTruncationOperation="Lookup"
+                  errorRowDisposition="IgnoreFailure"
+                  exclusionGroup="1"
+                  name="Lookup Match Output"
+                  synchronousInputId="Package\FACT TRANSFORMATIONS\TimeID lookup.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\FACT TRANSFORMATIONS\TimeID lookup.Outputs[Lookup Match Output].Columns[TimeID]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Copy Column"
+                      lineageId="Package\FACT TRANSFORMATIONS\TimeID lookup.Outputs[Lookup Match Output].Columns[TimeID]"
+                      name="TimeID"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn">TimeID</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\FACT TRANSFORMATIONS\TimeID lookup.Outputs[Lookup No Match Output]"
+                  description="The Lookup output that handles rows with no matching entries in the reference dataset. Use this output when the NoMatchBehavior property is set to &quot;Send rows with no matching entries to the no match output.&quot;"
+                  exclusionGroup="1"
+                  name="Lookup No Match Output"
+                  synchronousInputId="Package\FACT TRANSFORMATIONS\TimeID lookup.Inputs[Lookup Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\FACT TRANSFORMATIONS\TimeID lookup.Outputs[Lookup Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Lookup Error Output"
+                  synchronousInputId="Package\FACT TRANSFORMATIONS\TimeID lookup.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\FACT TRANSFORMATIONS\TimeID lookup.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\FACT TRANSFORMATIONS\TimeID lookup.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\FACT TRANSFORMATIONS\TimeID lookup.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\FACT TRANSFORMATIONS\TimeID lookup.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\FACT TRANSFORMATIONS.Paths[Derived Column Output]"
+              endId="Package\FACT TRANSFORMATIONS\TimeID lookup.Inputs[Lookup Input]"
+              name="Derived Column Output"
+              startId="Package\FACT TRANSFORMATIONS\Hour, Minute.Outputs[Derived Column Output]" />
+            <path
+              refId="Package\FACT TRANSFORMATIONS.Paths[Lookup Match Output]"
+              endId="Package\FACT TRANSFORMATIONS\DateID lookup.Inputs[Lookup Input]"
+              name="Lookup Match Output"
+              startId="Package\FACT TRANSFORMATIONS\TimeID lookup.Outputs[Lookup Match Output]" />
+            <path
+              refId="Package\FACT TRANSFORMATIONS.Paths[Lookup Match Output1]"
+              endId="Package\FACT TRANSFORMATIONS\BusID lookup.Inputs[Lookup Input]"
+              name="Lookup Match Output"
+              startId="Package\FACT TRANSFORMATIONS\DateID lookup.Outputs[Lookup Match Output]" />
+            <path
+              refId="Package\FACT TRANSFORMATIONS.Paths[Lookup Match Output2]"
+              endId="Package\FACT TRANSFORMATIONS\schedule ID.Inputs[Input 0]"
+              name="Lookup Match Output"
+              startId="Package\FACT TRANSFORMATIONS\BusID lookup.Outputs[Lookup Match Output]" />
+            <path
+              refId="Package\FACT TRANSFORMATIONS.Paths[Lookup Match Output3]"
+              endId="Package\FACT TRANSFORMATIONS\stop_id.Inputs[Lookup Input]"
+              name="Lookup Match Output"
+              startId="Package\FACT TRANSFORMATIONS\Lookup.Outputs[Lookup Match Output]" />
+            <path
+              refId="Package\FACT TRANSFORMATIONS.Paths[Lookup Match Output4]"
+              endId="Package\FACT TRANSFORMATIONS\Lookup 1.Inputs[Lookup Input]"
+              name="Lookup Match Output"
+              startId="Package\FACT TRANSFORMATIONS\stop_id.Outputs[Lookup Match Output]" />
+            <path
+              refId="Package\FACT TRANSFORMATIONS.Paths[Lookup No Match Output]"
+              endId="Package\FACT TRANSFORMATIONS\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="Lookup No Match Output"
+              startId="Package\FACT TRANSFORMATIONS\Lookup 1.Outputs[Lookup No Match Output]" />
+            <path
+              refId="Package\FACT TRANSFORMATIONS.Paths[OLE DB Source Output]"
+              endId="Package\FACT TRANSFORMATIONS\Hour, Minute.Inputs[Derived Column Input]"
+              name="OLE DB Source Output"
+              startId="Package\FACT TRANSFORMATIONS\OLE DB Source.Outputs[OLE DB Source Output]" />
+            <path
+              refId="Package\FACT TRANSFORMATIONS.Paths[Output 0]"
+              endId="Package\FACT TRANSFORMATIONS\Lookup.Inputs[Lookup Input]"
+              name="Output 0"
+              startId="Package\FACT TRANSFORMATIONS\schedule ID.Outputs[Output 0]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\load current positions"
+      DTS:CreationName="Microsoft.ExecuteProcess"
+      DTS:Description="Execute Process Task"
+      DTS:DTSID="{A298E6F9-A54A-4757-A34D-2EE54DBAC107}"
+      DTS:ExecutableType="Microsoft.ExecuteProcess"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="load current positions"
+      DTS:TaskContact="Execute Process Task;Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <ExecuteProcessData
+          Executable="C:\Users\mipec\Documents\github\DWHPROJECT\virtual_env\Scripts\python.exe"
+          Arguments="get_current_positions.py"
+          WorkingDirectory="C:\Users\mipec\Documents\github\DWHPROJECT" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{30F16C4C-A768-4960-9214-66C40F0D8AB5}"
+      DTS:From="Package\load current positions"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\FACT TRANSFORMATIONS" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
+      DTS:CreationName=""
+      DTS:DTSID="{3EA61121-9781-4F48-89BB-2BD4F88FE15F}"
+      DTS:From="Package\FACT TRANSFORMATIONS"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 1"
+      DTS:To="Package\calculate metrics" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="181.6,41.6"
+          Id="Package\calculate metrics"
+          TopLeft="313.350671125249,290.437038868386" />
+        <NodeLayout
+          Size="212.8,41.6"
+          Id="Package\FACT TRANSFORMATIONS"
+          TopLeft="329.999989271164,179.966185207244" />
+        <NodeLayout
+          Size="176.8,41.6"
+          Id="Package\load current positions"
+          TopLeft="319.999987284343,78.0000006198883" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="408.399987284343,119.600000619888">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="28.0000019868211,60.3661845873557"
+              Start="0,0"
+              End="28.0000019868211,52.8661845873557">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,26.1830922936778" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,26.1830922936778"
+                    Point2="0,30.1830922936778"
+                    Point3="4,30.1830922936778" />
+                  <mssgle:LineSegment
+                    End="24.0000019868211,30.1830922936778" />
+                  <mssgle:CubicBezierSegment
+                    Point1="24.0000019868211,30.1830922936778"
+                    Point2="28.0000019868211,30.1830922936778"
+                    Point3="28.0000019868211,34.1830922936778" />
+                  <mssgle:LineSegment
+                    End="28.0000019868211,52.8661845873557" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 1]"
+          TopLeft="436.399989271164,221.566185207244">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-32.249318145915,68.870853661142"
+              Start="0,0"
+              End="-32.249318145915,61.370853661142">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,30.435426830571" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,30.435426830571"
+                    Point2="0,34.435426830571"
+                    Point3="-4,34.435426830571" />
+                  <mssgle:LineSegment
+                    End="-28.249318145915,34.435426830571" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-28.249318145915,34.435426830571"
+                    Point2="-32.249318145915,34.435426830571"
+                    Point3="-32.249318145915,38.435426830571" />
+                  <mssgle:LineSegment
+                    End="-32.249318145915,61.370853661142" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\FACT TRANSFORMATIONS">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="171.2,41.6"
+          Id="Package\FACT TRANSFORMATIONS\OLE DB Destination"
+          TopLeft="567.703024276339,458.642423429682" />
+        <NodeLayout
+          Size="146.4,42.4"
+          Id="Package\FACT TRANSFORMATIONS\DateID lookup"
+          TopLeft="336.080550541936,172.785969088218" />
+        <NodeLayout
+          Size="112,41.6"
+          Id="Package\FACT TRANSFORMATIONS\stop_id"
+          TopLeft="353.157575691348,375.066665991677" />
+        <NodeLayout
+          Size="120.8,41.6"
+          Id="Package\FACT TRANSFORMATIONS\Lookup 1"
+          TopLeft="348.418504768978,461.044447224759" />
+        <NodeLayout
+          Size="148,42.4"
+          Id="Package\FACT TRANSFORMATIONS\TimeID lookup"
+          TopLeft="556.14999170709,166.019887089518" />
+        <NodeLayout
+          Size="133.6,41.6"
+          Id="Package\FACT TRANSFORMATIONS\schedule ID"
+          TopLeft="564.566644546722,272.273972698299" />
+        <NodeLayout
+          Size="141.6,42.4"
+          Id="Package\FACT TRANSFORMATIONS\Hour, Minute"
+          TopLeft="553.580547300933,67.4175460522873" />
+        <NodeLayout
+          Size="112.8,41.6"
+          Id="Package\FACT TRANSFORMATIONS\Lookup"
+          TopLeft="572.299977449577,369.533335144785" />
+        <NodeLayout
+          Size="142.4,42.4"
+          Id="Package\FACT TRANSFORMATIONS\BusID lookup"
+          TopLeft="338.306741108302,281.308527418339" />
+        <NodeLayout
+          Size="154.4,42.4"
+          Id="Package\FACT TRANSFORMATIONS\OLE DB Source"
+          TopLeft="327.330550672321,62.6280722779263" />
+        <EdgeLayout
+          Id="Package\FACT TRANSFORMATIONS.Paths[Output 0]"
+          TopLeft="630.033310998149,313.873972698299">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,55.6593624464861"
+              Start="0,0"
+              End="0,48.1593624464861">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,48.1593624464861" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\FACT TRANSFORMATIONS.Paths[OLE DB Source Output]"
+          TopLeft="481.997217338987,86.3561424984403">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="71.5833299619455,0"
+              Start="0,0"
+              End="64.0833299619455,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="64.0833299619455,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\FACT TRANSFORMATIONS.Paths[Lookup No Match Output]"
+          TopLeft="469.218504768978,480.64343532722">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="98.4845195073606,0"
+              Start="0,0"
+              End="90.9845195073606,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="90.9845195073606,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-10.3141269650697,5,111.6127734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\FACT TRANSFORMATIONS.Paths[Lookup Match Output4]"
+          TopLeft="408.988040230163,416.666665991677">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,44.3777812330814"
+              Start="0,0"
+              End="0,36.8777812330814">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,36.8777812330814" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-48.19138671875,12.6342031165407,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\FACT TRANSFORMATIONS.Paths[Lookup Match Output3]"
+          TopLeft="572.299977449577,393.100000568231">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-107.142401758229,0"
+              Start="0,0"
+              End="-99.6424017582285,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-99.6424017582285,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-98.0125875978643,5,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\FACT TRANSFORMATIONS.Paths[Lookup Match Output2]"
+          TopLeft="480.706741108302,302.508527418339">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="83.8599034384198,-9.43455472004047"
+              Start="0,0"
+              End="76.3599034384198,-9.43455472004047">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="37.9299517192099,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="37.9299517192099,0"
+                    Point2="41.9299517192099,0"
+                    Point3="41.9299517192099,-4" />
+                  <mssgle:LineSegment
+                    End="41.9299517192099,-5.43455472004047" />
+                  <mssgle:CubicBezierSegment
+                    Point1="41.9299517192099,-5.43455472004047"
+                    Point2="41.9299517192099,-9.43455472004047"
+                    Point3="45.9299517192099,-9.43455472004047" />
+                  <mssgle:LineSegment
+                    End="76.3599034384198,-9.43455472004047" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-6.2614349995401,1,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\FACT TRANSFORMATIONS.Paths[Lookup Match Output1]"
+          TopLeft="409.393645825119,215.185969088218">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,66.122558330121"
+              Start="0,0"
+              End="0,58.622558330121">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,58.622558330121" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-48.19138671875,23.5065916650605,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\FACT TRANSFORMATIONS.Paths[Lookup Match Output]"
+          TopLeft="556.14999170709,190.736261422201">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-73.4027744984875,0"
+              Start="0,0"
+              End="-65.9027744984875,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-65.9027744984875,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-81.1427739679937,5,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\FACT TRANSFORMATIONS.Paths[Derived Column Output]"
+          TopLeft="627.198602837345,110.084212718953">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,55.9356743705645"
+              Start="0,0"
+              End="0,48.4356743705645">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,48.4356743705645" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <AnnotationLayout
+          Text="Działa ale tylko w trybie administratora chyba&#xA;"
+          ParentId="Package\FACT TRANSFORMATIONS"
+          FontInfo="{assembly:Null}"
+          Size="268.8,56"
+          Id="2b9c097e-b767-4467-8f0b-89055ad72c0b"
+          TopLeft="715.872213039381,274.96920655833" />
+        <AnnotationLayout
+          Text="redirect errors, bo autobusy na przełomie doby nie dostają zadnego przystanku przypisanego"
+          ParentId="Package\FACT TRANSFORMATIONS"
+          FontInfo="{assembly:Null}"
+          Size="243.2,72"
+          Id="0cd544db-edfd-432b-b147-83a16c541518"
+          TopLeft="68.1333308166928,363.600001363755" />
+        <AnnotationLayout
+          Text="sprawdzanie czy w tabeli taki rekord juz istnieje&#xD;&#xA;"
+          ParentId="Package\FACT TRANSFORMATIONS"
+          FontInfo="{assembly:Null}"
+          Size="278.4,60"
+          Id="58222108-0f45-4118-9dd6-1808b825a6a7"
+          TopLeft="59.1666643155947,456.733336963124" />
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\FACT TRANSFORMATIONS\DateID lookup">
+    <Properties>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q2:string">[dbo].[DimDate]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q3:string">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\FACT TRANSFORMATIONS\Lookup 1">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:string">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[FactDelays]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:string">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\FACT TRANSFORMATIONS\TimeID lookup">
+    <Properties>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q2:string">[dbo].[DimTime]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q3:string">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q4:string">true</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\FACT TRANSFORMATIONS\Lookup">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:string">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[DimScheduledArr]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:string">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\FACT TRANSFORMATIONS\BusID lookup">
+    <Properties>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q2:string">[dbo].[DimBuses]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q3:string">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\FACT TRANSFORMATIONS\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
