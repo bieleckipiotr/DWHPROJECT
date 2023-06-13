@@ -20,48 +20,38 @@ where ds.nazwa_zespolu = 'Mandarynki'
 
 
 -- OPOZNIENIA NA TRASIE
-select dsa.kod_trasy, dsa.StopOnRoute, avg(f.delay) as avg_delay
-from FactDelays f
-join DimScheduledArr dsa on f.scheduled_arr_id = dsa.scheduled_arr_id
-where f.delay > -10
-group by dsa.kod_trasy, dsa.StopOnRoute
-order by dsa.kod_trasy
--- TO-SAN
-
-select dsa.kod_trasy, count(*) as cnt
-from FactDelays f
-join DimScheduledArr dsa on f.scheduled_arr_id = dsa.scheduled_arr_id
-where f.delay > -10
-group by dsa.kod_trasy
-order by cnt desc
-
-
 select d.linia, COUNT(*) as cnt
 from FactDelays f
 join DimBuses d on f.bus_id=d.bus_id
 group by d.linia
 order by cnt desc
 
+select d.linia, d2.StopOnRoute, avg(f.delay) as avg_delay, count(d.bus_id) as number_of_vehicles
+from FactDelays f
+join DimBuses d on f.bus_id= d.bus_id
+join DimScheduledArr d2 on f.scheduled_arr_id=d2.scheduled_arr_id
+where f.delay > -10
+group by d.linia, d2.StopOnRoute
+order by d.linia
 
 
 
 
-
--- ROZK£ADY (2)
-select d3.nazwa_zespolu, d1.linia, d2.time_scheduled_id, f.time_estimated_id
+-- ROZK£ADY
+select d3.nazwa_zespolu, d1.linia, d4.TimeFull, d5.TimeFull
 from FactDelays f
 join DimBuses d1 on f.bus_id=d1.bus_id
 join DimScheduledArr d2 on f.scheduled_arr_id=d2.scheduled_arr_id
 join DimStops d3 on f.stop_id=d3.stop_id
---where d3.nazwa_zespolu
-order by d3.nazwa_zespolu asc
+join DimTime d4 on d2.time_scheduled_id=d4.TimeID
+join DimTime d5 on f.time_estimated_id=d5.TimeID
+order by d3.nazwa_zespolu asc, d1.linia asc, d4.TimeFull
 
 
 -- OPOZNIENIE VS CZAS
-
-
-select bus_id, COUNT(*) as num
-from FactDelays
-group by bus_id
-order by num desc
+select d.hour_val, avg(f.delay) as avg_delay, COUNT(f.bus_id) as number_of_vehicles
+from FactDelays f
+join DimTime d on f.Time_id=d.TimeID
+where f.delay > -10
+group by d.hour_val
 
